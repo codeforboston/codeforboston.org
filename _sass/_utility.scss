@@ -1,0 +1,14 @@
+$grid-columns: 12;
+
+.row {
+  @include row();
+}
+
+@for $i from 1 through 12 {
+  [class=col-#{$i}] {
+    @include span-columns($i);
+    @include media-query($on-palm) {
+      @include span-columns(12);
+    }
+  }
+}
