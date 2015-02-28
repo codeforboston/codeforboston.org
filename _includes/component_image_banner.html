@@ -1,0 +1,8 @@
+<section class="banner-image {{ include.classname }}">
+  {% if include.h1 %}
+    <h1>{{ include.headline }}</h1>
+  {% else %}
+    <h2>{{ include.headline }}</h2>
+  {% endif %}
+    <a href="{{ include.cta_href }}">{{ include.cta_text }}</a>
+</section>
