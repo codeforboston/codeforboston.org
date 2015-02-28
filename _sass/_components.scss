@@ -1,0 +1,22 @@
+.hero {
+  h1 {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+  a.cta {
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    background: $brand-color;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      background: darken($brand-color, 10%);
+
+    }
+  }
+}
+
+
+.panel {
+  margin: 5rem 0;
+}

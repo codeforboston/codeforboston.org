@@ -1,22 +1,37 @@
 ---
 layout: default
+
+hero:
+  subheadline_above: "Hack Your Community With"
+  headline: "Code For Boston"
+  cta:
+    text: "Get Involved"
+    href: "/join/"
+
+articles:
+  -
+    headline: "Jam on Civic Tech Projects"
+    content: "All of our projects are open source and freely available on Github. Hit it up if you’re a developer or designer. We love pull requests!"
+    cta:
+      href: "/projects/"
+      text: "Get Started"
+  -
+    headline: "Chat with Code for Boston Members"
+    content: "We use Hackpad to collaborate on our projects, organize our thoughts, and plan civic innovation events. Feel free to simply browse our discussions, or jump in and contribute to the conversation!"
+    cta:
+      href: "/community/"
+      text: "Come Hang Out"
+  -
+    headline: "Learn more about Civic Tech"
+    content: "Civic innovation is a wonderful way to make a difference and give back to your community. But, it can also be a confusing place full of unfamiliar names and acronyms. We can help you get started."
+    cta:
+      href: "/learn/"
+      text: "Learn More"
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% include component_hero.html data=page.hero %}
+  {% include component_threeup.html articles=page.articles %}
 
 </div>

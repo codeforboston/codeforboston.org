@@ -1,11 +1,15 @@
-<section class="row {{ include.classname }}">
+<section class="row panel {{ include.classname }}">
 
   {% for item in include.articles %}
     <article class="col-4">
-      <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
+      {% if item.image %}
+        <img src="{{ item.image.url }}" alt="{{ item.image.alt }}">
+      {% endif %}
       <h2>{{ item.headline }}</h2>
       <p> {{ item.content }}</p>
-      <a href="{{ item.cta.href }}" class="btn-default">{{ item.cta.text }}</button>
+      {% if item.cta  %}
+        <a href="{{ item.cta.href }}" class="btn-default">{{ item.cta.text }}</a>
+      {% endif %}
     </article>
   {% endfor %}
 
