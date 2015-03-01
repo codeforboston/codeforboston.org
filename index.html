@@ -4,34 +4,59 @@ layout: default
 hero:
   subheadline_above: "Hack Your Community With"
   headline: "Code For Boston"
-  cta:
-    text: "Get Involved"
-    href: "/join/"
 
-articles:
+oneup_content:
+  headline: "Every Tuesday, 7-10 pm <br> Cambridge Innovation Center <br> Cambridge, MA"
+  cta:
+    href: "http://www.meetup.com/Code-for-Boston/"
+    text: "Join The Brigade"
+
+get_involved:
+  headline: "Get involved with Code For Boston"
+  content: "Code for Boston aims to provide a ‘center of gravity’ for grassroots, community-driven civic innovation in the Greater Boston area. Our work includes building apps, community organizing, policy initiatives, qualitative research, and more, and we hope that volunteers of all types will join our community. We can’t wait to meet you."
+
+threeup_content:
   -
     headline: "Jam on Civic Tech Projects"
     content: "All of our projects are open source and freely available on Github. Hit it up if you’re a developer or designer. We love pull requests!"
     cta:
-      href: "/projects/"
+      href: "http://github.com/codeforboston"
       text: "Get Started"
   -
     headline: "Chat with Code for Boston Members"
     content: "We use Hackpad to collaborate on our projects, organize our thoughts, and plan civic innovation events. Feel free to simply browse our discussions, or jump in and contribute to the conversation!"
     cta:
-      href: "/community/"
+      href: "https://codeforboston.hackpad.com/"
       text: "Come Hang Out"
   -
     headline: "Learn more about Civic Tech"
     content: "Civic innovation is a wonderful way to make a difference and give back to your community. But, it can also be a confusing place full of unfamiliar names and acronyms. We can help you get started."
     cta:
-      href: "/learn/"
+      href: "http://www.codeforamerica.org"
       text: "Learn More"
 ---
 
 <div class="home">
 
-  {% include component_hero.html data=page.hero %}
-  {% include component_threeup.html articles=page.articles %}
+  <div class="hero-container">
+    <div class="wrapper">
+      {% include component_hero.html data=page.hero %}
+    </div>
+  </div>
+
+  <div class="hacknight-banner">
+    <div class="wrapper panel">
+      {% include component_oneup.html data=page.oneup_content %}
+    </div>
+  </div>
+
+  <div class="wrapper panel">
+    {% include component_oneup.html data=page.get_involved %}
+  </div>
+
+  <div class="wrapper">
+    {% include component_threeup.html articles=page.threeup_content %}
+  </div>
+
 
 </div>

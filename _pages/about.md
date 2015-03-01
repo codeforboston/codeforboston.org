@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-type: page
+type: hidden
 permalink: /about/
 ---
 

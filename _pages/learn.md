@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Learn
-type: page
+type: hidden
 permalink: /learn/
 ---
 
