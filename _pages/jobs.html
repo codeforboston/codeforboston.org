@@ -1,0 +1,33 @@
+---
+layout: page
+title: Civic Jobs
+type: hidden
+permalink: /jobs/
+---
+
+<h1 class="page-title">Jobs In Our Community</h1>
+
+<div class="job-controls row">
+  <input class="col-6 pull-right" type="text" name="filter-jobs" id="filter-jobs" placeholder="Start typing to filter by title, description, organization...">
+</div>
+
+<ul class="jobs" id="jobs-listing">
+{% for job in site.data.jobs %}
+  <li class="job-listing">
+    <h3>{{ job.title }}</h3>
+    <div class="row">
+      <h4 class="col-6"><a href="{{ job.org.link }}" target="_blank">{{ job.org.name }}</a></h4>
+      <p class="col-6 listing">
+        <a href="{{ job.org.link }}">view listing</a>
+      </p>
+    </div>
+    <p> {{ job.description }} </p>
+  </li>
+
+{% endfor %}
+</ul>
+
+<hr>
+<p class="notice notice-yay">
+  Looking to post a job? Reach out to us at <a href="mailto:hello@codeforboston.org">hello@codeforboston.org</a>!
+</p>

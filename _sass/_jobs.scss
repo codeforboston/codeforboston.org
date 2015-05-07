@@ -1,0 +1,26 @@
+.jobs {
+  list-style: none;
+  margin-left: 0;
+
+  .job-listing {
+    border-left: 10px solid $grey-color-light;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    max-height: 500px;
+    overflow: hidden;
+    transition: all 500ms ease-in;
+
+    &.hidden {
+      max-height: 0;
+    }
+  }
+
+  .listing {
+    text-align: right;
+  }
+}
+
+
+.job-controls {
+  padding-bottom: 20px;
+}

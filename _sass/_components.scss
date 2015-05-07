@@ -2,6 +2,7 @@
   padding: 2rem 0;
   h1 {
     font-size: 6rem;
+    line-height: 1;
     font-weight: 700;
   }
   .subheadline-above {
@@ -44,6 +45,12 @@
 
 }
 
+
+.page-title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
 a.btn-outline-white {
   padding: 0.5rem 1.5rem;
   border: 2px solid $white-color;
@@ -72,4 +79,10 @@ a.btn-primary {
       color: #fff;
 
   }
+}
+
+
+input {
+  font-size: 0.8rem;
+  padding: 0.5rem;
 }
