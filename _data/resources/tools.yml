@@ -1,0 +1,45 @@
+-
+  category: "Discovery"
+  tools:
+    -
+      name: "Human Centered Design Toolkit"
+      url:  "http://ideo.com"
+-
+  category: "Problem Solving"
+  tools:
+    -
+      name: "Something"
+      url: "http://something.com"
+-
+  category: "Organizing"
+  tools:
+    -
+      name: "Meetup"
+      url: "http://meetup.ocom/code-for-boston"
+    -
+      name: "Hackpad"
+      url: "http://hackpad.com"
+-
+  category: "Prototyping"
+  tools:
+    -
+      name: "invision App"
+      url: "http://invisionapp.com"
+-
+  category: "Designing"
+  tools:
+    -
+      name: "Sketch"
+      url: "http://sketch.com"
+-
+  category: "Building"
+  tools:
+    -
+      name: "jekyll"
+      url: "http://jekyll.io"
+-
+  category: "Analyzing"
+  tools:
+    -
+      name: "Google Analytics"
+      url:  "http://analytics.google.com"
