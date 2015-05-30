@@ -20,7 +20,6 @@ permalink: /ndoch/
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
 
 
@@ -57,8 +56,15 @@ permalink: /ndoch/
         </div>
         <div class="info-content">
           <h3>Special thanks to our generous donors:</h3>
-          <p>CfA, Microsoft, VMWare</p>
-          <p>Amsterdam Falafel, Cambridge Pizzeria, Chipotle, Hi Rise, Spindrift</p>
+
+          <ul class="donors">
+            <li>CfA</li> <li>Microsoft</li> <li>VMWare</li>
+          </ul>
+
+          <ul class="donors">
+            <li>Amsterdam Falafel</li> <li>Cambridge Pizzeria</li> <li>Chipotle</li> <li>Hi Rise</li> <li>Spindrift</li>
+          </ul>
+
         </div>
       </div>
     </header>

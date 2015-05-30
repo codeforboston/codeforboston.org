@@ -3,7 +3,7 @@
     - time: "5:30 PM"
       name: "Doors Open"
     - time: "6:00 PM"
-      name: "MA Senator Jamie Eldridge Kick-Off Address"
+      name: "MA Senator Jamie Eldridge <br>Kick-Off Address"
     - time: "6:15 PM"
       name: "Warm Up!"
     - time: "6:20 PM"
@@ -26,7 +26,7 @@
     - time: "5:00 PM"
       name: "Doors Close"
     - time: ""
-      name: "IGNITE talks to follow! RSVP on 'splash'"
+      name: "IGNITE talks to follow! <br>RSVP on 'splash'"
 
 - date: "Sunday"
   events:
