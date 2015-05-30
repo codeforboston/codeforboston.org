@@ -1,0 +1,146 @@
+// the base font size drives the sizing of everything, adjust as needed
+$base-font-size: 24px;
+
+$right-bar-width: 25%;
+$main-content-width: 75%;
+
+html.one-off {
+  height: 100%;
+
+  body {
+    height: 100%;
+    margin: 0;
+    font-size: $base-font-size;
+    color: $grey-color-dark;
+  }
+
+  header, .timeline, footer {
+    width: $main-content-width;
+    position: absolute;
+    left: 0;
+  }
+
+
+  .text-mono {
+    font-family: monospace;
+  }
+
+  .text-faded {
+    color: $grey-color;
+  }
+
+  header {
+    top: 0;
+    height: 20%;
+    h1 {
+      font-weight: 700;
+    }
+
+    .info-icon {
+      width: 2rem;
+      height: 2rem;
+      line-height: 1.4;
+      text-align: center;
+      display: inline-block;
+      background: white;
+      color: $blue-color;
+      font-family: monospace;
+      border-radius: 50%;
+    }
+
+    .information {
+
+      .info-header {
+        padding-left: 2rem;
+        background: $blue-color;
+        color: white;
+        h2 {
+          font-weight: 400;
+          font-size: 1.5rem;
+          display: inline-block;
+          margin: 0.5rem 0;
+        }
+      }
+
+      .info-content {
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+
+
+
+  .timeline {
+    top: 20%;
+    bottom: 15%;
+
+    .timeline-header {
+      padding-left: 2rem;
+      background: $grey-color-dark;
+      color: white;
+      margin-bottom: 1rem;
+
+      h2 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: 0.5rem 0;
+      }
+    }
+
+    .events {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      list-style: none;
+
+      h3 {
+        margin: 0;
+        color: $grey-color;
+      }
+
+      .time {
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+      h4 {
+        font-size: 1.5rem;
+        display: inline;
+      }
+      li {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+
+
+  footer {
+    bottom: 0;
+    height: 15%;
+    background: $brand-color;
+    color: white;
+    padding: 1rem 0 0 2rem;
+
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+    }
+  }
+
+  // twitter feed
+  .twitter-feed{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: $right-bar-width;
+    padding: 0 10px;
+    iframe {
+      height: 100%;
+    }
+  }
+
+
+}

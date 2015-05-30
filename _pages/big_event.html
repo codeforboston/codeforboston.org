@@ -1,0 +1,104 @@
+---
+layout: one_off
+title: National Day Of Civic Hacking
+type: hidden
+permalink: /ndoch/
+---
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{page.title}}">
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+
+  <link rel="stylesheet" href="{{ '/css/big-event.css' | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+
+  <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
+
+</head>
+
+<body>
+
+  <div class="main">
+
+    <header>
+      <div class="information">
+        <div class="info-header">
+          <span class="info-icon">i</span> <h2>THINGS TO KNOW</h2>
+        </div>
+        <div class="info-content">
+
+          <p>
+            <strong class="text-faded">WIFI:</strong> <span class="text-mono">&nbsp;theNetworkName</span> &nbsp;&nbsp; | &nbsp;&nbsp; <span class="text-mono">123Pass</span>
+          </p>
+          <p>
+            <strong>#NDOCH, #CIVICTECHBOS, #HACKFORCHANGE</strong>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="timeline">
+      <div class="timeline-header">
+        <h2>SCHEDULE</h2>
+      </div>
+
+      {% for eventColl in site.data.events.ndoch %}
+        <ul class="events">
+          <h3>{{eventColl.date}}</h3>
+        {% for event in eventColl.events %}
+          <li>
+            <span class="time">{{ event.time }}</span>
+            <h4 class="event">{{ event.name }}</h4>
+          </li>
+        {% endfor %}
+        </ul>
+      {% endfor %}
+
+    </div>
+
+    <footer>
+      <h1>NDoCH 2015</h1>
+      <p>Questions/Concerns? ask anyone w/ a Code for America Lanyard, or email <strong>hello@codeforboston.org</strong></p>
+    </footer>
+
+    <div class="twitter-feed">
+
+      <a  class="twitter-timeline"
+          data-dnt="true"
+          href="https://twitter.com/search?q=%23hackforchange%20OR%20%23ndoch%20OR%20%23civictechbos"
+          data-widget-id="604444746703093762"
+          data-chrome="nofooter  transparent">#NDoCH Tweets</a>
+
+    </div>
+
+  </div>
+
+</body>
+
