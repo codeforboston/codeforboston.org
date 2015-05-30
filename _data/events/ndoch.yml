@@ -3,7 +3,7 @@
     - time: "5:30 PM"
       name: "Doors Open"
     - time: "6:00 PM"
-      name: "State Senator Jamie Eldridge Kick-Off Address"
+      name: "MA Senator Jamie Eldridge Kick-Off Address"
     - time: "6:15 PM"
       name: "Warm Up!"
     - time: "6:20 PM"
@@ -15,7 +15,7 @@
 
 - date: "Saturday"
   events:
-    - time: "8:30 AM"
+    - time: "9:00 AM"
       name: "Doors Open - Breakfast!"
     - time: "10:10 AM"
       name: "Panel Discussions on Focus Area"
@@ -25,6 +25,8 @@
       name: "Lunch Is Served"
     - time: "5:00 PM"
       name: "Doors Close"
+    - time: ""
+      name: "IGNITE talks to follow! RSVP on 'splash'"
 
 - date: "Sunday"
   events:
