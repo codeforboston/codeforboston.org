@@ -271,6 +271,12 @@ li > ol {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
+h1 {
+  font-weight: 400; }
+
+h5, h6 {
+  font-weight: 700; }
+
 /**
  * Links
  */
@@ -284,14 +290,61 @@ a {
     text-decoration: underline; }
 
 /**
+ *  Buttons
+ */
+.btn-default, a.btn-default, .btn-primary, a.btn-primary {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  display: inline-block; }
+.btn-default, a.btn-default {
+  background: #e8e8e8;
+  color: #424242; }
+  .btn-default:hover, a.btn-default:hover {
+    background: #dbdbdb; }
+
+.btn-primary, a.btn-primary {
+  background: #ce1a40;
+  color: #ffffff; }
+  .btn-primary:hover, a.btn-primary:hover {
+    background: #b71739; }
+
+.btn-large {
+  font-size: 2rem; }
+
+a.btn-outline-white {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none; }
+  a.btn-outline-white:hover {
+    background: #ffffff;
+    color: #ce1a40; }
+
+a.btn-primary {
+  padding: 0.5rem 1.5rem;
+  background: #ce1a40;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none; }
+  a.btn-primary:hover {
+    background: #a11432; }
+  .site-nav a.btn-primary.page-link {
+    color: #fff; }
+
+/**
  * Blockquotes
  */
 blockquote {
   color: #828282;
-  border-left: 4px solid #e8e8e8;
+  border-left: 8px solid #e8e8e8;
   padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
+  font-size: 1.3rem;
   font-style: italic; }
   blockquote > :last-child {
     margin-bottom: 0; }

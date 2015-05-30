@@ -83,6 +83,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h1 {
+    font-weight: 400;
+}
+
+h5, h6 {
+    font-weight: 700;
+}
 
 
 /**
@@ -105,14 +112,88 @@ a {
 
 
 /**
+ *  Buttons
+ */
+%btn {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    display: inline-block;
+    &a {
+        font-size: 0.8rem;
+    }
+}
+
+.btn-default, a.btn-default {
+    @extend %btn;
+    background: $grey-color-light;
+    color: $grey-color-dark;
+    &:hover {
+        background: darken($grey-color-light, 5%);
+    }
+}
+
+.btn-primary, a.btn-primary {
+    @extend %btn;
+    background: $brand-color;
+    color: $white-color;
+    &:hover {
+        background: darken($brand-color, 5%);
+    }
+}
+
+
+.btn-large {
+    font-size: 2rem;
+}
+
+
+a.btn-outline-white {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid $white-color;
+  color: $white-color;
+  border-radius: 4px;
+  text-decoration: none;
+  &:hover {
+    background: $white-color;
+    color: $brand-color;
+  }
+
+}
+
+
+a.btn-primary {
+  padding: 0.5rem 1.5rem;
+  background: $brand-color;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  &:hover {
+    background: darken($brand-color, 10%);
+  }
+  // override for page-link in nav
+  .site-nav &.page-link {
+      color: #fff;
+
+  }
+}
+
+
+
+
+
+/**
  * Blockquotes
  */
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    border-left: 8px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
+    font-size: 1.3rem;
     font-style: italic;
 
     > :last-child {

@@ -1,12 +1,19 @@
 <section class="row oneup {{ include.classname }}">
-  <div class="col-8">
-    <h2>{{ include.data.headline }}</h2>
-    <p> {{ include.data.content }}</p>
-  </div>
-  <div class="col-4 cta-section">
-    {% if include.data.cta  %}
-      <a href="{{ include.data.cta.href }}" class="btn-outline-white">{{ include.data.cta.text }}</a>
-    {% endif %}
-  </div>
+
+  {% if include.data.cta  %}
+    <div class="col-8">
+      <h2>{{ include.data.headline }}</h2>
+      <p> {{ include.data.content }}</p>
+    </div>
+    <div class="col-4 cta-section">
+        <a href="{{ include.data.cta.href }}" class="btn-large btn-outline-white">{{ include.data.cta.text }}</a>
+    </div>
+  {% else %}
+    <div class="col-12">
+      <h2>{{ include.data.headline }}</h2>
+      <p> {{ include.data.content }}</p>
+    </div>
+  {% endif %}
 
 </section>
+

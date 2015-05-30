@@ -37,10 +37,6 @@
 
   .cta-section {
     text-align: right;
-    a {
-      margin-top: 3rem;
-      display: inline-block;
-    }
   }
 
 }
@@ -49,36 +45,6 @@
 .page-title {
   text-align: center;
   margin: 2rem 0;
-}
-
-a.btn-outline-white {
-  padding: 0.5rem 1.5rem;
-  border: 2px solid $white-color;
-  color: $white-color;
-  border-radius: 4px;
-  text-decoration: none;
-  &:hover {
-    background: $white-color;
-    color: $brand-color;
-  }
-
-}
-
-
-a.btn-primary {
-  padding: 0.5rem 1.5rem;
-  background: $brand-color;
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  &:hover {
-    background: darken($brand-color, 10%);
-  }
-  // override for page-link in nav
-  .site-nav &.page-link {
-      color: #fff;
-
-  }
 }
 
 
@@ -105,5 +71,13 @@ input {
         color: $white-color;
       }
     }
+  }
+}
+
+
+
+.three-up {
+  article p {
+    min-height: 10rem;
   }
 }
