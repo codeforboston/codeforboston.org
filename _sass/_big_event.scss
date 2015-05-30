@@ -12,6 +12,11 @@ html.one-off {
     margin: 0;
     font-size: $base-font-size;
     color: $grey-color-dark;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-weight: 400;
   }
 
   header, .timeline, footer {
@@ -31,7 +36,7 @@ html.one-off {
 
   header {
     top: 0;
-    height: 20%;
+    height: 25%;
     h1 {
       font-weight: 700;
     }
@@ -46,6 +51,7 @@ html.one-off {
       color: $blue-color;
       font-family: monospace;
       border-radius: 50%;
+      margin-right: 1rem;
     }
 
     .information {
@@ -72,8 +78,8 @@ html.one-off {
 
 
   .timeline {
-    top: 20%;
-    bottom: 15%;
+    top: 25%;
+    bottom: 10%;
 
     .timeline-header {
       padding-left: 2rem;
@@ -98,15 +104,17 @@ html.one-off {
       h3 {
         margin: 0;
         color: $grey-color;
+        font-weight: 600;
       }
 
       .time {
         font-weight: 600;
+        color: $grey-color;
         font-size: 1.2rem;
       }
       h4 {
         font-size: 1.5rem;
-        display: inline;
+        margin-left: 0.5rem;
       }
       li {
         margin-bottom: 1.5rem;
@@ -118,7 +126,7 @@ html.one-off {
 
   footer {
     bottom: 0;
-    height: 15%;
+    height: 10%;
     background: $brand-color;
     color: white;
     padding: 1rem 0 0 2rem;
@@ -130,16 +138,41 @@ html.one-off {
     }
   }
 
+
+  .welcome {
+    position: absolute;
+    right: 0;
+    width: $right-bar-width;
+    top: 0;
+    height: 20%;
+    padding: 0.5rem;
+    h1 {
+      font-weight: 800;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
   // twitter feed
   .twitter-feed{
     position: absolute;
     right: 0;
-    height: 100%;
+    top: 20%;
+    height: 75%;
     width: $right-bar-width;
     padding: 0 10px;
     iframe {
       height: 100%;
     }
+  }
+  .twitter-footer {
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: $right-bar-width;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    text-align: center;
   }
 
 

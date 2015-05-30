@@ -359,7 +359,10 @@ html.one-off {
     height: 100%;
     margin: 0;
     font-size: 24px;
-    color: #424242; }
+    color: #424242;
+    font-weight: 400; }
+  html.one-off h4 {
+    font-weight: 400; }
   html.one-off header, html.one-off .timeline, html.one-off footer {
     width: 75%;
     position: absolute;
@@ -370,7 +373,7 @@ html.one-off {
     color: #828282; }
   html.one-off header {
     top: 0;
-    height: 20%; }
+    height: 25%; }
     html.one-off header h1 {
       font-weight: 700; }
     html.one-off header .info-icon {
@@ -382,7 +385,8 @@ html.one-off {
       background: white;
       color: #65B3E0;
       font-family: monospace;
-      border-radius: 50%; }
+      border-radius: 50%;
+      margin-right: 1rem; }
     html.one-off header .information .info-header {
       padding-left: 2rem;
       background: #65B3E0;
@@ -396,8 +400,8 @@ html.one-off {
       padding-left: 2rem;
       padding-top: 0.5rem; }
   html.one-off .timeline {
-    top: 20%;
-    bottom: 15%; }
+    top: 25%;
+    bottom: 10%; }
     html.one-off .timeline .timeline-header {
       padding-left: 2rem;
       background: #424242;
@@ -415,29 +419,52 @@ html.one-off {
       list-style: none; }
       html.one-off .timeline .events h3 {
         margin: 0;
-        color: #828282; }
+        color: #828282;
+        font-weight: 600; }
       html.one-off .timeline .events .time {
         font-weight: 600;
+        color: #828282;
         font-size: 1.2rem; }
       html.one-off .timeline .events h4 {
         font-size: 1.5rem;
-        display: inline; }
+        margin-left: 0.5rem; }
       html.one-off .timeline .events li {
         margin-bottom: 1.5rem; }
   html.one-off footer {
     bottom: 0;
-    height: 15%;
+    height: 10%;
     background: #ce1a40;
     color: white;
     padding: 1rem 0 0 2rem; }
     html.one-off footer h1 {
       font-size: 2rem;
       font-weight: 900; }
+  html.one-off .welcome {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    top: 0;
+    height: 20%;
+    padding: 0.5rem; }
+    html.one-off .welcome h1 {
+      font-weight: 800;
+      text-align: center;
+      font-size: 3rem; }
   html.one-off .twitter-feed {
     position: absolute;
     right: 0;
-    height: 100%;
+    top: 20%;
+    height: 75%;
     width: 25%;
     padding: 0 10px; }
     html.one-off .twitter-feed iframe {
       height: 100%; }
+  html.one-off .twitter-footer {
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    text-align: center; }
