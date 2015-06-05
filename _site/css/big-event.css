@@ -435,6 +435,10 @@ html.one-off {
     html.one-off header .logo {
       width: 15rem;
       display: inline-block; }
+    html.one-off header .nd-logo {
+      width: 30rem;
+      padding-top: 0.5rem;
+      display: inline-block; }
     html.one-off header h1 {
       font-weight: 700;
       display: inline-block;
