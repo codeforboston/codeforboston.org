@@ -1,6 +1,6 @@
 # Site settings
 title: Code For Boston
-email: team@codeforboston.org
+email: hello@codeforboston.org
 description: > # this means to ignore newlines until "baseurl:"
   Part of the Code for America Brigade network, we are a volunteer group of developers, designers, data geeks, and citizen activists who use creative technology to solve civic and social problems.
 baseurl: "" # the subpath of your site, e.g. /blog/

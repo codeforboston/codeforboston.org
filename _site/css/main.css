@@ -275,6 +275,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: 400; }
 
+h3 {
+  font-weight: 700; }
+
 h5, h6 {
   font-weight: 700; }
 
@@ -343,7 +346,7 @@ a.btn-primary {
  */
 blockquote {
   color: #828282;
-  border-left: 8px solid #e8e8e8;
+  border-left: 8px solid #65B3E0;
   padding-left: 15px;
   font-size: 1.3rem;
   font-style: italic; }
@@ -628,21 +631,25 @@ input {
 
 .jobs {
   list-style: none;
-  margin-left: 0; }
+  margin-left: 0;
+  min-height: 25rem; }
   .jobs .job-listing {
     border-left: 10px solid #e8e8e8;
-    padding-left: 20px;
-    margin-bottom: 40px;
-    max-height: 500px;
+    padding-left: 1.5rem;
+    margin-bottom: 4rem;
+    max-height: 20rem;
     overflow: hidden;
-    transition: all 500ms ease-in; }
+    opacity: 1;
+    transition: max-height 500ms ease-in, opacity 250ms ease-in; }
     .jobs .job-listing.hidden {
-      max-height: 0; }
+      max-height: 0;
+      margin: 0;
+      opacity: 0; }
   .jobs .listing {
     text-align: right; }
 
 .job-controls {
-  padding-bottom: 20px; }
+  padding-bottom: 1.5rem; }
 
 /**
  * Syntax highlighting styles

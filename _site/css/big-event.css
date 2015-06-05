@@ -274,6 +274,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: 400; }
 
+h3 {
+  font-weight: 700; }
+
 h5, h6 {
   font-weight: 700; }
 
@@ -342,7 +345,7 @@ a.btn-primary {
  */
 blockquote {
   color: #828282;
-  border-left: 8px solid #e8e8e8;
+  border-left: 8px solid #65B3E0;
   padding-left: 15px;
   font-size: 1.3rem;
   font-style: italic; }

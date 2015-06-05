@@ -7,7 +7,7 @@ permalink: /code-of-conduct/
 
 #Code Of Conduct
 
-##The Code for Boston community expects that Code for Boston network activities, events, and digital forums:
+###The Code for Boston community expects that Code for Boston network activities, events, and digital forums:
 
 - Are a safe and respectful environment for all participants.
 - Are a place where people are free to fully express their identities.
@@ -26,15 +26,15 @@ permalink: /code-of-conduct/
 
 Code for Boston reserves the right to remove anyone in violation of these policies from any Code for Boston event, network activity, or digital forum. Repeated offenses may mean not being welcomed back to future Code for Boston events.
 
-##Code for Boston's Anti-Harassment Policy
+###Code for Boston's Anti-Harassment Policy
 
 All Code for Boston network activities, events, and digital forums  and their staff, presenters, and participants are held to an anti-harassment policy, included below.
 
-In addition to governing our own events by this policy, Code for Boston will only collaborate with groups that offer an anti-harassment policy to their attendees, or are willing to implement one. For information on how to offer an anti-harassment policy to your group, see this policy as a guide.
+In addition to governing our own events by this policy, Code for Boston will only collaborate with groups that offer an anti-harassment policy to their attendees, or are willing to implement one. For information on how to offer an anti-harassment policy to your group, see this guide.
 
 Code for Boston is dedicated to providing a harassment-free experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or any other identifying characteristics. We do not tolerate harassment of staff, presenters, or participants in any form. Sexual language and imagery is not appropriate for any Code for Boston event or network activity, including talks.
 
-**Harassment includes but is not limited to**: offensive verbal or written comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, or other identifying characteristics; sexual images in public spaces; deliberate intimidation; stalking; following; harassing photography or recording; sustained disruption of talks or other events; inappropriate physical contact;  unwelcome sexual attention; unwarranted exclusion; patronizing language or action; or conversation topics that make others uncomfortable.
+Harassment includes but is not limited to: offensive verbal or written comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, or other identifying characteristics; sexual images in public spaces; deliberate intimidation; stalking; following; harassing photography or recording; sustained disruption of talks or other events; inappropriate physical contact;  unwelcome sexual attention; unwarranted exclusion; patronizing language or action; or conversation topics that make others uncomfortable.
 
 If a participant engages in harassing behavior, the organizers may take any action they deem appropriate, including warning the offender or expulsion from Code for Boston network activities, events, and digital forums. Participants asked to stop any harassing behavior are expected to comply immediately. Anyone in violation of these policies may expelled from Code for Boston network activities, events, and digital forums, at the discretion of the Brigade Core Team.
 
@@ -48,7 +48,7 @@ If you cannot reach member of the Brigade Core Team and/or it is an emergency, p
 
 This policy is based on several other policies, including the Ohio LinuxFest anti-harassment policy, written by Esther Filderman and Beth Lynn Eicher, and the Con Anti-Harassment Project. Mary Gardiner, Valerie Aurora, Sarah Smith, and Donna Benjamin generalized the policies and added supporting material. Many members of LinuxChix, Geek Feminism and other groups contributed to this work. Special thanks to Ashe Dryden for compiling accessible Code of Conduct reference materials.
 
-##Email Template for Anti-Harassment Reporting
+###Email Template for Anti-Harassment Reporting
 
 **SUBJECT**: Safe Space alert at `EVENT NAME`
 
@@ -58,23 +58,23 @@ You can reach me at `CONTACT INFO`. Thank you.
 
 Default contact information for Code for Boston events.
 
-##Code for Boston Brigade Core Team & Organizers
+###Code for Boston Brigade Core Team & Organizers
 
- - Brigade Core Team (whole team): hello@codeforboston.org
- - Harlan Weber: hweber@codeforamerica.org
- - Matt Cloyd: mcloyd@codeforamerica.org
- - Lyre Calliope: lyre@codeforboston.org
- - Kristen Weber: kristen@codeforboston.org
- - Becky Donner: becky@codeforboston.org
- - Isaac Chansky: isaac@codeforboston.org
- - Maria Grinko: maria@codeforboston.org
- - Matt Rouser: mattr@codeforboston.org
- - Ethan Bagley: ethan@codeforboston.org
+ - Brigade Core Team (whole team): [hello@codeforboston.org](mailto:hello@codeforboston.org)
+ - Harlan Weber: [hweber@codeforamerica.org](mailto:hweber@codeforamerica.org)
+ - Matt Cloyd: [mcloyd@codeforamerica.org](mailto:mcloyd@codeforamerica.org)
+ - Lyre Calliope: [lyre@codeforboston.org](mailto:lyre@codeforboston.org)
+ - Kristen Weber: [kristen@codeforboston.org](mailto:kristen@codeforboston.org)
+ - Becky Donner: [becky@codeforboston.org](mailto:becky@codeforboston.org)
+ - Isaac Chansky: [isaac@codeforboston.org](mailto:isaac@codeforboston.org)
+ - Maria Grinko: [maria@codeforboston.org](mailto:maria@codeforboston.org)
+ - Matt Rouser: [mattr@codeforboston.org](mailto:mattr@codeforboston.org)
+ - Ethan Bagley: [ethan@codeforboston.org](mailto:ethan@codeforboston.org)
 
-##Local Resources
+###Local Resources
 
- - Boston Police, non-emergency: 617.343.4200
- - Boston Emergency Medical Services: 617.343.2367
- - Boston-Area Sexual Assault Resources: http://www.barcc.org/help/services/
- - Boston-Area Sexual Assault Hotline: 800.841.8371
- - Metro Cab (Local Taxi) 617.782.5500: http://boston-cab.com/
+ - Boston Police, non-emergency: [617.343.4200](tel:6173434200)
+ - Boston Emergency Medical Services: [617.343.2367](tel:6173432367)
+ - Boston-Area Sexual Assault Resources: [http://www.barcc.org/help/services/](http://www.barcc.org/help/services/)
+ - Boston-Area Sexual Assault Hotline: [800.841.8371](8008418371)
+ - Metro Cab (Local Taxi) [617.782.5500](tel:6177825500): [http://boston-cab.com/](http://boston-cab.com/)

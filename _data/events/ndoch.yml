@@ -17,8 +17,8 @@
   events:
     - time: "9:00 AM"
       name: "Doors Open - Breakfast!"
-    - time: "10:10 AM"
-      name: "Panel Discussions on Focus Area"
+    - time: "10:00 AM"
+      name: "Team Check-Ins"
     - time: "11:00 AM"
       name: "Open Work Session"
     - time: "12:00 PM"
@@ -26,7 +26,7 @@
     - time: "5:00 PM"
       name: "Doors Close"
     - time: ""
-      name: "IGNITE talks to follow! <br>RSVP on 'splash'"
+      name: "IGNITE talks! @ Venture Cafe <br>6:30PM RSVP only"
 
 - date: "Sunday"
   events:
@@ -37,7 +37,7 @@
     - time: "12:00 PM"
       name: "Lunch Is Served"
     - time: "3:15 PM"
-      name: "Closing Speaker"
+      name: "Pencils Down"
     - time: "3:30 PM"
       name: "Presentations"
     - time: "4:45 PM"
