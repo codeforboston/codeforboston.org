@@ -15,7 +15,7 @@
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}">
-              github.com/{{ site.github_username }}
+              GitHub: codeforboston
             </a>
           </li>
           {% endif %}
@@ -23,7 +23,23 @@
           {% if site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
-              twitter.com/{{ site.twitter_username }}
+              Twitter: @{{ site.twitter_username }}
+            </a>
+          </li>
+          {% endif %}
+          
+          {% if site.hackpad_username %}
+          <li>
+            <a href="https://{{ site.hackpad_username }}.hackpad.com">
+              Hackpad
+            </a>
+          </li>
+          {% endif %}
+          
+          {% if site.meetup_path %}
+          <li>
+            <a href="http://meetup.com/{{ site.meetup_path }}">
+              Meetup
             </a>
           </li>
           {% endif %}
