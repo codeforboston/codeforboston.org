@@ -7,6 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://codeforboston.org" # the base hostname & protocol for your site
 twitter_username: codeforboston
 github_username:  codeforboston
+hackpad_username: codeforboston
+meetup_path:      Code-For-Boston
 
 # Build settings
 markdown: kramdown
