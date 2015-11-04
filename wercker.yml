@@ -39,4 +39,4 @@ build:
           git remote add origin git@github.com:codeforboston/CFB_static.git
           git add .
           git commit -m "deploy commit from $WERCKER_STARTED_BY"
-          git push -f $GIT_REMOTE master:gh-pages
+          git push $GIT_REMOTE `git subtree split --prefix _site master`:hg-pages --force

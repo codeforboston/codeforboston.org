@@ -2,7 +2,7 @@
 # Docker Hub https://registry.hub.docker.com/_/debian/
 # Read more about containers on our dev center
 # http://devcenter.wercker.com/docs/containers/index.html
-box: ruby
+box: mwallasch/docker-ruby-node
 # You can also use services such as databases. Read more on our dev center:
 # http://devcenter.wercker.com/docs/services/index.html
 # services:
@@ -27,5 +27,16 @@ build:
         name: build
         code: jekyll build
     - script:
+        name: Configure git
+        code: |-
+          git config --global user.email "robot@wercker.com"
+          git config --global user.name "wercker CI"
+          rm -rf .git
+    - script:
         name: deploy
-        code: git push origin `git subtree split --prefix build_folder master`:gh-pages --force
+        code: |-
+          git init
+          git remote add origin git@github.com:codeforboston/CFB_static.git
+          git add .
+          git commit -m "deploy commit from $WERCKER_STARTED_BY"
+          git push -f $GIT_REMOTE master:gh-pages
