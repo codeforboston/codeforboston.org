@@ -39,3 +39,9 @@
     link: "http://www.cityofboston.gov/doit/knight.asp"
   description: >
     You will develop programs within the Boston Public Libraries that make open data a part of the library offering. You will write reference guides, plan events, and develop training programs that make open data a useful part of the library collection - and help librarians learn how to incorporate open data into their work.
+- title: "DevOps Engineer"
+  org:
+    name: "Harvard Library Innovation Lab"
+    link: "http://librarylab.law.harvard.edu/"
+  description: >
+    What you will do: Own the production infrastructure that ensures Lab applications are responding quickly to people and bots on the internet. Write code that will monitor systems and develop logic that will automate common deployment and maintenance tasks. Act as a core member of our fun and dynamic team by helping us shape ideas and efforts in libraries, technology, and law. We’re freewheelin’. We fully encourage the pursuit of interests and opportunities. 
