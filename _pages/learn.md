@@ -5,8 +5,6 @@ type: hidden
 permalink: /learn/
 ---
 
-#About Code For America
+#Learning with Code for Boston
 
-
-#About Code For Boston
-
+#Workshops
