@@ -5,9 +5,10 @@ type: none
 permalink: /code-of-conduct/
 ---
 
+{: .t-section-headline }
 #Code Of Conduct
 
-###The Code for Boston community expects that Code for Boston network activities, events, and digital forums:
+####The Code for Boston community expects that Code for Boston network activities, events, and digital forums:
 
 - Are a safe and respectful environment for all participants.
 - Are a place where people are free to fully express their identities.
@@ -26,6 +27,7 @@ permalink: /code-of-conduct/
 
 Code for Boston reserves the right to remove anyone in violation of these policies from any Code for Boston event, network activity, or digital forum. Repeated offenses may mean not being welcomed back to future Code for Boston events.
 
+{: .t-pad--top }
 ###Code for Boston's Anti-Harassment Policy
 
 All Code for Boston network activities, events, and digital forums  and their staff, presenters, and participants are held to an anti-harassment policy, included below.
@@ -48,16 +50,19 @@ If you cannot reach member of the Brigade Core Team and/or it is an emergency, p
 
 This policy is based on several other policies, including the Ohio LinuxFest anti-harassment policy, written by Esther Filderman and Beth Lynn Eicher, and the Con Anti-Harassment Project. Mary Gardiner, Valerie Aurora, Sarah Smith, and Donna Benjamin generalized the policies and added supporting material. Many members of LinuxChix, Geek Feminism and other groups contributed to this work. Special thanks to Ashe Dryden for compiling accessible Code of Conduct reference materials.
 
+{: .t-pad--top }
 ###Email Template for Anti-Harassment Reporting
 
-**SUBJECT**: Safe Space alert at `EVENT NAME`
+**SUBJECT**: Safe Space alert at [EVENT NAME]
 
-I am writing because of harassment at a Code for Boston event, (NAME, PLACE, DATE OF EVENT).
 
-You can reach me at `CONTACT INFO`. Thank you.
+I am writing because of harassment at a Code for Boston event, [NAME, PLACE, DATE OF EVENT].
+
+You can reach me at [CONTACT INFO]. Thank you.
 
 Default contact information for Code for Boston events.
 
+{: .t-pad--top }
 ###Code for Boston Brigade Core Team & Organizers
 
  - Brigade Core Team (whole team): [hello@codeforboston.org](mailto:hello@codeforboston.org)
@@ -71,6 +76,7 @@ Default contact information for Code for Boston events.
  - Matt Rouser: [mattr@codeforboston.org](mailto:mattr@codeforboston.org)
  - Ethan Bagley: [ethan@codeforboston.org](mailto:ethan@codeforboston.org)
 
+{: .t-pad--top }
 ###Local Resources
 
  - Boston Police, non-emergency: [617.343.4200](tel:6173434200)

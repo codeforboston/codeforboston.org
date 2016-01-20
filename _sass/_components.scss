@@ -57,14 +57,14 @@ input {
 .notice {
   padding: 1.4rem;
   margin: 2rem 0;
-  border-radius: 4px;
 
   &.inline {
     display: inline-block;
   }
 
   &.notice-positive {
-    background: $blue-color;
+    border: 1px solid $blue-color;
+    border-left: 1em solid $blue-color;
     a {
       border-color: $white-color;
       &:hover {
@@ -80,4 +80,87 @@ input {
   article p {
     min-height: 10rem;
   }
+}
+
+
+
+
+
+
+/**
+ *  Buttons
+ */
+%btn {
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    display: inline-block;
+    &a {
+        font-size: 0.8rem;
+    }
+}
+
+.btn-default, a.btn-default {
+    @extend %btn;
+    background: $grey-color-light;
+    color: $grey-color-dark;
+    &:hover {
+        background: darken($grey-color-light, 5%);
+    }
+}
+
+.btn-primary, a.btn-primary {
+    @extend %btn;
+    background: $brand-color;
+    color: $white-color;
+    &:hover {
+        background: darken($brand-color, 5%);
+    }
+}
+
+
+.btn-large {
+    font-size: 1.5rem;
+}
+
+
+a.btn-outline-white {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid $white-color;
+  color: $white-color;
+  border-radius: 4px;
+  text-decoration: none;
+  &:hover {
+    background: $white-color;
+    color: $brand-color;
+  }
+
+}
+
+
+a.btn-primary {
+  padding: 0.5rem 1.5rem;
+  background: $brand-color;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  &:hover {
+    background: darken($brand-color, 10%);
+  }
+  // override for page-link in nav
+  .site-nav &.page-link {
+      color: #fff;
+
+  }
+}
+
+
+.t-section-headline {
+  padding: $spacing-unit*2 0;
+  text-align: center;
 }

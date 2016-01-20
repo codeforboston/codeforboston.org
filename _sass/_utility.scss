@@ -19,3 +19,22 @@ $grid-columns: 12;
 .pull-right {
   float: right;
 }
+
+
+.t-center {
+    text-align: center;
+}
+
+.t-pad--top {
+    padding-top: $spacing-unit * 2;
+}
+.t-pad--bottom {
+    padding-bottom: $spacing-unit * 2;
+}
+
+.t-margin--top {
+    margin-top: $spacing-unit * 2;
+}
+.t-margin--bottom {
+    margin-bottom: $spacing-unit * 2;
+}

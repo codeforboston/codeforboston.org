@@ -5,7 +5,7 @@ type: hidden
 permalink: /about/
 ---
 
-
+{: .t-section-headline }
 #About Code for Boston
 
 ##What We Do
