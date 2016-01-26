@@ -39,43 +39,69 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+.t-serif {
+    font-family: $headline-font-family;
+}
+.t-serif-italic {
+    font-family: $headline-font-family;
+    font-style: italic;
+}
+.t-sans {
+    font-family: $base-font-family;
+    font-weight: 400;
+}
+.t-sans-bold {
+    font-family: $base-font-family;
+    font-weight: 700;
+}
+
+.t-h5,
 h5 {
     font-size: $base-font-size * $font-ratio;
 }
 
+.t-h4,
 h4 {
     font-size: $base-font-size * $font-ratio * $font-ratio;
 }
 
+.t-h3,
 h3 {
     font-size: $base-font-size * $font-ratio * $font-ratio * $font-ratio;
 }
 
+.t-h2,
 h2 {
     font-size: $base-font-size * $font-ratio * $font-ratio * $font-ratio * $font-ratio;
 }
 
+.t-h1,
 h1 {
     font-size: $base-font-size * $font-ratio * $font-ratio * $font-ratio * $font-ratio * $font-ratio;
 }
 
 @include media-query(768px) {
+    .t-h5,
     h5 {
         font-size: $base-font-size * $small-font-ratio;
     }
 
+    .t-h4,
     h4 {
         font-size: $base-font-size * $small-font-ratio * $small-font-ratio;
     }
 
+    .t-h3,
     h3 {
         font-size: $base-font-size * $small-font-ratio * $small-font-ratio * $small-font-ratio;
     }
 
+    .t-h2,
     h2 {
         font-size: $base-font-size * $small-font-ratio * $small-font-ratio * $small-font-ratio * $small-font-ratio;
     }
 
+    .t-h1,
     h1 {
         font-size: $base-font-size * $small-font-ratio * $small-font-ratio * $small-font-ratio * $small-font-ratio * $small-font-ratio;
     }
@@ -84,9 +110,6 @@ h1 {
 
 
 
-p {
-    text-indent: 1.5em;
-}
 
 // Readable line length
 

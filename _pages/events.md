@@ -3,7 +3,7 @@ layout: page
 title: Events
 permalink: /events/
 ---
-<header class="t-center t-pad--top t-pad--bottom">
+<header class="t-center l-pad--top l-pad--bottom">
     <h1>Events</h1>
     <a href="http://cal.codeforboston.org" class="btn-default">View Our Calendar</a>
 </header>
