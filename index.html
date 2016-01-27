@@ -1,61 +1,47 @@
 ---
 layout: default
-
-hero:
-  subheadline_above: "Hack Your Community With"
-  headline: "Code for Boston"
-
-oneup_content:
-  headline: "Every Tuesday, 7-10 pm <br> Cambridge Innovation Center <br> Cambridge, MA"
-  cta:
-    href: "http://www.meetup.com/Code-for-Boston/"
-    text: "Come Hang Out!"
-
-get_involved:
-  headline: "Get involved with Code For Boston"
-  content: "<blockquote>Code for Boston aims to provide a ‘center of gravity’ for grassroots, community-driven civic innovation in the Greater Boston area. Our work includes building apps, community organizing, policy initiatives, qualitative research, and more, and we hope that volunteers of all types will join our community. We can’t wait to meet you.</blockquote>"
-
-threeup_content:
-  -
-    headline: "Jam on Civic <br> Tech Projects"
-    content: "All of our projects are open source and freely available on Github. Hit it up if you’re a developer or designer. We love pull requests!"
-    cta:
-      href: "http://github.com/codeforboston"
-      text: "Get Started"
-  -
-    headline: "Chat with Code for Boston Members"
-    content: "We use Hackpad to collaborate on our projects, organize our thoughts, and plan civic innovation events. Feel free to simply browse our discussions, or jump in and contribute to the conversation!"
-    cta:
-      href: "https://codeforboston.hackpad.com/"
-      text: "Come Hang Out"
-  -
-    headline: "Learn more <br>about Civic Tech"
-    content: "Civic innovation is a wonderful way to make a difference and give back to your community. But, it can also be a confusing place full of unfamiliar names and acronyms. We can help you get started."
-    cta:
-      href: "http://www.codeforamerica.org"
-      text: "Learn More"
 ---
 
 <div class="home">
-
-  <div class="hero-container">
-    <div class="wrapper">
-      {% include component_hero.html data=page.hero %}
+  <div class="row bg-red">
+    <div class="col-12 l-pad--top l-pad--bottom t-center">
+      <h1 class="t-section-headline t-white">Code for Boston</h1>
     </div>
   </div>
 
-  <div class="hacknight-banner">
-    <div class="wrapper panel">
-      {% include component_oneup.html data=page.oneup_content %}
+  <div class="row row--centered yank--north ">
+    <div class="col-7 bg-white card">
+      <div class="col-8 col--padded">
+        <h2 class="t-h4">Every Tuesday @ 7pm</h2>
+        <address>
+          Cambridge Innovation Center 5<sup>th</sup> floor
+          <br>
+          1 Broadway Cambridge, MA
+        </address>
+        <div class="t-right">
+          <a href="http://meetup.com/code-for-boston" class="btn-secondary">Come hang out</a>
+        </div>
+      </div>
+      <div class="col-4 ">
+        <img width="600" src="http://maps.googleapis.com/maps/api/staticmap?center=Mass+General+Boston,+MA&zoom=14&scale=false&size=600x600&maptype=roadmap&format=jpg&visual_refresh=true&markers=size:mid%7Ccolor:0x000000%7Clabel:1%7C1+broadway+cambridge+MA" alt="Google Map of Cambridge, MA">
+      </div>
     </div>
   </div>
 
-  <div class="wrapper panel">
-    {% include component_oneup.html data=page.get_involved %}
+
+
+  <div class="row">
+    <div class="col-12 l-pad--top l-pad--bottom t-center">
+      <h1 class="t-section-headline">Let&rsquo;s towards a better city</h1>
+    </div>
   </div>
 
-  <div class="wrapper">
-    {% include component_threeup.html articles=page.threeup_content %}
+
+
+  <div class="row">
+    <div class="col-12 l-pad--top l-pad--bottom t-center">
+      <h1 class="t-section-headline">RESEARCH/DESIGN/CODE</h1>
+    </div>
   </div>
 
 

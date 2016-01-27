@@ -6,7 +6,7 @@ permalink: /code-of-conduct/
 ---
 
 {: .t-section-headline }
-#Code Of Conduct
+#Our Code Of Conduct
 
 ####The Code for Boston community expects that Code for Boston network activities, events, and digital forums:
 

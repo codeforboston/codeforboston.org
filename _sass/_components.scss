@@ -1,3 +1,8 @@
+.card {
+  margin-bottom: 1rem;
+  box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);
+}
+
 .hero {
   padding: 2rem 0;
   h1 {
@@ -65,12 +70,6 @@ input {
   &.notice-positive {
     border: 1px solid $blue-color;
     border-left: 1em solid $blue-color;
-    a {
-      border-color: $white-color;
-      &:hover {
-        color: $white-color;
-      }
-    }
   }
 }
 
@@ -94,7 +93,7 @@ input {
     font-size: 1em;
     padding: 0.75em 1.5em;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     cursor: pointer;
     transition: all 250ms ease-in-out;
     text-decoration: none;
@@ -110,22 +109,38 @@ input {
     background: $grey-color-light;
     color: $grey-color-dark;
     &:hover {
-        background: darken($grey-color-light, 5%);
+        background: darken($grey-color-light, 12%);
     }
 }
 
 .btn-primary, a.btn-primary {
     @extend %btn;
-    background: $brand-color;
+    background: $red-color;
     color: $white-color;
     &:hover {
-        background: darken($brand-color, 5%);
+        background: darken($red-color, 12%);
+    }
+}
+
+.btn-secondary, a.btn-secondary {
+    @extend %btn;
+    background: $blue-color;
+    color: $white-color;
+    &:hover {
+        background: darken($blue-color, 12%);
     }
 }
 
 
-.btn-large {
+.btn--small {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.5em 1em;
+}
+
+.btn--large {
     font-size: 1.5rem;
+    padding: 0.75em 2.5em;
 }
 
 
@@ -164,3 +179,6 @@ a.btn-primary {
   padding: $spacing-unit*2 0;
   text-align: center;
 }
+
+
+

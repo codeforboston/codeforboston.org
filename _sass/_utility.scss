@@ -23,6 +23,10 @@ $grid-columns: 12;
 
 }
 
+.col--padded {
+  padding: 2rem;
+}
+
 
 .pull-right {
   float: right;
@@ -31,6 +35,9 @@ $grid-columns: 12;
 
 .t-center {
     text-align: center;
+}
+.t-right {
+    text-align: right;
 }
 
 .t-indented {
@@ -131,3 +138,4 @@ $grid-columns: 12;
   top: -4rem;
   margin-bottom: -4rem;
 }
+
