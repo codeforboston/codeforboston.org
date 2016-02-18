@@ -29,8 +29,8 @@ body {
 
 
 // Typography
-
-.page-content p a {
+//
+.page-content a {
     color: inherit;
     border-bottom: 2px solid darken($red-color, 10%);
     text-decoration: none;
@@ -90,7 +90,7 @@ body {
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query(768px) {
         position: absolute;
         top: 1rem;
         right: 2rem;
@@ -151,7 +151,7 @@ body {
     padding: $spacing-unit 0;
     background: $grey-color-dark;
     position: relative;
-    margin-top: 18rem;
+    margin-top: 20rem;
     padding-top: 6rem;
     &:before {
         content: '';
@@ -263,4 +263,3 @@ body {
         }
     }
 }
-
