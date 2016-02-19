@@ -4,9 +4,7 @@ title: Learn
 type: hidden
 permalink: /learn/
 ---
+{: .t-section-headline }
+#Learning with Code for Boston
 
-#About Code For America
-
-
-#About Code For Boston
-
+#Workshops

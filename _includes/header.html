@@ -14,13 +14,14 @@
       </a>
 
       <div class="trigger">
+        <a class="page-link" href="http://cal.codeforboston.org" target="_blank">Events</a>
         <a class="page-link" href="http://blog.codeforboston.org" target="_blank">Blog</a>
         {% for page in site.pages %}
           {% if page.title and page.type != 'hidden' %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
-        <a href="https://secure.codeforamerica.org/page/contribute/default?custom1=Code%20For%20Boston" class="page-link btn-primary" target="_blank">Donate</a>
+        <a href="https://secure.codeforamerica.org/page/contribute/default?brigade=Code%20For%20Boston" class="btn-secondary btn--small" target="_blank">Donate</a>
       </div>
     </nav>
 
