@@ -30,13 +30,15 @@ body {
 
 // Typography
 //
-.page-content a {
+.page-content a,
+.site-footer a  {
     color: inherit;
-    border-bottom: 2px solid darken($red-color, 10%);
+    border-bottom: 0.05em solid;
     text-decoration: none;
+    color: $red-color;
+    transition: all 250ms ease-in-out;
     &:hover {
-        text-decoration: none;
-        color: darken($red-color, 10%);
+      color: darken($red-color, 20%);
     }
 }
 
@@ -80,13 +82,23 @@ body {
         display: none;
     }
 
+    [class*="btn-"] {
+      margin: 0;
+    }
+
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
-
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 250ms ease-in-out;
         // Gaps between nav items, but not on the first one
         &:not(:last-child) {
             margin-right: 20px;
+        }
+
+        &:hover {
+          border-bottom: 1px solid $text-color;
         }
     }
 
@@ -98,6 +110,7 @@ body {
         border: 1px solid $grey-color-light;
         border-radius: 4px;
         text-align: right;
+        z-index: 1;
 
         .menu-icon {
             display: block;
@@ -149,33 +162,11 @@ body {
  */
 .site-footer {
     padding: $spacing-unit 0;
-    background: $grey-color-dark;
+    background: $grey-color-light;
     position: relative;
-    margin-top: 20rem;
-    padding-top: 6rem;
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: 100%;
-        width: 200%;
-        border-bottom: 20rem solid $grey-color-dark;
-        border-left: 100rem solid transparent;
-    }
-    &:after {
-        position: absolute;
-        bottom: calc(100% + 4rem);
-        left: 10%;
-        content: '</>';
-        color: $grey-color-light;
-        font-family: monospace;
-        font-size: 10rem;
-    }
-
-
-    &, a, p, ul, li {
-        color: #fff;
-    }
-
+    margin-top: 6rem;
+    padding-top: 3rem;
+    color: $black-color;
 }
 
 

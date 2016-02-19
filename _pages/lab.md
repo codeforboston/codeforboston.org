@@ -1,6 +1,7 @@
 ---
 layout: page
 title: The Lab
+type: hidden
 permalink: /prototyping-lab/
 ---
 

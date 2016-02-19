@@ -47,7 +47,7 @@
     padding: 1.5rem 2.5rem;
     border-radius: 4px;
     background: $brand-color;
-    color: #fff;
+    color: $white-color;
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     &:hover {
@@ -132,7 +132,8 @@ input {
     }
 }
 
-.btn-default, a.btn-default {
+.btn-default,
+a.btn-default {
     @extend %btn;
     background: $grey-color-light;
     color: $grey-color-dark;
@@ -142,17 +143,26 @@ input {
     }
 }
 
-.btn-primary, a.btn-primary {
-    @extend %btn;
-    background: $red-color;
-    color: $white-color;
-    &:hover {
-        background: darken($red-color, 12%);
-        color: $white-color;
-    }
+
+.btn-primary,
+a.btn-primary {
+  padding: 0.5rem 1.5rem;
+  background: $brand-color;
+  color: $white-color;
+  border-radius: 4px;
+  text-decoration: none;
+  &:hover {
+    background: darken($brand-color, 10%);
+  }
+  // override for page-link in nav
+  .site-nav &.page-link {
+      color: $white-color;
+
+  }
 }
 
-.btn-secondary, a.btn-secondary {
+.btn-secondary,
+a.btn-secondary {
     @extend %btn;
     background: $blue-color;
     color: $white-color;
@@ -163,18 +173,7 @@ input {
 }
 
 
-.btn--small {
-    font-size: 0.8rem;
-    line-height: 1.2;
-    padding: 0.5em 1em;
-}
-
-.btn--large {
-    font-size: 1.5rem;
-    padding: 0.75em 2.5em;
-}
-
-
+.btn-outline-white,
 a.btn-outline-white {
   padding: 0.5rem 1.5rem;
   border: 2px solid $white-color;
@@ -189,20 +188,19 @@ a.btn-outline-white {
 }
 
 
-a.btn-primary {
-  padding: 0.5rem 1.5rem;
-  background: $brand-color;
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  &:hover {
-    background: darken($brand-color, 10%);
-  }
-  // override for page-link in nav
-  .site-nav &.page-link {
-      color: #fff;
 
-  }
+
+.btn--small,
+a.btn--small {
+    font-size: 1em;
+    line-height: 1.2;
+    padding: 0.5em 1em;
+}
+
+.btn--large,
+a.btn--large {
+    font-size: 1.5em;
+    padding: 0.75em 2.5em;
 }
 
 
