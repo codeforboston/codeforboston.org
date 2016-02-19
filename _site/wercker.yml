@@ -36,7 +36,7 @@ build:
         name: deploy
         code: |-
           git init
-          git remote add origin git@github.com:codeforboston/CFB_static.git
+          git remote add origin git@github.com:codeforboston/codeforboston.org.git
           git add .
           git commit -m "deploy commit from $WERCKER_STARTED_BY"
-          git push -f $GIT_REMOTE master:gh-pages
+          git push $GIT_REMOTE `git subtree split --prefix _site master`:gh-pages --force

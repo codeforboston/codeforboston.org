@@ -7,15 +7,38 @@ body {
 }
 
 
-// Typography
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
 
-.page-content p a {
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+
+// Typography
+//
+.page-content a,
+.site-footer a  {
     color: inherit;
-    border-bottom: 2px solid $brand-color;
+    border-bottom: 0.05em solid;
     text-decoration: none;
+    color: $red-color;
+    transition: all 250ms ease-in-out;
     &:hover {
-        text-decoration: none;
-        color: $brand-color;
+      color: darken($red-color, 20%);
     }
 }
 
@@ -28,7 +51,6 @@ body {
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
     padding: 1rem;
-    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
     // Positioning context for the mobile navigation icon
     position: relative;
     .logo {
@@ -60,17 +82,27 @@ body {
         display: none;
     }
 
+    [class*="btn-"] {
+      margin: 0;
+    }
+
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
-
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 250ms ease-in-out;
         // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &:hover {
+          border-bottom: 1px solid $text-color;
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query(768px) {
         position: absolute;
         top: 1rem;
         right: 2rem;
@@ -78,6 +110,7 @@ body {
         border: 1px solid $grey-color-light;
         border-radius: 4px;
         text-align: right;
+        z-index: 1;
 
         .menu-icon {
             display: block;
@@ -100,6 +133,9 @@ body {
             clear: both;
             display: none;
         }
+        &:hover {
+            left: 2rem;
+        }
 
         &:hover .trigger {
             display: block;
@@ -110,9 +146,10 @@ body {
 
         .page-link {
             display: block;
-            padding: 5px 10px;
-            &:not(:first-child){
-                margin-left: 0;
+            padding: 0.5em 0;
+            font-size: 1.5em;
+            &:not(:last-child){
+                margin-right: 0;
             }
         }
     }
@@ -124,12 +161,12 @@ body {
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background: $grey-color-dark;
-    &, a, p, ul, li {
-        color: #fff;
-    }
+    background: $grey-color-light;
+    position: relative;
+    margin-top: 6rem;
+    padding-top: 3rem;
+    color: $black-color;
 }
 
 
@@ -216,20 +253,4 @@ body {
             font-size: 18px;
         }
     }
-}
-
-
-.hero-container {
-    background-image: url('../img/home_hero.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 6rem 0;
-    text-align: right;
-    .headline, .subheadline, .subheadline-above {
-        color: #fff;
-        text-shadow: 0 2px rgba(0,0,0,0.6);
-        text-align: left;
-    }
-
 }

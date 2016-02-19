@@ -5,41 +5,221 @@ type: hidden
 permalink: /style_guide/
 ---
 
-<h1>This is a Header (h1)</h1>
-<h2>This is a Header (h2)</h2>
-<h3>This is a Header (h3)</h3>
-<h4>This is a Header (h4)</h4>
-<h5>This is a Header (h5)</h5>
-<h6>This is a Header (h6)</h6>
+
+
+<h1 class="t-section-headline">Core</h1>
+
+
+
+
+<h2 class="t-h5 t-grey t-sans-bold">Color</h2>
+<div class="row l-pad--bottom">
+  <div class="col-2">
+    <div class="aspect-1-1">
+      <div class="bg-red t-center l-pad--top">
+        <p class="t-white">
+          #ce1a40
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="aspect-1-1">
+      <div class="bg-blue t-center l-pad--top">
+        <p class="t-white">
+          #65B3E0
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="aspect-1-1">
+      <div class="bg-black t-center l-pad--top">
+        <p class="t-white">
+          #111111
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="aspect-1-1">
+      <div class="bg-grey t-center l-pad--top">
+        <p class="t-white">
+          #828282
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="aspect-1-1">
+      <div class="bg-white t-center l-pad--top">
+        <p class="t-grey">
+          #FFFFFF
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<h2 class="t-h5 t-grey t-sans-bold">Type</h2>
+<div class="row l-pad--bottom">
+  <div class="col-12">
+    <h1 class="t-serif">Merriweather</h1>
+  </div>
+  <div class="col-12">
+    <h1 class="t-serif-italic">Merriweather Italic</h1>
+  </div>
+  <div class="col-12 ">
+    <h1 class="t-sans">Open Sans</h1>
+  </div>
+  <div class="col-12">
+    <h1 class="t-sans-bold">Open Sans Bold</h1>
+  </div>
+
+</div>
+
+<h2 class="t-h5 t-grey t-sans-bold">Font Sizing</h2>
+
+<h1>This is a Headline (h1)</h1>
+<h2>This is a Headline (h2)</h2>
+<h3>This is a Headline (h3)</h3>
+<h4>This is a Headline (h4)</h4>
+<h5>This is a Headline (h5)</h5>
+<h6>This is a Headline (h6)</h6>
 
 <p>This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. This is a large body of text. </p>
 
-<div>
-  <button class="btn-default">This is a default button</button>
-  <button class="btn-primary">This is a primary action button</button>
+<blockquote>
+  This is a quote.
+</blockquote>
+
+
+
+<h1 class="t-section-headline">Grid</h1>
+<pre>Note: .col-* always go directly inside a .row</pre>
+<div class="row l-pad--bottom">
+  <div class="col-12 bg-grey t-center">
+    .col-12
+  </div>
 </div>
+<div class="row l-pad--bottom">
+  <div class="col-6 bg-grey t-center">
+    .col-6
+  </div>
+  <div class="col-6 bg-grey t-center">
+    .col-6
+  </div>
+</div>
+<div class="row l-pad--bottom">
+  <div class="col-4 bg-grey t-center">
+    .col-4
+  </div>
+  <div class="col-4 bg-grey t-center">
+    .col-4
+  </div>
+  <div class="col-4 bg-grey t-center">
+    .col-4
+  </div>
+</div>
+<div class="row l-pad--bottom">
+  <div class="col-3 bg-grey t-center">
+    .col-3
+  </div>
+  <div class="col-3 bg-grey t-center">
+    .col-3
+  </div>
+  <div class="col-3 bg-grey t-center">
+    .col-3
+  </div>
+  <div class="col-3 bg-grey t-center">
+    .col-3
+  </div>
+</div>
+<pre>Grid colums can be centered with .row.row--centered</pre>
+<div class="row row--centered l-pad--bottom">
+  <div class="col-3 bg-grey t-center">
+    .col-3
+  </div>
+  <div class="col-3 bg-grey t-center">
+    .col-3
+  </div>
+  <div class="col-3 bg-grey t-center">
+    .col-3
+  </div>
+</div>
+<div class="row row--centered l-pad--bottom">
+  <div class="col-6 bg-grey t-center">
+    .col-6
+  </div>
+</div>
+
+
+
+<h1 class="t-section-headline">UI Controls</h1>
+
+
+<h2 class="t-h5 t-grey t-sans-bold l-pad--top">Buttons</h2>
+
+
+<div>
+  <button class="btn-default">.btn-default</button>
+  <button class="btn-primary">.btn-primary</button>
+  <button class="btn-secondary">.btn-secondary</button>
+  <br>
+  <br>
+  <button class="btn-default btn-large">.btn-large</button>
+
+</div>
+
+
+
+<h2 class="t-h5 t-grey t-sans-bold l-pad--top">Text Links</h2>
 
 <div>
   <p>Here is some text and <a href="#">this is a link</a> and here is more text. Here is some text and <a href="#">this is a link</a> and here is more text. Here is some text and <a href="#">this is a link</a> and here is more text. Here is some text and <a href="#">this is a link</a> and here is more text. Here is some text and <a href="#">this is a link</a> and here is more text </p>
 </div>
 
-<section class="full-panel panel-demo ">
 
-  <div class="panel-content-center">
-    <h1>This is a centered panel</h1>
-    <button class="panel-cta">This is a cta</button>
-  </div>
 
-</section>
+<h2 class="t-h5 t-grey t-sans-bold l-pad--top">Buttons</h2>
 
-<section class="full-panel panel-demo ">
+<form action="#">
+  <input type="text" placeholder="Text Input">
+  <br>
+  <br>
+  <input type="checkbox" name="my-checkbox" id="my-checkbox">
+  <label for="my-checkbox">Checkbox</label>
+  <br>
+  <br>
+  <input type="radio" name="my-radio" id="my-radio1">
+  <label for="my-radio1">radio 1</label>
+  <input type="radio" name="my-radio" id="my-radio2">
+  <label for="my-radio2">radio 2</label>
+  <br>
+  <br>
+</form>
 
-  <div class="panel-content">
-    <h1>This is a centered panel</h1>
-    <button class="panel-cta">This is a cta</button>
-  </div>
 
-</section>
+
+
+
+
+
+
+
+
+
+
+<h1 class="t-section-headline">Content Components</h1>
+
 
 <div class="row">
 
