@@ -492,16 +492,8 @@ pre {
   display: table;
   clear: both; }
 
-/**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle; }
-  .icon > svg path {
-    fill: #828282; }
+.svg-icon {
+  height: 5rem; }
 
 html {
   background: #CE324A; }
@@ -844,6 +836,24 @@ a.btn--large {
   @media screen and (max-width: 768px) {
     .t-section-headline {
       padding: 30px 0; } }
+
+.team-grid {
+  margin: 0 auto;
+  text-align: center; }
+  .team-grid li {
+    width: 10%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.2; }
+    @media (max-width: 700px) {
+      .team-grid li {
+        width: 20%; } }
+    @media (max-width: 500px) {
+      .team-grid li {
+        width: 30%; } }
+  .team-grid img {
+    padding-bottom: 0.25em; }
 
 .jobs {
   list-style: none;

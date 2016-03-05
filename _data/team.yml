@@ -1,0 +1,31 @@
+- name: Lyre Calliope
+  image: lyre-calliope.jpg
+  email: lyre@codeforboston.org
+
+- name: Isaac Chansky
+  image: isaac-chansky.jpg
+  email: isaac@codeforboston.org
+
+- name: Matt Cloyd
+  image: matt-cloyd.jpg
+  email: mcloyd@codeforamerica.org
+
+- name: Becky Donner
+  image: becky-donner.jpg
+  email: becky@codeforboston.org
+
+- name: Megan Ouellette
+  image: megan-ouellette.jpg
+  email: megan@codeforboston.org
+
+- name: Noah Teshu
+  image: noah-teshu.jpg
+  email: noah@codeforboston.org
+
+- name: Kristen Weber
+  image: kristen-weber.jpg
+  email: kristen@codeforboston.org
+
+- name: Harlan Weber
+  image: harlan-weber.jpg
+  email: hweber@codeforamerica.org

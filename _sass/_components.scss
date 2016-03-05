@@ -211,3 +211,26 @@ a.btn--large {
     padding: $spacing-unit 0;
   }
 }
+
+
+
+.team-grid {
+  margin: 0 auto;
+  text-align: center;
+  li {
+    width: 10%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.2;
+    @media (max-width: 700px) {
+      width: 20%;
+    }
+    @media (max-width: 500px) {
+      width: 30%;
+    }
+  }
+  img {
+    padding-bottom: 0.25em;
+  }
+}

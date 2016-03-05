@@ -65,16 +65,7 @@ Default contact information for Code for Boston events.
 {: .l-pad--top }
 ### Code for Boston Brigade Core Team & Organizers
 
- - Brigade Core Team (whole team): [hello@codeforboston.org](mailto:hello@codeforboston.org)
- - Harlan Weber: [hweber@codeforamerica.org](mailto:hweber@codeforamerica.org)
- - Matt Cloyd: [mcloyd@codeforamerica.org](mailto:mcloyd@codeforamerica.org)
- - Lyre Calliope: [lyre@codeforboston.org](mailto:lyre@codeforboston.org)
- - Kristen Weber: [kristen@codeforboston.org](mailto:kristen@codeforboston.org)
- - Becky Donner: [becky@codeforboston.org](mailto:becky@codeforboston.org)
- - Isaac Chansky: [isaac@codeforboston.org](mailto:isaac@codeforboston.org)
- - Maria Grinko: [maria@codeforboston.org](mailto:maria@codeforboston.org)
- - Matt Rouser: [mattr@codeforboston.org](mailto:mattr@codeforboston.org)
- - Ethan Bagley: [ethan@codeforboston.org](mailto:ethan@codeforboston.org)
+{% include team-list.html %}
 
 {: .l-pad--top }
 ### Local Resources

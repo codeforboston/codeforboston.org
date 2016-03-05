@@ -91,6 +91,9 @@
     <div class="page-content">
       <div class="wrapper">
     <style>
+  p, li {
+    max-width: none;
+  }
   h2 {
     margin-top: 4rem;
   }
@@ -108,31 +111,6 @@
   .logos img {
     width: 200px;
   }
-
-  .people {
-    margin: 0 auto;
-    text-align: center;
-  }
-  .people li {
-    width: 10%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    line-height: 1.2;
-  }
-  .people img {
-    padding-bottom: 0.25em;
-  }
-  @media (max-width: 700px) {
-    .people li {
-      width: 20%;
-    }
-  }
-  @media (max-width: 500px) {
-    .people li {
-      width: 30%;
-    }
-  }
 </style>
 
 <p><strong>WIFI network is <code>RIC-internetz</code> , the password is: <code>topsecretpassword</code></strong></p>
@@ -149,7 +127,7 @@
 </div>
 
 <div class="t-center">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="10rem" height="5rem" viewBox="1.464 25.444 498.152 149.23" enable-background="new 1.464 25.444 498.152 149.23" xml:space="preserve">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="svg-icon" x="0px" y="0px" width="10rem" height="5rem" viewBox="1.464 25.444 498.152 149.23" enable-background="new 1.464 25.444 498.152 149.23" xml:space="preserve">
 <title>background</title>
 <title>Layer 1</title>
 <g>
@@ -194,10 +172,11 @@
 <br>
 <br>
 
-<h2 class="t-center">Rules</h2>
+<h2 class="t-center">A few quick things...</h2>
 <ol>
-  <li><a href="http://codeforboston.org/code-of-conduct">We have a code of conduct for all of our events, please read it and respect it.</a></li>
-  <li>Have fun!</li>
+  <li><strong>Code of Conduct: </strong><a href="http://codeforboston.org/code-of-conduct" target="_blank">We have a code of conduct for all of our events, please read it and respect it.</a></li>
+  <li><strong>GitHub: </strong><a href="https://github.com/codeforboston" target="_blank">Here's Code for Boston on GitHub.</a> If you don't know what GitHub is yet, don't worry - we'll teach you!</li>
+  <li><strong>Have fun!</strong></li>
 </ol>
 
 
@@ -206,17 +185,31 @@
   <em>Ask any one of these fine individuals.</em>
 </div>
 
-<ul class="people">
-  <li><img src="https://www.codeforamerica.org/media/images/people/harlan-weber.jpg" alt="Harlan Weber"> Harlan Weber</li>
-  <li><img src="https://pbs.twimg.com/profile_images/888181639/20362_325634283331_672073331_4918472_7160605_n_400x400.jpg" alt="Noah Teshu"> Noah Teshu</li>
-  <li><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/000/022/374/08746e5.jpg" alt="Kristen Weber"> Kristen Weber</li>
-  <li><img src="https://avatars0.githubusercontent.com/u/1397914?v=3&amp;s=400" alt="Isaac Chansky"> Isaac Chansky</li>
-  <li><img src="https://pbs.twimg.com/profile_images/578898035226312705/TaZhd0Z7_400x400.jpeg" alt="Megan Ouelette"> Megan Ouelette</li>
-  <li><img src="https://pbs.twimg.com/profile_images/520555148889051136/4cQ5pANY_400x400.jpeg" alt="Matt Cloyd"> Matt Cloyd</li>
-  <li><img src="https://pbs.twimg.com/profile_images/668126642934521856/j8A5DGv7.jpg" alt="Becky Donner"> Becky Donner</li>
-  <li><img src="https://pbs.twimg.com/profile_images/574995421845565440/b3yMK8bN.jpeg" alt="Lyre Calliope"> Lyre Calliope</li>
+<ul class="team-grid">
+  
+  <li><img src="/img/team/lyre-calliope.jpg" alt="Lyre Calliope">Lyre Calliope</li>
+  
+  <li><img src="/img/team/isaac-chansky.jpg" alt="Isaac Chansky">Isaac Chansky</li>
+  
+  <li><img src="/img/team/matt-cloyd.jpg" alt="Matt Cloyd">Matt Cloyd</li>
+  
+  <li><img src="/img/team/becky-donner.jpg" alt="Becky Donner">Becky Donner</li>
+  
+  <li><img src="/img/team/megan-ouellette.jpg" alt="Megan Ouellette">Megan Ouellette</li>
+  
+  <li><img src="/img/team/noah-teshu.jpg" alt="Noah Teshu">Noah Teshu</li>
+  
+  <li><img src="/img/team/kristen-weber.jpg" alt="Kristen Weber">Kristen Weber</li>
+  
+  <li><img src="/img/team/harlan-weber.jpg" alt="Harlan Weber">Harlan Weber</li>
+  
 </ul>
 
+
+
+<div class="t-center">
+  <h4>Or email us at <a href="mailto:hello@codeforboston.org">hello@codeforboston.org</a></h4>
+</div>
 
 <h2 class="t-center">The Schedule</h2>
 <h3>Saturday</h3>
@@ -254,6 +247,22 @@
   <li><strong>03:30 - 04:00</strong> Snacks and mingling</li>
 </ul>
 
+<h2>Challenge Statements</h2>
+<ul>
+  <li><strong>Resilient Coders: </strong>How might we enable better communication between parole officers and parolees?</li>
+  <li><strong>Dudley Street Neighborhood Initiative: </strong>How might we help students show that they were late to school due to transit delays?</li>
+  <li><strong>Boston Department of Youth Engagement & Employment: </strong>How might we help young people better prepare for a career by helping them understand the impact of their online presence and social media usage?</li>
+  <li><strong>Boston Department of Youth Engagement & Employment: </strong>How might we help students to show off the courses and workshops they have taken from local non-profits to potential employers and each other?</li>
+  <li><strong>Youth Hub Boston: </strong>How might we tap into and leverage the existing youth social networks to promote trusted resources that help youth achieve their educational and career goals?</li>
+  <li>Have your own idea? Fill out <a href ="https://docs.google.com/a/codeforamerica.org/forms/d/15qVy49E5gP3kfY5DoZNqne4yRwgjBgV2I720UehetyY/viewform?c=0&w=1" target="_blank">the CodeAcross 2016 pitch form.</a> We'll take a look and connect with you the morning of the event!</li>
+</ul>
+
+<h2>Social Media</h2>
+<ul>
+  <li>Follow us <a href="https://twitter.com/codeforboston" target="_blank">@CodeForBoston</a>, and tweet all your awesome pictures, quotes, and everything else at us!</li>
+  <li>Tweet with hashtags <a href="https://twitter.com/hashtag/codeacross" target="_blank">#CodeAcross</a> (or <a href="https://twitter.com/hashtag/codeacrossbos" target="_blank">#CodeAcrossBOS</a> for tweets to only local participants).</li>
+  <li>We plan to take photos of the event and share them via our social media channels. Please approach one of the organizers before the event or email us if you do not want us to take your photo.
+</ul>
 
 <h2>Useful links</h2>
 <ul>
