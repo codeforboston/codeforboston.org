@@ -1,14 +1,13 @@
 # Site settings
-title: Code For Boston
-email: hello@codeforboston.org
+title: Code for Brasília
+email: codeforbrasilia@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Part of the Code for America Brigade network, we are a volunteer group of developers, designers, data geeks, and citizen activists who use creative technology to solve civic and social problems.
+  Fazemos parte da rede Code for Brasil e somos um grupo de hackers cívicos (desenvolvedores, designers, empreendedores, sociedade civil engajada, etc) que utiliza da tecnologia para resolver problemas da sociedade.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://codeforboston.org" # the base hostname & protocol for your site
-twitter_username: codeforboston
-github_username:  codeforboston
-hackpad_username: codeforboston
-meetup_path:      Code-For-Boston
+url: "http://codeforbrasilia.org" # the base hostname & protocol for your site
+twitter_username: codeforbrasilia
+github_username:  codeforbrasilia
+meetup_path:      Code-For-Brasilia
 
 # Build settings
 markdown: kramdown
