@@ -1,9 +1,10 @@
 ---
-layout: page
 title: Learn
+permalink: "/learn/"
+layout: page
 type: hidden
-permalink: /learn/
 ---
+
 {: .t-section-headline }
 #Learning with Code for Boston
 

@@ -1,8 +1,8 @@
 ---
-layout: page
 title: Projects
+permalink: "/projects/"
+layout: page
 type: hidden
-permalink: /projects/
 ---
 
 {: .t-section-headline }

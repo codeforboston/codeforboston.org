@@ -1,8 +1,8 @@
 ---
-layout: page
 title: The Lab
+permalink: "/prototyping-lab/"
+layout: page
 type: hidden
-permalink: /prototyping-lab/
 ---
 
 {: .t-section-headline }

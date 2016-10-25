@@ -1,8 +1,8 @@
 ---
-layout: page
 title: About
+permalink: "/about/"
+layout: page
 type: hidden
-permalink: /about/
 ---
 
 {: .t-section-headline }

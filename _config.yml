@@ -1,14 +1,23 @@
-# Site settings
+---
 title: Code For Boston
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: hello@codeforboston.org
-description: > # this means to ignore newlines until "baseurl:"
-  Part of the Code for America Brigade network, we are a volunteer group of developers, designers, data geeks, and citizen activists who use creative technology to solve civic and social problems.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://codeforboston.org" # the base hostname & protocol for your site
-twitter_username: codeforboston
-github_username:  codeforboston
-hackpad_username: codeforboston
-meetup_path:      Code-For-Boston
+description: 'Part of the Code for America Brigade network, we are a volunteer group
+  of developers, designers, data geeks, and citizen activists who use creative technology
+  to solve civic and social problems.
 
-# Build settings
+'
+baseurl: ''
+url: http://codeforboston.org
+twitter_username: codeforboston
+github_username: codeforboston
+hackpad_username: codeforboston
+meetup_path: Code-For-Boston
 markdown: kramdown

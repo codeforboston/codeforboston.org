@@ -1,8 +1,8 @@
 ---
-layout: page
 title: Code of Conduct
+permalink: "/code-of-conduct/"
+layout: page
 type: none
-permalink: /code-of-conduct/
 ---
 
 {: .t-section-headline }
