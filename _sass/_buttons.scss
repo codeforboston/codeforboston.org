@@ -20,12 +20,12 @@
 .btn-default,
 a.btn-default {
     @extend %btn;
-    background: $grey-color-light;
-    color: $grey-color-dark;
+    background: $grey-color-dark;
+    color: $white-color;
     &:hover,
     &:focus {
-        background: darken($grey-color-light, 12%);
-        color: $grey-color-dark;
+	background: darken($grey-color-dark, 12%);
+	color: $white-color;
     }
 }
 
@@ -59,7 +59,7 @@ a.btn-secondary {
 
 .btn--small,
 a.btn--small {
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 1.2;
     padding: 0.5em 1em;
     border-bottom-width: 2px;

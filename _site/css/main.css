@@ -534,7 +534,7 @@ a {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #5c5c5c; }
 
 /**
  * Site footer
@@ -631,13 +631,13 @@ a.btn-secondary {
 
 .btn-default,
 a.btn-default {
-  background: #e8e8e8;
-  color: #424242; }
+  background: #5c5c5c;
+  color: #ffffff; }
   .btn-default:hover, .btn-default:focus,
   a.btn-default:hover,
   a.btn-default:focus {
-    background: #c9c9c9;
-    color: #424242; }
+    background: #3d3d3d;
+    color: #ffffff; }
 
 .btn-primary,
 a.btn-primary {
@@ -660,7 +660,7 @@ a.btn-secondary {
 
 .btn--small,
 a.btn--small {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.2;
   padding: 0.5em 1em;
   border-bottom-width: 2px; }
