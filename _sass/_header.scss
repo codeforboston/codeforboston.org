@@ -1,0 +1,92 @@
+
+
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 5px solid $brand-color;
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+    padding: 1rem;
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    .logo {
+        float: left;
+        text-decoration: none;
+        border: none;
+    }
+    .logo img {
+        height: 3rem;
+    }
+}
+
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    [class*="btn-"] {
+      margin: 0;
+    }
+
+    .page-link {
+        text-decoration: none;
+        margin: 0 0.5rem;
+    }
+
+    @include media-query(768px) {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 4px;
+        text-align: right;
+        z-index: 1;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 4rem;
+            height: 3rem;
+            line-height: 0;
+            text-align: center;
+
+            > svg {
+                width: 50%;
+                margin-top: 15%;
+                path {
+                    fill: $grey-color;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+        &:hover {
+            left: 2rem;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .page-link {
+            display: block;
+            padding: 0.5em 0;
+            font-size: 1.5em;
+            &:not(:last-child){
+                margin-right: 0;
+            }
+        }
+    }
+}

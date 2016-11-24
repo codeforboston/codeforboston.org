@@ -1,18 +1,6 @@
-- name: Lyre Calliope
-  image: lyre-calliope.jpg
-  email: lyre@codeforboston.org
-
 - name: Isaac Chansky
   image: isaac-chansky.jpg
   email: isaac@codeforboston.org
-
-- name: Matt Cloyd
-  image: matt-cloyd.jpg
-  email: mcloyd@codeforamerica.org
-
-- name: Becky Donner
-  image: becky-donner.jpg
-  email: becky@codeforboston.org
 
 - name: Megan Ouellette
   image: megan-ouellette.jpg

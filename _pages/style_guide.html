@@ -173,7 +173,8 @@ type: hidden
   <button class="btn-secondary">.btn-secondary</button>
   <br>
   <br>
-  <button class="btn-default btn-large">.btn-large</button>
+  <button class="btn-default btn--large">.btn--large</button>
+  <button class="btn-default btn--small">.btn--small</button>
 
 </div>
 
@@ -187,10 +188,11 @@ type: hidden
 
 
 
-<h2 class="t-h5 t-grey t-sans-bold l-pad--top">Buttons</h2>
+<h2 class="t-h5 t-grey t-sans-bold l-pad--top">Input Controls</h2>
 
 <form action="#">
-  <input type="text" placeholder="Text Input">
+  <label for="text-input">Text input</label>
+  <input type="text" id="text-input">
   <br>
   <br>
   <input type="checkbox" name="my-checkbox" id="my-checkbox">
@@ -243,3 +245,11 @@ type: hidden
   </div>
 
 </div>
+
+
+
+
+
+<h1 class="t-section-headline">Larger Components</h1>
+
+{% include header.html %}

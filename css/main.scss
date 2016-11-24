@@ -33,8 +33,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 
 // Width of the content area
-$content-width:    1400px;
-
+$content-width:    1200px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
@@ -62,7 +61,11 @@ $on-laptop:        800px;
         "utility",
         "base",
         "layout",
+        "buttons",
+        "lists",
+        "header",
         "forms",
+        "page-link-nav",
         "components",
         "jobs",
         "syntax-highlighting"

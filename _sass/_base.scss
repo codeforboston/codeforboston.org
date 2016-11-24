@@ -62,53 +62,54 @@ ul, ol, dl, figure,
 
 .t-h5,
 h5 {
-    font-size: $base-font-size * $font-ratio;
+    font-size: $base-font-size;
 }
 
 .t-h4,
 h4 {
-    font-size: $base-font-size * $font-ratio * $font-ratio;
+    font-size: $base-font-size;
 }
 
 .t-h3,
 h3 {
-    font-size: $base-font-size * $font-ratio * $font-ratio * $font-ratio;
+    font-size: $base-font-size * $font-ratio;
 }
 
 .t-h2,
 h2 {
-    font-size: $base-font-size * $font-ratio * $font-ratio * $font-ratio * $font-ratio;
+    font-size: $base-font-size * $font-ratio * $font-ratio;
+    position: relative;
 }
 
 .t-h1,
 h1 {
-    font-size: $base-font-size * $font-ratio * $font-ratio * $font-ratio * $font-ratio * $font-ratio;
+    font-size: $base-font-size * $font-ratio * $font-ratio * $font-ratio * $font-ratio;
 }
 
 @include media-query(768px) {
     .t-h5,
     h5 {
-        font-size: $base-font-size * $small-font-ratio;
+        font-size: $base-font-size;
     }
 
     .t-h4,
     h4 {
-        font-size: $base-font-size * $small-font-ratio * $small-font-ratio;
+        font-size: $base-font-size;
     }
 
     .t-h3,
     h3 {
-        font-size: $base-font-size * $small-font-ratio * $small-font-ratio * $small-font-ratio;
+        font-size: $base-font-size * $small-font-ratio;
     }
 
     .t-h2,
     h2 {
-        font-size: $base-font-size * $small-font-ratio * $small-font-ratio * $small-font-ratio * $small-font-ratio;
+        font-size: $base-font-size * $small-font-ratio * $small-font-ratio;
     }
 
     .t-h1,
     h1 {
-        font-size: $base-font-size * $small-font-ratio * $small-font-ratio * $small-font-ratio * $small-font-ratio * $small-font-ratio;
+        font-size: $base-font-size * $small-font-ratio * $small-font-ratio * $small-font-ratio * $small-font-ratio;
     }
 
 }
