@@ -115,6 +115,10 @@ h1 {
 }
 
 
+.t-lead {
+    @extend .t-h3;
+}
+
 
 
 // Readable line length

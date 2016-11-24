@@ -365,7 +365,7 @@ h5 {
 h4 {
   font-size: 18px; }
 
-.t-h3,
+.t-h3, .t-lead,
 h3 {
   font-size: 23.4px; }
 
@@ -387,7 +387,7 @@ h1 {
   h4 {
     font-size: 18px; }
 
-  .t-h3,
+  .t-h3, .t-lead,
   h3 {
     font-size: 21.6px; }
 
