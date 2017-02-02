@@ -1,5 +1,5 @@
 ---
-title: Code For Boston
+title: Open Savannah
 timezone: UTC
 markdown: kramdown
 collections:
@@ -9,7 +9,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: hello@codeforboston.org
+email: yall@opensavannah.org  
 description: 'Part of the Code for America Brigade network, we are a volunteer group
   of developers, designers, data geeks, and citizen activists who use creative technology
   to solve civic and social problems.'
