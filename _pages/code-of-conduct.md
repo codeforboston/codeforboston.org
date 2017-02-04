@@ -59,9 +59,9 @@ I am writing because of harassment at an Open Savannah event, [NAME, PLACE, DATE
 
 You can reach me at [CONTACT INFO]. Thank you.
 
-Default contact information for Code for Boston events.
+Default contact information for Open Savannah events.
 
-## Code for Boston Brigade Core Team & Organizers
+## Open Savannah Brigade Core Team & Organizers
 {: .l-pad--top}
 
 {% include team-list.html %}
