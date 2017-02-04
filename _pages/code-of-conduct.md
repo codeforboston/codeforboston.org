@@ -25,7 +25,7 @@ type: none
 * Ensure that the relationships and conversations between community members, the local government staff, and community partners remain respectful, participatory, and productive.
 * Provide an environment where people are free from discrimination and harassment.
 
-Open Savannah reserves the right to remove anyone in violation of these policies from any Open Savannah event, network activity, or digital forum. Repeated offenses may mean not being welcomed back to future Code for Boston events.
+Open Savannah reserves the right to remove anyone in violation of these policies from any Open Savannah event, network activity, or digital forum. Repeated offenses may mean not being welcomed back to future Open Savannah events.
 
 ## Open Savannah's Anti-Harassment Policy
 {: .l-pad--top}
@@ -34,7 +34,7 @@ All Open Savannah network activities, events, and digital forums and their staff
 
 In addition to governing our own events by this policy, Open Savannah will only collaborate with groups that offer an anti-harassment policy to their attendees, or are willing to implement one. For information on how to offer an anti-harassment policy to your group, see this guide.
 
-Open Savannah is dedicated to providing a harassment-free experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or any other identifying characteristics. We do not tolerate harassment of staff, presenters, or participants in any form. Sexual language and imagery is not appropriate for any Code for Boston event or network activity, including talks.
+Open Savannah is dedicated to providing a harassment-free experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or any other identifying characteristics. We do not tolerate harassment of staff, presenters, or participants in any form. Sexual language and imagery is not appropriate for any Open Savannah event or network activity, including talks.
 
 Harassment includes but is not limited to: offensive verbal or written comments related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion, or other identifying characteristics; sexual images in public spaces; deliberate intimidation; stalking; following; harassing photography or recording; sustained disruption of talks or other events; inappropriate physical contact; unwelcome sexual attention; unwarranted exclusion; patronizing language or action; or conversation topics that make others uncomfortable.
 
@@ -69,8 +69,7 @@ Default contact information for Open Savannah events.
 ## Local Resources
 {: .l-pad--top}
 
-* Savannah-Chatham Metro Police, non-emergency: 912-652-6500
-* Boston Emergency Medical Services: [617.343.2367](tel:6173432367)
-* Boston-Area Sexual Assault Resources: [http://www.barcc.org/help/services/](http://www.barcc.org/help/services/)
-* Boston-Area Sexual Assault Hotline: [800.841.8371](8008418371)
-* Metro Cab (Local Taxi) [617.782.5500](tel:6177825500): [http://boston-cab.com/](http://boston-cab.com/)
+* Savannah-Chatham Metro Police, non-emergency: [912-652-6500](9126526500)
+* Coastal Emergency Medical Services: [912-335-3935](tel:9123353935)
+* Savannah Area Rape Crisis Center: [http://www.rccsav.org/](http://www.rccsav.org/)
+* Savannah Rape Crisis Center Sexual Assault Hotline: [912-233-7273](tel: 912=233-7273)
