@@ -47,6 +47,10 @@
         border-radius: 4px;
         text-align: right;
         z-index: 1;
+        
+        .logo img {
+        height: 2rem;
+    }
 
         .menu-icon {
             display: block;
