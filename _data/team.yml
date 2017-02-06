@@ -1,16 +1,12 @@
 - name: Carl V. Lewis (Brigade Captain)
-  image: isaac-chansky.jpg
+  image: 'https://pbs.twimg.com/profile_images/715856178941526016/g4e58s6m.jpg'
   email: carl@opensavannah.org
-
 - name: Josef Siebert (Brigade Co-Captain)
-  image: megan-ouellette.jpg
+  image: 'http://cvlassets.s3.amazonaws.com/AAEAAQAAAAAAAAgmAAAAJDYzNTJiN2U1LTc2ZjQtNDc2NS04ZDliLTEyOTZlNDExZmZiYw.jpg'
   email: josef@opensavannah.org
-
 - name: Gary Skoglind (Delivery Lead)
   image: noah-teshu.jpg
   email: gary@opensavannah.org
-
 - name: Patrick Bentley (Government Partnership Liasion)
   image: kristen-weber.jpg
   email: patrick@opensavannah.org
-
