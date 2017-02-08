@@ -15,7 +15,7 @@ description: 'Part of the Code for America Brigade network, we are a volunteer g
   to solve civic and social problems.'
 baseurl: ''
 url: http://opensavannah.org
-hackpad_url: https://paper.dropbox.com/folder/show/Open-Savannah-e.iX7ZavGxujPFwhjOZcQs9n4AUdTccaQWjm2v68S2qKtG5tiIny
+hackpad_url: https://wikisav.herokuapp.com
 twitter_url: https://twitter.com/opensavannah
 github_url: https://github.com/opensavannah
 meetup_url: https://meetup.com/opensavannah
