@@ -55,8 +55,7 @@ layout: default
       </section>
       <section>
 	<div class="container">
-		<h2 class="editable">Updates</h2>
-		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<h2>Updates</h2>
 		{% for post in site.posts %}
 			{% assign author_id = post.author_staff_member | prepend: "/staff_members/" | append: "/" %}
 			{% assign author = site.staff_members | where: "url", author_id | first %}
