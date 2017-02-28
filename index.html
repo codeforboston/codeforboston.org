@@ -52,24 +52,7 @@ layout: default
         <div class="t-center">
           <a href="/projects" class="btn-default">Let's collaborate</a>
         </div>
-      </section><div class="row wrapper">
-      <section>
-	<div class="container">
-		<h2>Updates</h2>
-		{% for post in /_posts %}
-			<div class="post">
-				<div class="post-title">
-					<img src="{% include relative-src.html src=author.image %}" alt="Photo of {{ author.name }}" width="50" height="50" />
-					<h3>{{ post.title }}</h3>
-					<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-				</div>
-				{{ post.content }}
-				<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
-			</div>
-		{% endfor %}
-	</div>
-</section></div>
-      
+      </section>
       <div class="row wrapper">
       <section>
       <div class="col-4">
