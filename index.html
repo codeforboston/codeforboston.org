@@ -52,7 +52,28 @@ layout: default
         <div class="t-center">
           <a href="/projects" class="btn-default">Let's collaborate</a>
         </div>
-      </section><div class="row wrapper">
+      </section>
+      <section>
+	<div class="container">
+		<h2 class="editable">Updates</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		{% for post in site.posts %}
+			{% assign author_id = post.author_staff_member | prepend: "/staff_members/" | append: "/" %}
+			{% assign author = site.staff_members | where: "url", author_id | first %}
+			<div class="post">
+				<div class="post-title">
+					<img src="{% include relative-src.html src=author.image %}" alt="Photo of {{ author.name }}" width="50" height="50" />
+					<h3>{{ post.title }}</h3>
+					<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+				</div>
+				{{ post.content }}
+				<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+			</div>
+		{% endfor %}
+	</div>
+</section>
+      
+      <div class="row wrapper">
       <section>
       <div class="col-4">
          <div style="padding: 25px;"> <a href="http://thecreativecoast.org"><img src="http://cvlassets.s3.amazonaws.com/Screen%20Shot%202017-01-30%20at%202.23.25%20PM-2.png"></a></div></div>
