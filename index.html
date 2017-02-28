@@ -56,9 +56,7 @@ layout: default
       <section>
 	<div class="container">
 		<h2>Updates</h2>
-		{% for post in site.posts %}
-			{% assign author_id = post.author_staff_member | prepend: "/staff_members/" | append: "/" %}
-			{% assign author = site.staff_members | where: "url", author_id | first %}
+		{% for post in /_posts %}
 			<div class="post">
 				<div class="post-title">
 					<img src="{% include relative-src.html src=author.image %}" alt="Photo of {{ author.name }}" width="50" height="50" />
