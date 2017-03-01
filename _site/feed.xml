@@ -5,9 +5,30 @@
     <description>Part of the Code for America Brigade network, we are a volunteer group of developers, designers, data geeks, and citizen activists who use creative technology to solve civic and social problems.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Mar 2017 19:57:42 +0000</pubDate>
-    <lastBuildDate>Wed, 01 Mar 2017 19:57:42 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Mar 2017 22:15:24 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Mar 2017 22:15:24 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Announcing Feb. 23rd Kickoff Event, Community Brainstorming Night</title>
+        <description>&lt;p&gt;Come join us for our first official group meeting, and help set the future agenda for the brigade.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*z0wNjhZ4cTO6idt5wewDXw.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;RSVP here now for our first official brigade event.&lt;/p&gt;
+
+&lt;p&gt;I’m the sort of person who always has too many ideas and too little time. I’d gamble to say that I’m not alone in that respect. That’s why it’s important for us to prioritize and have a dialogue about what our first projects should be regarding improving Savannah’s public data and services.&lt;/p&gt;
+
+&lt;p&gt;The goal for the evening will be first for us to get to know each other over Mellow Mushroom and small group icebreakers, then complete a quick project of compiling a mobile app for community points of contact and — most importantly — have a lightning brainstorm session in which we pitch project ideas and decide on one to start with immediately.&lt;/p&gt;
+
+&lt;p&gt;We’re happy to announce that the City of Savannah will have several employees in attendance, as well as the presidents of at least three different neighborhood associations. But, let’s spread the word as much as we can so we can have as inclusive and representative sampling for this evening where we’ll plot a roadmap for the coming months.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 04 Feb 2017 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2017/02/04/firstevent.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/04/firstevent.html</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>
