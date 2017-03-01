@@ -1,6 +1,6 @@
 ---
 title: What We Do
-permalink: "/about/"
+permalink: /about/
 layout: page
 ---
 
