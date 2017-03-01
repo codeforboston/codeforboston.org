@@ -1,20 +1,14 @@
 <nav class="page-links">
     <ul>
-        <li>
-	<a class="page-link" href="/new-members">Get Started</a>
-    </li>
-    <li>
-	<a class="page-link" href="{{site.events_url}}">Events</a>
-    </li>
-    <li>
-	<a class="page-link" href="{{site.blog_url}}">Blog</a>
-    </li>
-	     <li>
-	<a class="page-link" href="{{site.url}}/about/">What We Do</a>
-    </li>
-	    <li>
-	<a class="page-link" href="{{site.url}}/projects">Code of Conduct</a>
-    </li>
+		<li>
+			<a class="page-link" href="/new-members">Get Started</a>
+		</li>
+		<li>
+			<a class="page-link" href="{{site.events_url}}">Events</a>
+		</li>
+		<li>
+			<a class="page-link" href="{{site.blog_url}}">Blog</a>
+		</li>
         {% for page in site.pages %}
           {% if page.title and page.type != 'hidden' %}
             <li>
