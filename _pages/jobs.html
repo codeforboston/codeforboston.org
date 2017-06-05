@@ -6,7 +6,7 @@ type: hidden
 ---
 
 <h1 class="t-section-headline">Jobs In Our Community</h1>
-
+{% if site.data.jobs %}
 <div class="job-controls row t-pad--top">
   <input class="col-6 pull-right" type="text" name="filter-jobs" id="filter-jobs" placeholder="Start typing to filter by title, description, organization...">
 </div>
@@ -28,6 +28,9 @@ type: hidden
 </ul>
 
 <hr>
+{% endif %}
+
 <p class="notice notice-positive inline">
+  {% unless site.data.jobs %}No jobs currently listed. {% endunless %}
   Looking to post a job? Let us know: <a href="mailto:hello@codeforboston.org">hello@codeforboston.org</a>!
 </p>
