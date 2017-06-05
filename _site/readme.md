@@ -1,12 +1,8 @@
-#CFB Static Website
+# Open Savannah Starter Jekyll Brigade Site
 
-[![wercker status](https://app.wercker.com/status/fc5d754b6c76bd607c1304d460bd7a9a/s "wercker status")](https://app.wercker.com/project/bykey/fc5d754b6c76bd607c1304d460bd7a9a)
+#### Based on [Code for Boston](http://codeforboston.org)'s site.
+
+This is pretty much a standard Jekyll install. You can fork it into your own account, edit the `config.yaml` file with the appropriate settings and then you should be good to go.
 
 
-This is a pretty standard [Jekyll](https://jekyllrb.com/) website.
-
-
-#I want to update the site. How do I do that?
-###To add/update jobs, edit `_data/jobs.yml`
-###To edit normal site pages, edit the `html` or `markdown` files in `_pages/`
-###To edit the homepage content, edit `index.html`
+This site is published to http://opensavannah.org/

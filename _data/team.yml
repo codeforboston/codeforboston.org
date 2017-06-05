@@ -1,19 +1,15 @@
-- name: Isaac Chansky
-  image: isaac-chansky.jpg
-  email: isaac@codeforboston.org
-
-- name: Megan Ouellette
-  image: megan-ouellette.jpg
-  email: megan@codeforboston.org
-
-- name: Noah Teshu
-  image: noah-teshu.jpg
-  email: noah@codeforboston.org
-
-- name: Kristen Weber
-  image: kristen-weber.jpg
-  email: kristen@codeforboston.org
-
-- name: Harlan Weber
-  image: harlan-weber.jpg
-  email: hweber@codeforamerica.org
+- name: Carl V. Lewis (Brigade Captain)
+  image: 'https://pbs.twimg.com/profile_images/715856178941526016/g4e58s6m.jpg'
+  email: carl@opensavannah.org
+- name: Josef Siebert (Community Organizer)
+  image: 'http://cvlassets.s3.amazonaws.com/AAEAAQAAAAAAAAgmAAAAJDYzNTJiN2U1LTc2ZjQtNDc2NS04ZDliLTEyOTZlNDExZmZiYw.jpg'
+  email: josef@opensavannah.org
+- name: Gary Skoglind (Delivery Lead)
+  image: /uploads/screen-shot-2017-02-12-at-1-14-49-am.png
+  email: gary@opensavannah.org
+- name: Patrick Bentley (Government Partnership Liasion)
+  image: /uploads/screen-shot-2017-02-12-at-1-13-27-am.png
+  email: patrick@opensavannah.org
+- name: Adam Messer (Storyteller)
+  image: /uploads/screen-shot-2017-02-12-at-1-14-12-am.png
+  email:

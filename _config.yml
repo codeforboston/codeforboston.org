@@ -1,5 +1,5 @@
 ---
-title: Code For Boston
+title: Open Savannah
 timezone: UTC
 markdown: kramdown
 collections:
@@ -9,16 +9,18 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: hello@codeforboston.org
+email: yall@opensavannah.org  
+repository: opensavannah/opensavannah.github.io
 description: 'Part of the Code for America Brigade network, we are a volunteer group
   of developers, designers, data geeks, and citizen activists who use creative technology
   to solve civic and social problems.'
 baseurl: ''
-url: http://codeforboston.org
-hackpad_url: https://codeforboston.hackpad.com/
-twitter_url: https://twitter.com/codeforboston
-github_url: https://github.com/codeforboston
-meetup_url: https://meetup.com/Code-For-Boston
-blog_url: https://medium.com/@CodeForBoston
-events_url: http://cal.codeforboston.org
-slack_url: http://slack.codeforboston.org
+include: ['_pages']
+url: http://opensavannah.org
+hackpad_url: https://paper.dropbox.com/doc/-Open-Savannah-Brigade-Dropbox-Paper-Hub-x6lFrdh3PLZEfFAA9BLpZ
+twitter_url: https://twitter.com/open_savannah
+github_url: https://github.com/opensavannah
+meetup_url: https://meetup.com/opensavannah
+blog_url: https://medium.com/open-savannah
+events_url: https://meetup.com/opensavannah
+slack_url: https://techsav.co/wp-login.php?action=slack-invitation
