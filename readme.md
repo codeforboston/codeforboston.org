@@ -6,7 +6,10 @@
 This is a pretty standard [Jekyll](https://jekyllrb.com/) website.
 
 
-#I want to update the site. How do I do that?
-###To add/update jobs, edit `_data/jobs.yml`
-###To edit normal site pages, edit the `html` or `markdown` files in `_pages/`
-###To edit the homepage content, edit `index.html`
+# I want to update the site. How do I do that?
+
+### To add/update jobs, edit `_data/jobs.yml`
+
+### To edit normal site pages, edit the `html` or `markdown` files in `_pages/`
+
+### To edit the homepage content, edit `index.html`
