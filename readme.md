@@ -11,3 +11,4 @@ We have a [Guide for New Members](http://www.codeforboston.org/new-members/).  P
 - To edit normal site pages, edit the `html` or `markdown` files in `_pages/`
 - To edit the homepage content, edit `index.html`
 
+
