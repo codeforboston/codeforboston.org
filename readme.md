@@ -11,4 +11,15 @@ We have a [Guide for New Members](http://www.codeforboston.org/new-members/).  P
 - To edit normal site pages, edit the `html` or `markdown` files in `_pages/`
 - To edit the homepage content, edit `index.html`
 
+## Deploy to codeforboston.org
+This site is hosted via Github Pages, so all you need to do to deploy is to push the updates to the `gh-pages` in github. The `gh-pages` branch should generally always be the same as master.
+Example workflow:
+```bash
+# merge a PR into master to change something
+git checkout master
+git pull                    # get the latest version of the master branch
+git checkout gh-pages
+git rebase master           # sync gh-pages with your updates
+git push origin gh-pages    # deploy to codeforboston.org
+```
 
