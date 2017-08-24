@@ -19,7 +19,7 @@ Example workflow:
 git checkout master
 git pull                    # get the latest version of the master branch
 git checkout gh-pages
-git rebase master           # sync gh-pages with your updates
+git merge master            # sync gh-pages with your updates
 git push origin gh-pages    # deploy to codeforboston.org
 ```
 
