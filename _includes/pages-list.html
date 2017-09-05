@@ -1,0 +1,20 @@
+<nav class="page-links">
+    <ul>
+    <li>
+	<a class="page-link" href="{{site.events_url}}">Events</a>
+    </li>
+    <li>
+	<a class="page-link" href="{{site.blog_url}}">Blog</a>
+    </li>
+        {% for page in site.pages %}
+          {% if page.title and page.type != 'hidden' %}
+            <li>
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        <li>
+            <a href="https://secure.codeforamerica.org/page/contribute/default?brigade=Code%20For%20Boston" class="btn-primary btn--small">Donate</a>
+        </li>
+    </ul>
+</nav>

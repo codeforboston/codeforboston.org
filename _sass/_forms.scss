@@ -1,0 +1,14 @@
+label[for] {
+    cursor: pointer;
+}
+
+input {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  display: block;
+
+  &:not([type="checkbox"]),
+  &:not([type="radio"]) {
+    display: inline-block;
+  }
+}

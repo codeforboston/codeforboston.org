@@ -1,0 +1,72 @@
+---
+---
+
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$headline-font-family: 'Merriweather', serif;
+$base-font-size:   18px;
+$font-ratio:  1.3;
+$small-font-ratio:  1.2;
+$small-font-size:   $base-font-size / $font-ratio;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$white-color: #ffffff;
+$offwhite-color: #fdfdfd;
+$grey-color: #828282;
+$black-color: #111111;
+
+$blue-color: #65B3E0;
+$red-color: #CE324A;
+
+// color alias
+$text-color:       $black-color;
+$background-color: $white-color;
+$brand-color:      $red-color;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 15%);
+
+
+// Width of the content area
+$content-width:    1200px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "vendor/bourbon/bourbon",
+        "vendor/neat/neat",
+        "utility",
+        "base",
+        "layout",
+        "buttons",
+        "lists",
+        "header",
+        "forms",
+        "page-link-nav",
+        "components",
+        "jobs",
+        "syntax-highlighting"
+;

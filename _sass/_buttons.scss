@@ -1,0 +1,73 @@
+
+/**
+ *  Buttons
+ */
+%btn {
+    font-size: 1.2rem;
+    padding: 0.75em 1.5em;
+    border: none;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.btn-default,
+a.btn-default {
+    @extend %btn;
+    background: $grey-color-dark;
+    color: $white-color;
+    &:hover,
+    &:focus {
+	background: darken($grey-color-dark, 12%);
+	color: $white-color;
+    }
+}
+
+
+.btn-primary,
+a.btn-primary {
+  @extend %btn;
+  background: $brand-color;
+  color: $white-color;
+  &:hover,
+  &:focus {
+    background: darken($brand-color, 10%);
+  }
+}
+
+.btn-secondary,
+a.btn-secondary {
+    @extend %btn;
+    background: $blue-color;
+    color: $white-color;
+    &:hover,
+    &:focus {
+        background: darken($blue-color, 12%);
+        color: $white-color;
+    }
+}
+
+
+
+
+
+.btn--small,
+a.btn--small {
+    font-size: 0.9em;
+    line-height: 1.2;
+    padding: 0.5em 1em;
+    border-bottom-width: 2px;
+}
+
+.btn--large,
+a.btn--large {
+    font-size: 1.3em;
+    padding: 0.75em 2.5em;
+    border-bottom-width: 6px;
+}

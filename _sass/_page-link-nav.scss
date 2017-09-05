@@ -1,0 +1,28 @@
+.page-link {
+    // color: $text-color;
+    // line-height: $base-line-height;
+    // text-decoration: none;
+    // border-bottom: 1px solid transparent;
+    // transition: all 250ms ease-in-out;
+    // // Gaps between nav items, but not on the first one
+    // &:not(:last-child) {
+    //     margin-right: 20px;
+    // }
+
+    // &:hover {
+    //   border-bottom: 1px solid $text-color;
+    // }
+}
+
+.page-links ul {
+    margin: 0;
+    list-style: none;
+
+    .site-header & li {
+        display: inline-block;
+
+        @include media-query(768px) {
+            display: block;
+        }
+    }
+}

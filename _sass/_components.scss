@@ -1,0 +1,141 @@
+.card {
+  margin-bottom: 1rem;
+  box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);
+}
+
+.card--map {
+  background: $white-color;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 50rem;
+  overflow: auto;
+  text-align: left;
+  @include media-query(767px) {
+    width: 95%;
+  }
+
+  .card-content {
+    float:left;
+    padding: 1.5rem;
+    width: calc(100% - 15rem);
+    @include media-query(767px) {
+      width: 100%;
+    }
+  }
+  .card-img {
+    float:right;
+    width: 15rem;
+    @include media-query(767px) {
+      display: none;
+    }
+  }
+}
+
+.hero {
+  padding: 2rem 0;
+  h1 {
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .subheadline-above {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  a.cta {
+    margin: 2rem 0;
+    padding: 1.5rem 2.5rem;
+    border-radius: 4px;
+    background: $brand-color;
+    color: $white-color;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    &:hover {
+      background: darken($brand-color, 10%);
+
+    }
+  }
+}
+
+
+.panel {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+
+.hacknight-banner {
+  background: $brand-color;
+  color: $white-color;
+
+  .cta-section {
+    text-align: right;
+  }
+
+}
+
+
+.page-title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+.notice {
+  padding: 1.4rem;
+  margin: 2rem 0;
+
+  &.inline {
+    display: inline-block;
+  }
+
+  &.notice-positive {
+    border: 1px solid $blue-color;
+    border-left: 1em solid $blue-color;
+  }
+}
+
+
+
+.three-up {
+  article p {
+    min-height: 10rem;
+  }
+}
+
+
+
+
+
+
+
+.t-section-headline {
+  padding: $spacing-unit*2 0;
+  text-align: center;
+  @include media-query(768px) {
+    padding: $spacing-unit 0;
+  }
+}
+
+
+
+.team-grid {
+  margin: 0 auto;
+  text-align: center;
+  li {
+    width: 10%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.2;
+    @media (max-width: 700px) {
+      width: 20%;
+    }
+    @media (max-width: 500px) {
+      width: 30%;
+    }
+  }
+  img {
+    padding-bottom: 0.25em;
+  }
+}

@@ -1,0 +1,51 @@
+<footer class="site-footer t-margin--top l-before-angled">
+
+  <div class="wrapper">
+
+    <div class="row">
+      <div class="col-6">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+	  <li>Something wrong with the site? <br><a class="btn-default btn--small" href="{{site.github_url}}/CFB_static/issues">Submit an issue</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h2>Collaborate</h2>
+        <ul class="social-media-list">
+          <li>
+	    <a href="{{site.github_url}}">
+	      GitHub
+            </a>
+          </li>
+          <li>
+	    <a href="{{ site.twitter_url }}">
+	      Twitter
+            </a>
+          </li>
+          <li>
+	    <a href="{{ site.meetup_url }}">
+              Meetup
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74039819-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

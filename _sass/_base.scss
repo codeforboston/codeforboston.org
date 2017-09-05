@@ -1,0 +1,264 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+
+    @include media-query(768px) {
+        font-size: $base-font-size * 0.8;
+    }
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+.t-serif {
+    font-family: $headline-font-family;
+}
+.t-serif-italic {
+    font-family: $headline-font-family;
+    font-style: italic;
+}
+.t-sans {
+    font-family: $base-font-family;
+    font-weight: 400;
+}
+.t-sans-bold {
+    font-family: $base-font-family;
+    font-weight: 700;
+}
+
+.t-h5,
+h5 {
+    font-size: $base-font-size;
+}
+
+.t-h4,
+h4 {
+    font-size: $base-font-size;
+}
+
+.t-h3,
+h3 {
+    font-size: $base-font-size * $font-ratio;
+}
+
+.t-h2,
+h2 {
+    font-size: $base-font-size * $font-ratio * $font-ratio;
+    position: relative;
+}
+
+.t-h1,
+h1 {
+    font-size: $base-font-size * $font-ratio * $font-ratio * $font-ratio * $font-ratio;
+}
+
+@include media-query(768px) {
+    .t-h5,
+    h5 {
+        font-size: $base-font-size;
+    }
+
+    .t-h4,
+    h4 {
+        font-size: $base-font-size;
+    }
+
+    .t-h3,
+    h3 {
+        font-size: $base-font-size * $small-font-ratio;
+    }
+
+    .t-h2,
+    h2 {
+        font-size: $base-font-size * $small-font-ratio * $small-font-ratio;
+    }
+
+    .t-h1,
+    h1 {
+        font-size: $base-font-size * $small-font-ratio * $small-font-ratio * $small-font-ratio * $small-font-ratio;
+    }
+
+}
+
+
+.t-lead {
+    @extend .t-h3;
+}
+
+
+
+// Readable line length
+
+li, p, .t-line-length {
+    max-width: 50em;
+}
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+hr {
+    border-top: 1px solid darken($white-color, 10%);
+    border-bottom: none;
+}
+
+address {
+  font-size: 0.9rem;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    margin-bottom: 0.5em;
+
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headline-font-family;
+    line-height: 1.2;
+}
+
+/**
+ * Links
+ */
+
+
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    padding-left: $spacing-unit / 2;
+    font-size: 1.3em;
+    font-style: italic;
+    padding: 2em 0;
+    font-family: $headline-font-family;
+
+    &:before {
+        content: "\"";
+        font-size: 5em;
+        vertical-align: bottom;
+        line-height: 0;
+        padding-right: 0.25em;
+        opacity: 0.2;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+.svg-icon {
+  height: 5rem;
+}

@@ -1,0 +1,43 @@
+- name: Isaac Chansky
+  image: isaac-chansky.jpg
+  email: isaac@codeforboston.org
+
+- name: Becky Donner
+  image: becky-donner.jpg
+  email: becky@codeforboston.org
+
+- name: Jonathan Marcus
+  image: jon-marcus.jpg
+  email: jonathan@codeforboston.org
+
+- name: Alex Merritt
+  image: alex-merritt.jpg
+  email: alex@codeforboston.org
+
+- name: Liam Morley
+  image: liam-morley.jpg
+  email: liam@codeforboston.org
+
+- name: Andrew Seeder
+  image: andrew-seeder.jpg
+  email: andrew@codeforboston.org
+
+- name: Noah Teshu
+  image: noah-teshu.jpg
+  email: noah@codeforboston.org
+
+- name: Emily Wasserman
+  image: emily-wasserman.jpg
+  email: emily@codeforboston.org
+
+- name: Kristen Weber
+  image: kristen-weber.jpg
+  email: kristen@codeforboston.org
+
+- name: Harlan Weber
+  image: harlan-weber.jpg
+  email: hweber@codeforamerica.org
+
+- name: Matt Zagaja
+  image: matt-zagaja.jpg
+  email: mattz@codeforboston.org
