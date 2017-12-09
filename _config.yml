@@ -22,3 +22,6 @@ meetup_url: https://meetup.com/Code-For-Boston
 blog_url: https://medium.com/@CodeForBoston
 events_url: http://cal.codeforboston.org
 slack_url: http://slack.codeforboston.org
+reveal_path: /reveal.js/
+reveal_theme_path: /reveal.js/css/theme/
+reveal_theme: sky.css
