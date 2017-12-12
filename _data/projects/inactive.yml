@@ -1,0 +1,43 @@
+-
+  name: Ungentry
+  url: https://github.com/codeforboston/ungentry
+-
+  name: MBTA.ninja
+  url: https://github.com/codeforboston/mbta-ninja
+-
+  name: CornerWise
+  url: https://github.com/cityofsomerville/cornerwise
+-
+  name: Finda
+  url: https://github.com/codeforboston/finda
+-
+  name: Cambridge Open Data Challenges
+  news: >
+    Public data sets with problem statements from the City of Cambridge
+    https://data.cambridgema.gov/General-Government/Civic-Innovation-Challenge-Inventory/x96z-hdnh/about
+    Kent Johnson's answer to one of the problem statements (this was demo'd at the 2017 Bloomberg What Works Cities conference):
+    http://kentsj.com/Misc/Board_of_Zoning_Appeal_Requests_CT.html
+-
+  name: Tools and Rules for Blockchain-Backed Individual Identity
+  news: >
+    https://www.meetup.com/Massachusetts-Legal-Hackers/events/239091160
+    In the Prome Conference Room, 4th Floor CIC.
+    Tonight is the third of five Legal Hack Nights dedicated to building out a reference implementation blockchain-backed individual identity digital signature app.  The app is intended to be a working prototype we can use to evaluate and work with individual identity innovation and to better understand how legal, technical and other requirements can be addressed in an integrated manner.
+    Massachusetts Legal Hackers is grateful to hack along with Code for Boston during this special 5-part series!
+-
+  name: Inman Square Intersection VM
+  news: >
+    Urban Planning with Virtual Reality: Inman Square Intersection
+
+    We're looking to create a moderately realistic model of the Inman Square intersection redesign as a way to communicate the City's plans and progress to the public. We'll also be testing how VR affects public opinion on a contentious planning issue.
+
+    Need skills:
+
+    - Sketchup or 3D modeling software in general
+    - Unity or AFrame
+    - Research / survey design
+
+    No VR experience required.
+-
+  name: EnerSave
+  url: https://github.com/codeforboston/cambridge_energy_app

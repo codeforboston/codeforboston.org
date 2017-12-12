@@ -1,17 +1,6 @@
 -
-  name: Ungentry
-  url: https://github.com/codeforboston/ungentry
--
-  name: MBTA.ninja
-  url: https://github.com/codeforboston/mbta-ninja
--
-  name: CornerWise
-  url: https://github.com/cityofsomerville/cornerwise
--
-  name: Finda
-  url: https://github.com/codeforboston/finda
--
-  name: Project Hope & "cliff effects"
+  name: Cliff Effects (with Project Hope)
+  url: https://github.com/codeforboston/project-hope
   news: >
     We'll be continuing to look at policy and turning that into financial models.
     Also, going over some findings from recent user research @ Project Hope
@@ -19,50 +8,36 @@
 
     * Personas
 -
-  name: Ethical (i.e LEGAL) Housing Listings
+  name: Legal Housing Listings
+  url: https://github.com/codeforboston/legalhousing
   news: >
+    Technologies: Ruby on Rails, Python, D3.js
+
     Continuing our project planning and investigation of using data to identify
     discriminatory housing postings in online real estate listings
-
-
-    [Discriminatory Housing Brainstorm](https://codeforboston.hackpad.com/Discriminatory-Housing-Brainstorm-qqXfX9SAPfa)
-
-
-    Website: http://legalhousing.herokuapp.com/
-
-
-    Tech-Stack:
-
-    * Ruby on Rails
-
-    * Python
-
-    * Javascript
 -
-  name: Cambridge Open Data Challenges
+  name: Local First
+  url: https://github.com/codeforboston/local-first-cms
   news: >
-    Public data sets with problem statements from the City of Cambridge
-    https://data.cambridgema.gov/General-Government/Civic-Innovation-Challenge-Inventory/x96z-hdnh/about
-    Kent Johnson's answer to one of the problem statements (this was demo'd at the 2017 Bloomberg What Works Cities conference):
-    http://kentsj.com/Misc/Board_of_Zoning_Appeal_Requests_CT.html
+    Technologies: Python, Django, Javascript
 -
-  name: Tools and Rules for Blockchain-Backed Individual Identity
+  name: Alexa 311
+  url: https://github.com/codeforboston/voiceapp311
   news: >
-    https://www.meetup.com/Massachusetts-Legal-Hackers/events/239091160
-    In the Prome Conference Room, 4th Floor CIC.
-    Tonight is the third of five Legal Hack Nights dedicated to building out a reference implementation blockchain-backed individual identity digital signature app.  The app is intended to be a working prototype we can use to evaluate and work with individual identity innovation and to better understand how legal, technical and other requirements can be addressed in an integrated manner.
-    Massachusetts Legal Hackers is grateful to hack along with Code for Boston during this special 5-part series!
+    Technologies: Python, AWS
 -
-  name: Inman Square Intersection VM
+  name: Interactive Film Documentary
+  url:
   news: >
-    Urban Planning with Virtual Reality: Inman Square Intersection
-
-    We're looking to create a moderately realistic model of the Inman Square intersection redesign as a way to communicate the City's plans and progress to the public. We'll also be testing how VR affects public opinion on a contentious planning issue.
-
-    Need skills:
-
-    - Sketchup or 3D modeling software in general
-    - Unity or AFrame
-    - Research / survey design
-
-    No VR experience required.
+    Code and UI/UX for the invisible women of Delhi
+-
+  name: DACA
+  url:
+  news: >
+-
+  name: MuckRock
+  url: https://www.muckrock.com/
+  news: >
+    MuckRock is a non-profit, collaborative news site that brings together journalists,
+    researchers, activists, and regular citizens to request, analyze, and share government
+    documents, making politics more transparent and democracies more informed.
