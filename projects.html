@@ -7,12 +7,12 @@ layout: page
 <h1 class="t-section-headline">Projects</h1>
 <section>
     <h2 class="">Past Projects</h2>
-    {% for proj in site.data.projects.active %}
+    {% for proj in site.data.projects.inactive %}
         <a class="btn-secondary btn--small" href="{{proj.url}}">{{ proj.name }}</a>
     {% endfor %}
     <h2 class="">Open Projects</h2>
     <p>Here is a sample of what we've been working on recently. Projects are open to all volunteers - if you're interested, just show up at one of our <a href="{{site.meetup_url}}">Tuesday evening hack nights!</a></p>
-    {% for proj in site.data.projects.ongoing %}
+    {% for proj in site.data.projects.active %}
         <a class="btn-secondary btn--small" href="{{proj.url}}">{{ proj.name }}</a>
     {% endfor %}
     <p>You can view all the projects we've ever done (in code) over on <a href="{{site.github_url}}">github</a>.</p>
