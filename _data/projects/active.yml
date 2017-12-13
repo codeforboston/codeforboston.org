@@ -13,8 +13,12 @@
   news: >
     Technologies: Ruby on Rails, Python, D3.js
 
-    Continuing our project planning and investigation of using data to identify
-    discriminatory housing postings in online real estate listings
+    The craigslist scraper is working. 
+    Tonight we will be working on an interface (Providing 
+    a REST endpoint for accessing the data), hooking it up 
+    to a database (Creating and easy way to put the data into 
+    a postgres database), and Configuration (Reading a file for 
+    database user/password, settings up any login info that would be needed)
 -
   name: Local First
   url: https://github.com/codeforboston/local-first-cms
@@ -25,6 +29,8 @@
   url: https://github.com/codeforboston/voiceapp311
   news: >
     Technologies: Python, AWS
+    
+    Looking into notifications for Alexa
 -
   name: Interactive Film Documentary
   url:
@@ -41,3 +47,5 @@
     MuckRock is a non-profit, collaborative news site that brings together journalists,
     researchers, activists, and regular citizens to request, analyze, and share government
     documents, making politics more transparent and democracies more informed.
+    
+    Looking for folks interested in triaging todos or talking charts.
