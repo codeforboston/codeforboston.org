@@ -7,7 +7,7 @@
 	<a class="page-link" href="{{site.blog_url}}">Blog</a>
     </li>
         {% for page in site.pages %}
-          {% if page.title and page.type != 'hidden' %}
+          {% if page.title and page.type == 'inNavBar' %}
             <li>
               <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             </li>
