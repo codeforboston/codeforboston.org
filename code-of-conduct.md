@@ -2,7 +2,7 @@
 title: Code of Conduct
 permalink: "/code-of-conduct/"
 layout: page
-type: none
+type: inNavBar
 ---
 
 {: .t-section-headline }
