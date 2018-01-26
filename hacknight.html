@@ -7,7 +7,6 @@ type: hidden
 
 <section>
   Welcome to Code for Boston!
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/PPGhJ9biv_I?start=9" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </section>
 
 <section data-markdown>
@@ -82,6 +81,15 @@ type: hidden
         {{proj.news | markdownify}}
       </textarea>
     </section>
+
+    {% if proj.media %}
+      <section data-markdown>
+        <textarea data-template>
+          {{proj.media}}
+        </textarea>
+      </section>
+    {% endif %}
+
   {% endfor %}
 </section>
 
