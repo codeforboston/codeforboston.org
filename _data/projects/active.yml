@@ -31,7 +31,11 @@
   news: >
     Technologies: Python, AWS
     
-    Looking into notifications for Alexa
+    * Developing new Alexa features
+      * Street sweeping days
+      * Open spaces locations
+    * Researching automated testing
+    * Researching publishing requirements
 -
   name: Interactive Film Documentary
   news: >
