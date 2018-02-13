@@ -5,7 +5,9 @@ layout: hacknight
 type: hidden
 ---
 
-<section>Welcome to Code for Boston!</section>
+<section>
+  Welcome to Code for Boston!
+</section>
 
 <section data-markdown>
   <textarea data-template>
@@ -79,6 +81,15 @@ type: hidden
         {{proj.news | markdownify}}
       </textarea>
     </section>
+
+    {% if proj.media %}
+      <section data-markdown>
+        <textarea data-template>
+          {{proj.media}}
+        </textarea>
+      </section>
+    {% endif %}
+
   {% endfor %}
 </section>
 
