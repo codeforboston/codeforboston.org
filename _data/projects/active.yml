@@ -39,7 +39,7 @@
   news: >
     Code and UI/UX for the invisible women of Delhi
     React and React Native 
-  media:<iframe height="520px" width="1600" src="https://www.youtube.com/embed/vkZCJ74Mphc" frameborder="10" data-autoplay allowfullscreen></iframe>
+    media: <iframe height="520px" width="1600" src="https://www.youtube.com/embed/vkZCJ74Mphc" frameborder="10" data-autoplay allowfullscreen></iframe>
 -
 #   name: Community Engagement - DACA Litigation
 #   url: goo.gl/2Y51UC
