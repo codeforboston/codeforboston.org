@@ -26,16 +26,17 @@
   news: >
     Technologies: Python, Django, Javascript
 -
-  name: Alexa 311
+  name: My City Voice App
   url: https://github.com/codeforboston/voiceapp311
   news: >
     Technologies: Python, AWS
     
+    * Updating data locations for trash day and snow parking
+    * Researching automated testing
     * Developing new Alexa features
       * Street sweeping days
-      * Open spaces locations
-    * Researching automated testing
-    * Researching publishing requirements
+      * City of Boston status page
+    
 -
   name: Interactive Film Documentary
   news: >
