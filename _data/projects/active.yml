@@ -35,7 +35,7 @@
     
 -
   name: Interactive Film Documentary
-  news: >
+  news: > We have an MVP design!
     Code and UI/UX for the invisible women of Delhi
     React and React Native 
     media: <iframe height="520px" width="1600" src="https://www.youtube.com/embed/vkZCJ74Mphc" frameborder="10" data-autoplay allowfullscreen></iframe>
