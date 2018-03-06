@@ -3,19 +3,6 @@
   url: https://github.com/codeforboston/project-hope
   news: >
    User testing was a success! We need to integrate user feedback into the codebase.
-
--
-  name: Legal Housing Listings
-  url: https://github.com/codeforboston/legalhousing
-  news: >
-    Technologies: Ruby on Rails, Python, D3.js
-
-    The craigslist scraper is working.
-    Tonight we will be working on an interface (Providing
-    a REST endpoint for accessing the data), hooking it up
-    to a database (Creating and easy way to put the data into
-    a postgres database), and Configuration (Reading a file for
-    database user/password, settings up any login info that would be needed)
 -
   name: Local First
   url: https://github.com/codeforboston/local-first-cms
