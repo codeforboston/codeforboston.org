@@ -7,7 +7,7 @@ type: hidden
 
 <section data-markdown>
   <textarea data-template>
-    <img src="../img/code_for_boston_logo.png">
+    <img src="../img/code_for_boston_logo.png" style="border: 0; box-shadow: none;">
     ### Welcome to Code for Boston!
     1. Arrival: Eat Pizza, Mingle
     2. Read our Code of Conduct: http://www.codeforboston.org/code-of-conduct/
@@ -31,10 +31,10 @@ type: hidden
   <section data-markdown>
     <textarea data-template>
       ## Community Asks
-     1. Fundraising: talk to Andrew
-     2. Hack on CodeforBoston.org
-     3. We can all watch #thedoor in Slack
-     4. RSVP on Meetup for pizza count
+      1. Fundraising: talk to Andrew
+      2. Hack on CodeforBoston.org
+      3. We can all watch #thedoor in Slack
+      4. RSVP on Meetup for pizza count
     </textarea>
   </section>
 </section>
@@ -52,10 +52,11 @@ type: hidden
   {% for event in site.data.events.active %}
     <section data-markdown>
       <textarea data-template>
-            ### {{event.name}}
-            {{event.date}}{% if event.location %} at {{event.location}}{% endif %} \
-            {{event.description}}
-          </textarea>
+        ### {{event.name}}
+        * {{event.date}}
+        * {% if event.location %}{{event.location}}{% else %}Location TBD{% endif %}
+        * {{event.description}}
+      </textarea>
     </section>
   {% endfor %}
 </section>
