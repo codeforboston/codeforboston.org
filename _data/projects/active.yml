@@ -19,7 +19,6 @@
     * Developing new Alexa features
       * Street sweeping days
       * City of Boston status page
-
 -
   name: Interactive Film Documentary
   news: >
@@ -27,7 +26,7 @@
     Code and UI/UX for the invisible women of Delhi
     React Native -- need support building around the YouTube API. 
     media: <iframe height="520px" width="1600" src="https://www.youtube.com/embed/vkZCJ74Mphc" frameborder="10" data-autoplay allowfullscreen></iframe>
-
+-
   name: MuckRock
   url: https://www.muckrock.com/
   news: >
