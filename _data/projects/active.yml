@@ -24,7 +24,7 @@
   news: >
     Code and UI/UX for the invisible women of Delhi
     React Native -- need support building around the YouTube API. 
-    media: <iframe height="520px" width="1600" src="<iframe width="560" height="315" src="https://www.youtube.com/embed/SWXhe6ycKrY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>" frameborder="10" data-autoplay allowfullscreen></iframe>
+    media: <iframe height="520px" width="1600" src="https://www.youtube.com/embed/SWXhe6ycKrY" frameborder="10" data-autoplay allowfullscreen></iframe>
 -
   name: MuckRock
   url: https://www.muckrock.com/
