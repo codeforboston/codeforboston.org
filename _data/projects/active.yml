@@ -2,7 +2,12 @@
   name: Cliff Effects (with Project Hope)
   url: https://github.com/codeforboston/project-hope
   news: >
-   User testing was a success! We need to integrate user feedback into the codebase.
+   **User testing was a success! Now we need to:**
+    * Discuss and implement changes needed from user feedback and create a better user experience
+    * Write unit, regression, and integration tests
+    * Strengthen our existing code and make it more maintainable
+    * Examine legislative documentation with people experienced with reading policy to check the validity of our benefit program calculations
+   **Our goal:** Help case managers help their clients more easily plan for the future by showing which changes in their circumstances could change their benefit amounts in what ways.
 -
   name: My City Voice App
   url: https://github.com/codeforboston/voiceapp311
