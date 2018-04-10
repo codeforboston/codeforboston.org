@@ -4,11 +4,6 @@
   news: >
    User testing was a success! We need to integrate user feedback into the codebase.
 -
-  name: Local First
-  url: https://github.com/codeforboston/local-first-cms
-  news: >
-    Technologies: Python, Django, Javascript
--
   name: My City Voice App
   url: https://github.com/codeforboston/voiceapp311
   news: >
