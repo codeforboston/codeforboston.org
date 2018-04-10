@@ -7,7 +7,6 @@
     * Write unit, regression, and integration tests
     * Strengthen our existing code and make it more maintainable
     * Examine legislative documentation with people experienced with reading policy to check the validity of our benefit program calculations
-   **Our goal:** Help case managers help their clients more easily plan for the future by showing which changes in their circumstances could change their benefit amounts in what ways.
 -
   name: My City Voice App
   url: https://github.com/codeforboston/voiceapp311
