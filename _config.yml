@@ -21,7 +21,7 @@ github_url: https://github.com/codeforboston
 meetup_url: https://meetup.com/Code-For-Boston
 blog_url: https://medium.com/@CodeForBoston
 events_url: http://cal.codeforboston.org
-slack_url: http://slack.codeforboston.org
+slack_url: https://communityinviter.com/apps/cfb-public/code-for-boston-slack-invite
 reveal_path: /reveal.js/
 reveal_theme_path: /reveal.js/css/theme/
 reveal_theme: sky.css
