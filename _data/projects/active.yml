@@ -1,26 +1,24 @@
 -
   name: Cliff Effects
   elevatorPitch: >
-    This tool can help show how a change in income affects 
-    how much someone receives in public assistance 
-    from SNAP and Section 8 Housing Voucher benefits. 
-    It was designed for the case managers at Project 
-    Hope with the aim of helping to predict changes 
-    in their clients' benefits.
+    Prototyping a tool that can help case managers help 
+    their clients see how changes in pay can affect what 
+    they’re getting from public assistance programs.
   url: https://codeforboston.github.io/cliff-effects/
   repository: https://github.com/codeforboston/cliff-effects
-  partner: Project Hope
-  partnerUrl: http://www.prohope.org/
+  partner:
+  partnerUrl:
 #  lead: A wonderful person
 #  leadUrl: http://wonderfulperson.com
   technologies: NodeJS, ReactJS
   news: >
-    User testing was a success! Now we need to:
     <ul>
-      <li>Discuss and implement changes needed from user feedback and create a better user experience</li>
+      <li>Examine our UX and UI</li>
       <li>Write unit, regression, and integration tests</li>
-      <li>Strengthen our existing code and make it more maintainable</li>
-      <li>Examine legislative documentation with people experienced with reading policy to check the validity of our benefit program calculations</li>
+      <li>Strengthen and question our existing code</li>
+      <li>Translate the app</li>
+      <li>Validate benefit logic with with people familiar with regulation language and create a process for adding new benefits</li>
+    </ul>
 -
   name: My City Voice App
   elevatorPitch: >
