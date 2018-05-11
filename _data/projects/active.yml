@@ -2,49 +2,28 @@
   name: Cliff Effects (with Project Hope)
   url: https://github.com/codeforboston/project-hope
   news: >
-    On pause until we schedule demo days with partners.
-
-    Turning benefit program policies into financial models.  Also, going over some findings from recent user research @ Project Hope
-
-    Skillsets: user research, React
-
+   **User testing was a success! Now we need to:**
+    * Discuss and implement changes needed from user feedback and create a better user experience
+    * Write unit, regression, and integration tests
+    * Strengthen our existing code and make it more maintainable
+    * Examine legislative documentation with people experienced with reading policy to check the validity of our benefit program calculations
 -
-  name: Legal Housing Listings
-  url: https://github.com/codeforboston/legalhousing
-  news: >
-    Technologies: Ruby on Rails, Python, D3.js
-
-    The craigslist scraper is working. 
-    Tonight we will be working on an interface (Providing 
-    a REST endpoint for accessing the data), hooking it up 
-    to a database (Creating and easy way to put the data into 
-    a postgres database), and Configuration (Reading a file for 
-    database user/password, settings up any login info that would be needed)
--
-  name: Local First
-  url: https://github.com/codeforboston/local-first-cms
-  news: >
-    Technologies: Python, Django, Javascript
--
-  name: Alexa 311
+  name: My City Voice App
   url: https://github.com/codeforboston/voiceapp311
   news: >
     Technologies: Python, AWS
-    
-    Looking into notifications for Alexa
+
+    * Updating data locations for trash day and snow parking
+    * Researching automated testing
+    * Developing new Alexa features
+      * Street sweeping days
+      * City of Boston status page
 -
   name: Interactive Film Documentary
   news: >
     Code and UI/UX for the invisible women of Delhi
-    React and React Native 
-    https://www.youtube.com/watch?list=PLTXq6Eg-6vhrY3Ydr0dNTWnTINXjoC79y&params=OAFIAVgD&v=wiwtIKgDyC0&mode=NORMAL&app=desktop
-  #-
-  # name: Community Engagement - DACA Litigation
-  # url: goo.gl/2Y51UC
-  # news: >
-  #   On pause while AGO is on winter recess.
-  #   Amassing Dreamers' narratives to power MA Attorney General's Office's litigation against DACA program recission.
-  #   Skillsets: survey creation, community outreach, and social design.
+    React Native -- need support building around the YouTube API. 
+    media: <iframe height="520px" width="1600" src="https://www.youtube.com/embed/SWXhe6ycKrY" frameborder="10" data-autoplay allowfullscreen></iframe>
 -
   name: MuckRock
   url: https://www.muckrock.com/
@@ -52,5 +31,5 @@
     MuckRock is a non-profit, collaborative news site that brings together journalists,
     researchers, activists, and regular citizens to request, analyze, and share government
     documents, making politics more transparent and democracies more informed.
-    
+
     Looking for folks interested in triaging todos or talking charts.

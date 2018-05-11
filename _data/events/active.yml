@@ -1,29 +1,7 @@
-- name: Project Presentation Night
-  date: February 6
-  location: 50 Milk St
+- name: Code for America Summit
+  date: May 30 to June 1 2018
+  location: Oakland, CA
   description: >
-    Recent and ongoing Code for Boston projects will be presented to the community.
+    Use Code: BostonComp for 10% Off
 
-- name: Earth Hack 2018
-  date: January 26
-  location: 50 Milk St
-  description: >
-    http://tinyurl.com/EarthHack
-
-- name: CivilServant Community Research Summit
-  date: January 27
-  location: MIT Media Lab
-  description: >
-    How can the public work together and discover ideas for a fairer, safer, more understanding internet?
-
-- name: Building Climate Resilient Communities
-  date: January 30
-  location: 45 Beacon Street
-  description: >
-    Urban planning x climate resiliency x advocacy in the Greater Boston region
-
-- name: Sexual Assault & Consent - Tough Conversations, Challenging Coverage
-  date: January 31
-  location: WeWork @ Mass Ave
-  description: >
-    Journalistic challenges + how to be a more proactive citizen
+    http://www.codeforamerica.org/summit

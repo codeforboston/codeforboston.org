@@ -5,59 +5,60 @@ layout: hacknight
 type: hidden
 ---
 
-<section>Welcome to Code for Boston!</section>
-
 <section data-markdown>
   <textarea data-template>
-
+    <img src="../img/code_for_boston_logo.png" style="border: 0; box-shadow: none;">
+    ### Welcome to Code for Boston!
     1. Arrival: Eat Pizza, Mingle
-    1. 7:10 Opening Remarks
-    1. 7:20 New Member Orientation + Hacking!
+    2. Read our Code of Conduct: http://www.codeforboston.org/code-of-conduct/
+    3. 7:10 Opening Remarks
+    4. 7:20 New Member Orientation + Hacking!
   </textarea>
 </section>
 
-<section data-markdown>
-  <textarea data-template>
-    ### Agenda
-
-    1. Events
-    1. Announcements
-    1. Project Check-In
-    1. Orientation for New Folks
-  </textarea>
-</section>
 
 <section>
   <section data-markdown>
     <textarea data-template>
       ### Agenda
 
-      1. *Events*
+      1. *Announcements*
+      2. Events
+      3. Project Check-In
+      4. Orientation for New Folks
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      ## Community Asks
+      1. Fundraising: talk to Andrew
+      2. Hack on CodeforBoston.org
+      3. We can all watch #thedoor in Slack
+      4. RSVP on Meetup for pizza count
+    </textarea>
+  </section>
+</section>
+<section>
+  <section data-markdown>
+    <textarea data-template>
+      ### Agenda
+
       1. Announcements
-      1. Project Check-In
-      1. Orientation for New Folks
+      2. *Events*
+      3. Project Check-In
+      4. Orientation for New Folks
     </textarea>
   </section>
   {% for event in site.data.events.active %}
     <section data-markdown>
       <textarea data-template>
-            ### {{event.name}}
-            {{event.date}}{% if event.location %} at {{event.location}}{% endif %} \
-            {{event.description}}
-          </textarea>
+        ### {{event.name}}
+        * {{event.date}}
+        * {% if event.location %}{{event.location}}{% else %}Location TBD{% endif %}
+        * {{event.description}}
+      </textarea>
     </section>
   {% endfor %}
-</section>
-
-<section data-markdown>
-  <textarea data-template>
-    ### Agenda
-
-    1. Events
-    1. *Announcements*
-    1. Project Check-In
-    1. Orientation for New Folks
-  </textarea>
 </section>
 
 <section>
@@ -79,6 +80,15 @@ type: hidden
         {{proj.news | markdownify}}
       </textarea>
     </section>
+
+    {% if proj.media %}
+      <section data-markdown>
+        <textarea data-template>
+          {{proj.media}}
+        </textarea>
+      </section>
+    {% endif %}
+
   {% endfor %}
 </section>
 
@@ -95,6 +105,6 @@ type: hidden
 
 <section data-markdown>
   <textarea data-template>
-    # Thanks for coming!
+    ## Thanks for coming!
   </textarea>
 </section>
