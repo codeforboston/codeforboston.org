@@ -13,7 +13,7 @@ git submodule update --init
 ## I want to update the wesite. How do I do that?
 - To add/update jobs, edit `_data/jobs.yml`
 - To add/update events, edit [`_data/events/active.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/events/active.yml)
-- To edit normal site pages, edit the `html` or `markdown` files in `_pages/`
+- To edit normal site pages, edit the `html` files in `_layout/`. There's some stuff in `_includes`, too.
 - To edit the homepage content, edit `index.html`
 
 ## Deploy to codeforboston.org
