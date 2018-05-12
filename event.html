@@ -1,0 +1,20 @@
+---
+title: Civic Tech Events
+permalink: "/events/"
+layout: page
+type: inNavBar
+---
+
+
+<h1 class="t-section-headline">Civic Tech Events</h1>
+
+<section>
+<p>Know about an event that isn't listed here? <a href="mailto:hello@codeforboston.org" Subject="Please Add This Event!"> Send us the event link</a> or <a href="https://github.com/codeforboston/codeforboston.org/blob/master/_data/events/active.yml">add it yourself</a>.</p>
+
+<br>
+    {% for event in site.data.events.active %}
+        <h3><a href="{{event.url}}">{{ event.name }}- {{ event.date }}</a></h3>
+        <p><i>{{ event.location }}</i></p>
+        <p>{{ event.description }}</p><br>
+    {% endfor %}
+</section>
