@@ -8,6 +8,7 @@ We have a [Guide for New Members](http://www.codeforboston.org/new-members/).  P
 This repository makes use of [reveal.js](https://github.com/hakimel/reveal.js). In order to synchronize the dependencies within this repository, run the following:
 ```bash
 git submodule update --init
+gem install jekyll
 ```
 
 ## I want to update the wesite. How do I do that?
@@ -15,6 +16,8 @@ git submodule update --init
 - To add/update events, edit [`_data/events/active.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/events/active.yml)
 - To edit normal site pages, edit the `html` files in `_layout/`. There's some stuff in `_includes`, too.
 - To edit the homepage content, edit `index.html`
+
+To see the page, you'll have to run a local server. Open a terminal window in the project directory and do `jekyll serve`. Leave that terminal window alone to do keep serving that page. Open a different terminal window and do `jekyll build --watch`, then leave that alone too. It should then update automatically when you save your changes. In your browser, go to [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
 
 ## Deploy to codeforboston.org
 This site is hosted via [GitHub Pages](https://pages.github.com/), so all you need to do to deploy is to push updates to the `master` branch in GitHub. Within minutes, http://www.codeforboston.org/ will reflect the new changes.
