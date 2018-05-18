@@ -1,25 +1,72 @@
 ---
-title: Projects
+title: Our Work
 permalink: "/projects/"
 layout: page
 type: inNavBar
 ---
 
-<h1 class="t-section-headline">Projects</h1>
+<style>
+.thumb {
+    border: solid #000; 
+    border-width: 1px; 
+    border-radius:10px; 
+    padding: 10px
+}
+</style>
+
+<h1 class="t-section-headline">Our Work</h1>
+
 <section>
-    <h2 class="">Past Projects</h2>
-    {% for proj in site.data.projects.inactive %}
-        <a class="btn-secondary btn--small" href="{{proj.url}}">{{ proj.name }}</a>
-    {% endfor %}
-    <h2 class="">Open Projects</h2>
-    <p>Here is a sample of what we've been working on recently. Projects are open to all volunteers - if you're interested, just show up at one of our <a href="{{site.meetup_url}}">Tuesday evening hack nights!</a></p>
-    {% for proj in site.data.projects.active %}
-        <a class="btn-secondary btn--small" href="{{proj.url}}">{{ proj.name }}</a>
-    {% endfor %}
-    <p>You can view all the projects we've ever done (in code) over on <a href="{{site.github_url}}">github</a>.</p>
+    <h2>Open Projects</h2>
+    <p>Here's what we've been working on recently. Projects are open to all volunteers - if you're interested, just show up at one of our <a href="{{site.meetup_url}}">Tuesday evening hack nights!</a></p>
+
+    <div class="col-4">
+        {% for proj in site.data.projects.active %}
+            <div class='thumb'>
+
+                <b>{{ proj.name }}</b><br>
+
+                {% if proj.description %}
+                	{{ proj.description }} <br>
+            	{% endif %}
+
+                {{ proj.news }} <br>
+
+                {% if proj.partner %}
+                	<b>Partner: </b> <a href="{{proj.partner_url}}">{{ proj.partner }}</a> <br>
+                {% endif %}
+
+                <b>Links: </b>
+                {% if proj.repo_url %}
+	                   <a href="{{proj.repo_url}}">Repo</a> 
+                {% endif %}
+
+                {% if proj.site_url %}
+                	<a href="{{proj.site_url}}">Site</a>
+                {% endif %}
+                <br>
+
+                <!-- TODO: write an if -->
+                {% if proj.seeking %}
+                	<b>Seeking: </b> {{ proj.seeking }}<br>
+                {% endif %}
+
+            </div>
+        {% endfor %}
 </section>
 
 <section>
+    <h2 class="">Sampler of Completed Projects</h2>
+    <p>You can view all the projects we've ever done on <a href="{{site.github_url}}" target="_blank">GitHub</a>.</p>
+
+        {% for proj in site.data.projects.inactive %}
+            <div class='thumb'>
+                <b><a href="{{ proj.url }}"> {{ proj.name }} </a></b><br>
+            </div>
+        {% endfor %}
+</section>
+
+<!-- <section>
     <h2>Identified a problem in your community?</h2>
     <p>Maybe Code for Boston can help and we can address that problem together. You can submit a problem statement to our core team using the button at the bottom of this page. Before you submit, please make sure your submission is in line with our few ground-rules below.</p>
     <h3>How we take on new projects</h3>
@@ -30,4 +77,4 @@ type: inNavBar
         <li>Due to our tie to Code for America, and the diverse group of our members, we may not be able to take on projects that are political in nature. Projects focused around things like open-data and transparency are fair game, but projects to support a partisan political effort are 'iffy' at best. (i.e transparency tool for campaign finance is good, website promoting a candidate is a no-go).</li>
     </ol>
      <a class="btn-secondary btn--large" href="https://docs.google.com/a/codeforboston.org/forms/d/1QosuVBXWVUH8vRHZChauOXRvPFQhwrn3vi0dDcZd80Y/viewform">Submit a project idea</a>
-</section>
+</section> -->
