@@ -39,9 +39,12 @@ type: inNavBar
                 	<b>Partner: </b> <a href="{{proj.partner_url}}">{{ proj.partner }}</a> <br>
                 {% endif %}
 
-                <b>Links: </b>
+                {% if proj.repo_url or proj.site_url %}
+                    <b>Links: </b>
+                {% endif %}                
+
                 {% if proj.repo_url %}
-	                   <a href="{{proj.repo_url}}">Repo</a> 
+	                <a href="{{proj.repo_url}}">Repo</a> 
                 {% endif %}
 
                 {% if proj.site_url %}
