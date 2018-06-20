@@ -12,7 +12,7 @@ type: inNavBar
     border-radius:10px; 
     padding: 10px;
     display: inline-block;
-    width: 200px;
+    /*width: 200px;*/
     /*height: 500px;*/
 }
 </style>
@@ -23,9 +23,9 @@ type: inNavBar
     <h2>Open Projects</h2>
     <p>Here's what we've been working on recently. Projects are open to all volunteers - if you're interested, just show up at one of our <a href="{{site.meetup_url}}">Tuesday evening hack nights!</a></p>
 
-    <div class="col-4">
+    <div class="cfbgrid">
         {% for proj in site.data.projects.active %}
-            <div class='thumb'>
+            <div class='thumb cfbcol-4'>
 
                 <b>{{ proj.name }}</b><br>
 
@@ -49,27 +49,28 @@ type: inNavBar
 
                 {% if proj.site_url %}
                 	<a href="{{proj.site_url}}">Site</a>
-                {% endif %}
-                <br>
+                {% endif %} <br>
 
-                <!-- TODO: write an if -->
                 {% if proj.seeking %}
                 	<b>Seeking: </b> {{ proj.seeking }}<br>
                 {% endif %}
 
             </div>
         {% endfor %}
+    </div>
 </section>
 
 <section>
     <h2 class="">Sampler of Completed Projects</h2>
     <p>You can view all the projects we've ever done on <a href="{{site.github_url}}" target="_blank">GitHub</a>.</p>
 
+    <div class='cfbgrid'>
         {% for proj in site.data.projects.inactive %}
-            <div class='thumb'>
+            <div class='thumb cfbcol-4'>
                 <b><a href="{{ proj.url }}"> {{ proj.name }} </a></b><br>
             </div>
         {% endfor %}
+    </div>
 </section>
 
 <!-- <section>
