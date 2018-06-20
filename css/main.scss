@@ -45,6 +45,14 @@ $on-laptop:        800px;
 }
 
 
+/*** GENERAL ***/
+a {
+	color: $blue-color;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
 /*** NAV ***/
 
 .site-header .logo img {
