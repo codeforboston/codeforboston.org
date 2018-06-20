@@ -3,9 +3,8 @@
 
 @charset "utf-8";
 
+/*** VARIABLES ***/
 
-
-// Our variables
 $base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 $headline-font-family: 'Merriweather', serif;
 $base-font-size:   18px;
@@ -24,7 +23,8 @@ $black-color: #111111;
 $blue-color: #65B3E0;
 $red-color: #CE324A;
 
-// color alias
+
+/*** COLOR ALIAS ***/
 $text-color:       $black-color;
 $background-color: $white-color;
 $brand-color:      $red-color;
@@ -32,7 +32,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 15%);
 
 
-// Width of the content area
+/*** WIDTH OF CONTENT AREA ***/
 $content-width:    1200px;
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -45,60 +45,7 @@ $on-laptop:        800px;
 }
 
 
-.cfbgrid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    //grid-auto-rows: minmax(100px, auto);
-
-    .cfbcol-4 {
-        grid-column: span 4;
-        //grid-row: 1;
-  }
-}
-
-
-.page-content section {
-    margin-bottom: 4rem;
-    margin-left: 2rem;
-    padding-right: 30px;
-    padding-left: 30px;  
-}
-
-
-
-@media screen and (min-width: $on-palm) {
-    .cfbgrid .cfbcol-4 {
-        grid-column: span 5;
- }
-}
-
-@media screen and (min-width: $on-laptop) {
-    .cfbgrid .cfbcol-4 {
-        grid-column: span 4;
- }
-}
-
-@media screen and (min-width: 1400px) {
-    .cfbgrid .cfbcol-4 {
-        grid-column: span 3;
- }
-}
-
-@media screen and (min-width: 1600px) {
-    .cfbgrid .cfbcol-4 {
-        grid-column: span 2;
- }
-}
-
-@media screen and (min-width: 1900px) {
-    .cfbgrid .cfbcol-4 {
-        grid-column: span 2;
- }
-}
-
-// -- NAV --
+/*** NAV ***/
 
 .site-header .logo img {
     height: 3rem;
@@ -124,6 +71,8 @@ li {
 }
 
 
+/*** FOOTER ***/
+
 .site-footer {
     padding: 30px 0;
     background: #e8e8e8;
@@ -134,7 +83,60 @@ li {
 }
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+/*** PROJECTS PAGE THUMBNAILS ***/
+
+.cfbgrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    //grid-auto-rows: minmax(100px, auto);
+
+    .cfbcol-4 {
+        grid-column: span 4;
+        //grid-row: 1;
+    }
+}
+
+.page-content section {
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    padding-right: 30px;
+    padding-left: 30px;  
+}
+
+@media screen and (min-width: $on-palm) {
+    .cfbgrid .cfbcol-4 {
+        grid-column: span 5;
+    }
+}
+
+@media screen and (min-width: $on-laptop) {
+    .cfbgrid .cfbcol-4 {
+        grid-column: span 4;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+    .cfbgrid .cfbcol-4 {
+        grid-column: span 3;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+    .cfbgrid .cfbcol-4 {
+        grid-column: span 2;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+    .cfbgrid .cfbcol-4 {
+        grid-column: span 2;
+	}
+}
+
+
+/*** IMPORT PARTIALS FROM 'SASS_DIR' (defaults to '_sass') ***/
 @import 
     "vendor/bourbon/bourbon",
     "vendor/neat/neat",
@@ -148,4 +150,3 @@ li {
     "jobs",
     "syntax-highlighting"
 ;
-
