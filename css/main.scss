@@ -37,7 +37,6 @@ $content-width:    1200px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -47,9 +46,26 @@ $on-laptop:        800px;
 
 /*** GENERAL ***/
 a {
-	color: $blue-color;
-	text-decoration: none;
-	font-weight: bold;
+    color: $blue-color;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #4883a5;
+}
+
+.page-content section {
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    padding-right: 30px;
+    padding-left: 30px;  
+}
+
+.centered {
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -88,31 +104,33 @@ li {
     margin-top: 6rem;
     padding-top: 3rem;
     color: #111;
-}
-
-
-/*** PROJECTS PAGE THUMBNAILS ***/
-
-.cfbgrid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    //grid-auto-rows: minmax(100px, auto);
-
-    .cfbcol-4 {
-        grid-column: span 4;
-        //grid-row: 1;
-    }
-}
-
-.page-content section {
-    margin-bottom: 4rem;
-    margin-left: 2rem;
-    padding-right: 30px;
     padding-left: 30px;  
 }
 
+
+/*** PROJECTS PAGE ***/
+
+.thumb {
+    border: solid #000;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.cfbgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-columns: repeat(12, 1fr);*/
+    grid-template-rows: auto;
+    grid-gap: 10px;
+
+    .cfbcol-4 {
+        grid-column: span 4;
+    }
+}
+
+/* TODO:  despite changing line 123, did NOT change grid-col vals in lines 134-162*/
 @media screen and (min-width: $on-palm) {
     .cfbgrid .cfbcol-4 {
         grid-column: span 5;
@@ -122,34 +140,31 @@ li {
 @media screen and (min-width: $on-laptop) {
     .cfbgrid .cfbcol-4 {
         grid-column: span 4;
-	}
+    }
 }
 
 @media screen and (min-width: 1400px) {
     .cfbgrid .cfbcol-4 {
         grid-column: span 3;
-	}
+    }
 }
 
 @media screen and (min-width: 1600px) {
     .cfbgrid .cfbcol-4 {
         grid-column: span 2;
-	}
+    }
 }
 
 @media screen and (min-width: 1900px) {
     .cfbgrid .cfbcol-4 {
         grid-column: span 2;
-	}
+    }
 }
 
 
 /*** IMPORT PARTIALS FROM 'SASS_DIR' (defaults to '_sass') ***/
 @import 
-    "vendor/bourbon/bourbon",
-    "vendor/neat/neat",
     "base",
-    //"layout",
     "buttons",
     "lists",
     "forms",
