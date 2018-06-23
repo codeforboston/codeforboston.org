@@ -6,7 +6,7 @@ type: inNavBar
 ---
 
 {: .t-section-headline }
-# Our Code Of Conduct
+# Code Of Conduct
 
 ## The Code for Boston community expects that Code for Boston network activities, events, and digital forums:
 
