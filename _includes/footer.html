@@ -1,58 +1,29 @@
-<footer class="site-footer t-margin--top l-before-angled">
+<footer class="site-footer">
 
-  <div class="wrapper">
+  <div class="footer-grid">
 
-    <div class="row">
-      <div class="col-4">
+      <div style="grid-column: span 4">
         <h2>Contact</h2>
-        <ul class="contact-list">
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       </div>
 
-      <div class="col-4">
+      <div style="grid-column: span 4">
         <h2>Collaborate</h2>
-        <ul class="social-media-list">
-          <li>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSce0lWiZFMe4HnqgM9iaXDVhpwG06_GNLGKKYR2mcQGlhQ4rQ/viewform">
-              Submit a project idea
-              <!-- TODO: make sure links to the right place -->
-               </a>
-          </li>
-          <li>
-            <a href="{{ site.projects }}">
-              <!-- TODO: UGH this site.projects link does not work -->
-              Join an existing project
-                </a>
-          </li>
-        </ul>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSce0lWiZFMe4HnqgM9iaXDVhpwG06_GNLGKKYR2mcQGlhQ4rQ/viewform">
+            Submit a project idea </a><br>
+          <a href="{{ site.projects }}">
+            Join an existing project </a>
       </div>
 
-      <!-- ---------------------- -->
-      <div class="col-4">
-      <!-- TODO: Make sure this doesn't conflict with other footer cols -->
+      <div style="grid-column: span 4">
         <h2>Connect</h2>
-        <ul class="social-media-list">
-          <li>
-            <a href="{{site.github_url}}">
-              GitHub
-                </a>
-          </li>
-          <li>
-            <a href="{{ site.twitter_url }}">
-              Twitter
-                </a>
-          </li>
-          <li>
-            <a href="{{ site.meetup_url }}">
-              Meetup
-                </a>
-          </li>
-        </ul>
+          <a href="{{site.github_url}}">
+            GitHub </a>
+          <a href="{{ site.twitter_url }}">
+            Twitter </a>
+          <a href="{{ site.meetup_url }}">
+            Meetup </a>
       </div>
-      <!-- ---------------------- -->
-
-    </div>
 
   </div>
 
