@@ -47,7 +47,6 @@ $on-laptop:        800px;
 /*** GENERAL ***/
 a {
     color: $blue-color;
-    text-decoration: none;
     font-weight: bold;
 }
 
@@ -81,13 +80,18 @@ a:hover {
     min-height: 56px;
     padding: 1rem;
     position: relative;
+
+    ul li { 
+        display: inline; 
+        text-decoration: none;
+        margin: 0 0.5rem;
+
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
-li { 
-    display: inline; 
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
 
 .site-nav {
     float: right;
@@ -114,6 +118,10 @@ li {
     width: 50em;
     margin-left: auto;
     margin-right: auto;
+
+    .cfbcol-4 {
+        grid-column: span 4;
+    }
 }
 
 
