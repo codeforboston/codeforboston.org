@@ -45,6 +45,18 @@ $on-laptop:        800px;
 
 
 /*** GENERAL ***/
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 12rem;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 a {
     color: $blue-color;
     font-weight: bold;
@@ -101,13 +113,23 @@ a:hover {
 
 /*** FOOTER ***/
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .site-footer {
     padding: 30px 0;
     background: #e8e8e8;
-    position: relative;
+    position: absolute;
     margin-top: 6rem;
     padding-top: 3rem;
     color: #111;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .footer-grid {
