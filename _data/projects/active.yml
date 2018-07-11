@@ -1,15 +1,20 @@
 -
-  name: Cliff Effects (with Project Hope)
-  url: https://github.com/codeforboston/project-hope
+  name: Cliff Effects
+  description: description
   news: >
    **User testing was a success! Now we need to:**
     * Discuss and implement changes needed from user feedback and create a better user experience
     * Write unit, regression, and integration tests
     * Strengthen our existing code and make it more maintainable
     * Examine legislative documentation with people experienced with reading policy to check the validity of our benefit program calculations
+  partner: Project Hope
+  partner_url: http://www.prohope.org
+  repo_url: https://github.com/codeforboston/cliff-effects
+  site_url: https://codeforboston.github.io/cliff-effects/#/
+  seeking:
 -
   name: My City Voice App
-  url: https://github.com/codeforboston/voiceapp311
+  description:
   news: >
     Technologies: Python, AWS
 
@@ -18,18 +23,35 @@
     * Developing new Alexa features
       * Street sweeping days
       * City of Boston status page
+  partner:
+  partner_url:
+  repo_url: https://github.com/codeforboston/voiceapp311
+  site_url:
+  seeking:
 -
   name: Interactive Film Documentary
+  url:
+  description:
   news: >
     Code and UI/UX for the invisible women of Delhi
     React Native -- need support building around the YouTube API. 
-    media: <iframe height="520px" width="1600" src="https://www.youtube.com/embed/SWXhe6ycKrY" frameborder="10" data-autoplay allowfullscreen></iframe>
+  media: <iframe height="520px" width="1600" src="https://www.youtube.com/embed/SWXhe6ycKrY" frameborder="10" data-autoplay allowfullscreen></iframe>
+  partner:
+  partner_url:
+  repo_url:
+  site_url:
+  seeking:
 -
   name: MuckRock
-  url: https://www.muckrock.com/
+  description:
   news: >
     MuckRock is a non-profit, collaborative news site that brings together journalists,
     researchers, activists, and regular citizens to request, analyze, and share government
     documents, making politics more transparent and democracies more informed.
 
     Looking for folks interested in triaging todos or talking charts.
+  partner:
+  partner_url: Muckrock
+  repo_url:
+  site_url: https://www.muckrock.com/
+  seeking:
