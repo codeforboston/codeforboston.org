@@ -7,13 +7,95 @@ type: inNavBar
 
 <h1 class="t-section-headline">Projects</h1>
 <section>
+    <h2 class="spacer-0">Current Projects</h2>
+    <div>
+            <p>The following initiatives are currently underway and 
+                accepting contributors. Projects 
+            are open to volunteers of all skillsets - if you're interested, just show up 
+            at one of our 
+            <a href="{{site.meetup_url}}">Tuesday evening hack nights!</a>!</p>
+    </div>
+    <div class="container">
+        {% for proj in site.data.projects.active %}
+        <div class="row project">
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-12">
+                        {% if proj.url %}<a href="{{proj.url}}" target="project">{% endif %}
+                            <h3>{{proj.name}}</h3>
+                        {% if proj.url %}</a>{% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 elevatorPitch">
+                        {{proj.elevatorPitch}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                {% if proj.repository %}
+                <div class="row">
+                    <div class="col-4">
+                        <strong>Code Repository</strong>
+                    </div>
+                    <div class="col-8">
+                        <a href="{{proj.repository}}" target="project">{{proj.repository}}</a>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="row">
+                    <div class="col-4">
+                        <strong>Technologies Used</strong>
+                    </div>
+                    <div class="col-8">
+                        {{proj.technologies}}
+                    </div>
+                </div>
+                {% if proj.partner %}
+                <div class="row">
+                    <div class="col-4">
+                        <strong>Partner Organization</strong>
+                    </div>
+                    <div class="col-8">
+                        {% if proj.partnerUrl %}<a href="{{proj.partnerUrl}}" target="project">{% endif %}
+                            {{proj.partner}}
+                        {% if proj.partnerUrl %}</a>{% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% if proj.lead %}
+                <div class="row">
+                    <div class="col-4">
+                        <strong>Lead</strong>
+                    </div>
+                    <div class="col-8">
+                        {% if proj.leadUrl %}<a href="{{proj.leadUrl}}" target="project">{% endif %}
+                            {{proj.lead}}
+                        {% if proj.leadUrl %}</a>{% endif %} 
+                    </div>
+                </div>
+                {% endif %}
+                <div class="row spacer-10">
+                    <div class="col-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <small>{{proj.news}}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row spacer-30">
+            <div class="col-12"></div>
+        </div>
+        
+        {% endfor %}
+    </div>
+</section>
+
+<section>
     <h2 class="">Past Projects</h2>
     {% for proj in site.data.projects.inactive %}
-        <a class="btn-secondary btn--small" href="{{proj.url}}">{{ proj.name }}</a>
-    {% endfor %}
-    <h2 class="">Open Projects</h2>
-    <p>Here is a sample of what we've been working on recently. Projects are open to all volunteers - if you're interested, just show up at one of our <a href="{{site.meetup_url}}">Tuesday evening hack nights!</a></p>
-    {% for proj in site.data.projects.active %}
         <a class="btn-secondary btn--small" href="{{proj.url}}">{{ proj.name }}</a>
     {% endfor %}
     <p>You can view all the projects we've ever done (in code) over on <a href="{{site.github_url}}">github</a>.</p>

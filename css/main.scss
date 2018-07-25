@@ -52,7 +52,41 @@ $on-laptop:        800px;
     }
 }
 
+// Custom Classes for codeforamerica.org
 
+.project {
+    padding: 10px; 
+    border-color:black; 
+    border-width: 1px; 
+    border-style: solid; 
+    background-color: #f5f5f5;
+}
+
+.em {
+    font-style: italic;
+}
+
+.small {
+    font-size: 80%;
+}
+
+.elevatorPitch {
+    line-height: 1.25;
+    @extend .small;
+    @extend .em;
+}
+
+.spacer-0 {
+    margin-bottom: 0px;
+}
+
+.spacer-10 {
+    margin-bottom: 10px;
+}
+
+.spacer-30 {
+    margin-bottom: 30px;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
