@@ -90,6 +90,22 @@ LiveReload address: http://127.0.0.1:35729
 - To add/update jobs, edit [`_data/jobs.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/jobs.yml)
 - To add/update events, edit [`_data/events/active.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/events/active.yml)
 - To add/update current projects, edit [`_data/projects/active.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/projects/active.yml)
+
+Current projects are displayed on the Dashboard at `http://www.codeforboston.org/projects`.  To encourage contribution both in their initatives and CFB, project leads are encouraged to regularly update the backing data with relevant status updates alongside each Meetup.  To do this, simply edit the data fields in the file indicated above and submit a PR to the site's authoritative repository at [https://github.com/codeforboston/codeforboston.org](https://github.com/codeforboston/codeforboston.org).  The following fields are supported:
+
+|Field Name|Description|
+|---|---|
+|`name`|Name of the project (required)|
+|`elevatorPitch`|Short blurb, 1-2 sentences, explaining the project's mission (required)|
+|`url`|URL of the project home page|
+|`repository`|URL of the project's code repository (GitHub, required)|
+|`partner`|Name of the organization acting as partner for this initiative|
+|`partnerUrl`|URL to the partner's home page|
+|`lead`|Name of the project lead|
+|`leadUrl`|URL to contact the project lead, either a page with contact info or a `mailto://` protocol URL|
+|`technologies`|List of technologies used, ie "Java, NodeJS, React, etc."|
+|`news`|Weekly summary of tasks needed and progress made.  Should ideally entice and motivate contributors to get involved.  A good place to post project needs as a request for volunteers.|
+
 - To add/update retired projects, edit [`_data/projects/inactive.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/projects/inactive.yml)
 - To edit normal site pages, edit the `html` or `markdown` files in `_pages/`
 - To edit the homepage content, edit `index.html`
