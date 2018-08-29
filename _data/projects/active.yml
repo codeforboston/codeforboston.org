@@ -1,57 +1,74 @@
 -
   name: Cliff Effects
-  description: description
-  news: >
-   **User testing was a success! Now we need to:**
-    * Discuss and implement changes needed from user feedback and create a better user experience
-    * Write unit, regression, and integration tests
-    * Strengthen our existing code and make it more maintainable
-    * Examine legislative documentation with people experienced with reading policy to check the validity of our benefit program calculations
+  elevatorPitch: >
+    This tool can help show how a change in income affects 
+    how much someone receives in public assistance 
+    from SNAP and Section 8 Housing Voucher benefits. 
+    It was designed for the case managers at Project 
+    Hope with the aim of helping to predict changes 
+    in their clients' benefits.
+  url: https://codeforboston.github.io/cliff-effects/
+  repository: https://github.com/codeforboston/cliff-effects
   partner: Project Hope
-  partner_url: http://www.prohope.org
-  repo_url: https://github.com/codeforboston/cliff-effects
-  site_url: https://codeforboston.github.io/cliff-effects/#/
-  seeking:
+  partnerUrl: http://www.prohope.org/
+#  lead: A wonderful person
+#  leadUrl: http://wonderfulperson.com
+  technologies: NodeJS, ReactJS
+  news: >
+    User testing was a success! Now we need to:
+    <ul>
+      <li>Discuss and implement changes needed from user feedback and create a better user experience</li>
+      <li>Write unit, regression, and integration tests</li>
+      <li>Strengthen our existing code and make it more maintainable</li>
+      <li>Examine legislative documentation with people experienced with reading policy to check the validity of our benefit program calculations</li>
 -
   name: My City Voice App
-  description:
+  elevatorPitch: >
+    An Alexa skill to answer questions about municipal 
+    services in Boston. Currently supports providing an 
+    address and asking for trash/recycling pick up days.
+  repository: https://github.com/codeforboston/voiceapp311
+  partner: City of Boston 311
+  partnerUrl: https://www.cityofboston.gov/311/
+  #lead: Another wonderful person
+  #leadUrl: http://wonderfulperson.com
+  technologies: Python, AWS
   news: >
-    Technologies: Python, AWS
-
-    * Updating data locations for trash day and snow parking
-    * Researching automated testing
-    * Developing new Alexa features
-      * Street sweeping days
-      * City of Boston status page
-  partner:
-  partner_url:
-  repo_url: https://github.com/codeforboston/voiceapp311
-  site_url:
-  seeking:
+    <ul>
+      <li>Updating data locations for trash day and snow parking</li>
+      <li>Researching automated testing</li>
+      <li>Developing new Alexa features</li>
+      <li>Street sweeping days</li>
+      <li>City of Boston status page</li>
+    </ul>
 -
   name: Interactive Film Documentary
-  url:
-  description:
-  news: >
+  elevatorPitch: > 
     Code and UI/UX for the invisible women of Delhi
-    React Native -- need support building around the YouTube API. 
-  media: <iframe height="520px" width="1600" src="https://www.youtube.com/embed/SWXhe6ycKrY" frameborder="10" data-autoplay allowfullscreen></iframe>
-  partner:
-  partner_url:
-  repo_url:
-  site_url:
-  seeking:
+  url: https://www.youtube.com/watch?v=SWXhe6ycKrY
+  repository: 
+  partner: 
+  partnerUrl: 
+  lead: Anandana Kapur
+  leadUrl: 
+  technologies: React Native, YouTube API
+  news: >
+    Need help integrating with the YouTube API
+  # What to do with this media?
+  # <iframe height="520px" width="1600" src="https://www.youtube.com/embed/SWXhe6ycKrY" frameborder="10" data-autoplay allowfullscreen></iframe>
 -
   name: MuckRock
-  description:
+  elevatorPitch: >
+    File, track, and share public records requests.
+  url: https://www.muckrock.com/
+  repository: https://github.com/MuckRock/muckrock
+  partner: 
+  partnerUrl: 
+ # lead: 
+ # leadUrl: 
+  technologies: Python, Django
   news: >
     MuckRock is a non-profit, collaborative news site that brings together journalists,
     researchers, activists, and regular citizens to request, analyze, and share government
     documents, making politics more transparent and democracies more informed.
-
     Looking for folks interested in triaging todos or talking charts.
-  partner:
-  partner_url: Muckrock
-  repo_url:
-  site_url: https://www.muckrock.com/
-  seeking:
