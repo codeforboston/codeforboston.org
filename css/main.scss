@@ -57,6 +57,10 @@ html {
   box-sizing: border-box;
 }
 
+strong {
+    font-weight:bold;
+}
+
 a {
     color: $blue-color;
     font-weight: bold;
@@ -66,15 +70,31 @@ a:hover {
     color: #4883a5;
 }
 
+h1 {
+    font-weight:bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
 .page-content section {
     margin-bottom: 4rem;
 }
 
 .centered {
-    width: 50em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 250px;
+    padding: 10px;
+}
+
+.break-word {
+    word-wrap: break-word;
 }
 
 
@@ -91,8 +111,8 @@ a:hover {
     padding: 1rem;
     position: relative;
 
-    ul li { 
-        display: inline; 
+    ul li {
+        display: inline;
         text-decoration: none;
         margin: 0 0.5rem;
 
@@ -168,10 +188,10 @@ a:hover {
 
 // Custom Classes for codeforamerica.org
 .project {
-    padding: 10px; 
-    border-color:black; 
-    border-width: 1px; 
-    border-style: solid; 
+    padding: 10px;
+    border-color:black;
+    border-width: 1px;
+    border-style: solid;
     background-color: #f5f5f5;
 }
     .em {
@@ -227,7 +247,7 @@ a:hover {
 
 
 /*** IMPORT PARTIALS FROM 'SASS_DIR' (defaults to '_sass') ***/
-@import 
+@import
     "base",
     "buttons",
     "lists",

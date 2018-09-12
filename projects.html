@@ -7,20 +7,20 @@ type: inNavBar
 
 <h1 class="t-section-headline">Our Work</h1>
 
-  <div class="centered">
+  <div class="container">
     <section>
       <h2 class="spacer-0">Current Projects</h2>
       <div>
-              <p>The following initiatives are currently underway and 
-                  accepting contributors. Projects 
-              are open to volunteers of all skillsets - if you're interested, just show up 
-              at one of our 
+              <p>The following initiatives are currently underway and
+                  accepting contributors. Projects
+              are open to volunteers of all skillsets - if you're interested, just show up
+              at one of our
               <a href="{{site.meetup_url}}">Tuesday evening hack nights!</a>!</p>
       </div>
       <div class="container">
           {% for proj in site.data.projects.active %}
           <div class="row project">
-              <div class="col-3">
+              <div class="col-sm-3 col-12">
                   <div class="row">
                       <div class="col-12">
                           {% if proj.url %}<a href="{{proj.url}}" target="project">{% endif %}
@@ -34,31 +34,31 @@ type: inNavBar
                       </div>
                   </div>
               </div>
-              <div class="col-9">
+              <div class="col-sm-9 col-12">
                   {% if proj.repository %}
                   <div class="row">
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                           <strong>Code Repository</strong>
                       </div>
-                      <div class="col-8">
+                      <div class="col-sm-8 col-12 break-word">
                           <a href="{{proj.repository}}" target="project">{{proj.repository}}</a>
                       </div>
                   </div>
                   {% endif %}
                   <div class="row">
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                           <strong>Technologies Used</strong>
                       </div>
-                      <div class="col-8">
+                      <div class="col-sm-8 col-12">
                           {{proj.technologies}}
                       </div>
                   </div>
                   {% if proj.partner %}
                   <div class="row">
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                           <strong>Partner Organization</strong>
                       </div>
-                      <div class="col-8">
+                      <div class="col-sm-8 col-12">
                           {% if proj.partnerUrl %}<a href="{{proj.partnerUrl}}" target="project">{% endif %}
                               {{proj.partner}}
                           {% if proj.partnerUrl %}</a>{% endif %}
@@ -67,13 +67,13 @@ type: inNavBar
                   {% endif %}
                   {% if proj.lead %}
                   <div class="row">
-                      <div class="col-4">
+                      <div class="col-sm-4 col-12">
                           <strong>Lead</strong>
                       </div>
-                      <div class="col-8">
+                      <div class="col-sm-8 col-12">
                           {% if proj.leadUrl %}<a href="{{proj.leadUrl}}" target="project">{% endif %}
                               {{proj.lead}}
-                          {% if proj.leadUrl %}</a>{% endif %} 
+                          {% if proj.leadUrl %}</a>{% endif %}
                       </div>
                   </div>
                   {% endif %}
@@ -90,7 +90,7 @@ type: inNavBar
           <div class="row spacer-30">
               <div class="col-12"></div>
           </div>
-          
+
           {% endfor %}
       </div>
   </section>
@@ -111,13 +111,13 @@ type: inNavBar
   <section>
     <h2>Identified a problem in your community?</h2>
     <p>Maybe Code for Boston can help and we can address that problem together. You can submit a problem statement to our core team using the button at the bottom of this page. Before you submit, please make sure your submission is in line with our few ground-rules below.</p>
- 
+
     <h3>How we take on new projects</h3>
     <ol>
-      <li>We prefer submissions in the form of problem statements. A good rule to start with is to phrase your idea in the form of: 
-      
+      <li>We prefer submissions in the form of problem statements. A good rule to start with is to phrase your idea in the form of:
+
         <blockquote> "How might we (thing you want to change here)". </blockquote>
-      
+
       For example: <em>"How might we better enable citizens to be knowledgable about local political issues"</em> we consider a <strong>good</strong> problem statement, but <em>"Let's build an iOS app to track how people use parks in our community."</em> we consider to be a <strong>poor</strong> problem statement. The reason behind this, is that we want to avoid starting from a point where we have already made many assumptions about the project. Who knows if an iOS app is the best choice, and what problem are you trying to address by tracking people's opinions? <br>
 
       <strong>If you already know what you want and you just need it built, we're not the group for you - we do not do "spec work" by any means.</strong></li>
