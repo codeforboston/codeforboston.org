@@ -132,32 +132,14 @@ h3 {
 /*** FOOTER ***/
 
 .site-footer {
-    padding: 30px 0;
     background: #e8e8e8;
     position: absolute;
-    margin-top: 6rem;
-    padding-top: 3rem;
     color: #111;
     box-sizing: border-box;
     right: 0;
     bottom: 0;
     left: 0;
 }
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-
-    .cfbcol-4 {
-        grid-column: span 4;
-    }
-}
-
 
 /*** PROJECTS PAGE ***/
 
