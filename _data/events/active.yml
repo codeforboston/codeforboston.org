@@ -1,8 +1,8 @@
-- name: Code for America Summit
-  url: http://www.cvent.com/events/code-for-america-summit-2018/event-summary-e12d85b157b94d69b80d8911cc641d36.aspx
-  date: May 30 to June 1 2018
-  location: Oakland, CA
+- name: Libre Planet 2019
+  url: https://libreplanet.org/2019/
+  date: March 23rd to March 24th 2019
+  location: MIT, Cambrdige, MA
   description: >
-    Use Code: BostonComp for 10% Off
-
-    http://www.codeforamerica.org/summit
+    LibrePlanet is an annual conference hosted by the Free Software Foundation for free software enthusiasts and anyone who cares about the intersection of technology and social justice. LibrePlanet brings together software developers, law and policy experts, activists, students and computer users to learn skills, celebrate free software accomplishments, and face challenges to software freedom. Newcomers are always welcome, and LibrePlanet 2019 will feature programming for all ages and experience levels.
+    LibrePlanet 2019's theme is “Trailblazing Free Software.” In 1983, the free software movement was born with the announcement of the GNU Project. FSF founder Richard Stallman saw the dangers of proprietary code from the beginning: when code was kept secret from users, they would be controlled by the technology they used, instead of vice versa. In contrast, free software emphasized a community-oriented philosophy of sharing code freely, enabling people to understand how the programs they used worked, to build off of each other's code, to pay it forward by sharing their own code, and to create useful software that treated users fairly.
+    When he identified control over one's own computer as a requirement for ethical, trustworthy computing, Stallman anticipated some of the most toxic aspects of today's proprietary software-filled world, including Digital Restrictions Management (DRM), bulk surveillance, and Service as a Software Substitute (SaaSS). With a new and growing generation of free software enthusiasts, we can take this conference as an opportunity to discuss both the present and the future of the free software movement. Using the Four Freedoms as a litmus test for ethical computing, we ask, "How will free software continue to bring to life trailblazing, principled new technologies and new approaches to the world?"
