@@ -9,18 +9,19 @@
     in their clients' benefits.
   url: https://codeforboston.github.io/cliff-effects/
   repository: https://github.com/codeforboston/cliff-effects
-  partner: Project Hope
-  partnerUrl: http://www.prohope.org/
+  partner:
+  partnerUrl:
 #  lead: A wonderful person
 #  leadUrl: http://wonderfulperson.com
   technologies: NodeJS, ReactJS
   news: >
-    User testing was a success! Now we need to:
     <ul>
-      <li>Discuss and implement changes needed from user feedback and create a better user experience</li>
+      <li>Examine our UX and UI</li>
       <li>Write unit, regression, and integration tests</li>
-      <li>Strengthen our existing code and make it more maintainable</li>
-      <li>Examine legislative documentation with people experienced with reading policy to check the validity of our benefit program calculations</li>
+      <li>Strengthen and question our existing code</li>
+      <li>Translate the app</li>
+      <li>Work with people familiar with regulation language to check on benefit calculations and process</li>
+    </ul>
 -
   name: My City Voice App
   elevatorPitch: >
