@@ -82,8 +82,8 @@ h3 {
     font-weight: bold;
 }
 
-.page-content section {
-    margin-bottom: 4rem;
+.page-content {
+    margin-bottom: 300px;
 }
 
 .centered {
@@ -133,6 +133,7 @@ h3 {
 
 .site-footer {
     background: #e8e8e8;
+    position: fixed;
     color: #111;
     box-sizing: border-box;
     right: 0;
