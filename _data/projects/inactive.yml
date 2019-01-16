@@ -6,8 +6,6 @@
     they’re getting from public assistance programs.
   url: https://codeforboston.github.io/cliff-effects/
   repository: https://github.com/codeforboston/cliff-effects
-  partner:
-  partnerUrl:
   technologies: NodeJS, ReactJS
   news: >
     <ul>
@@ -32,8 +30,6 @@
     Code and UI/UX for the invisible women of Delhi
   url: http://www.aashiyaan.org/
   repository: https://github.com/codeforboston/conversations
-  partner: 
-  partnerUrl: 
   lead: Anandana Kapur
   leadUrl: 
   technologies: React Native, YouTube API

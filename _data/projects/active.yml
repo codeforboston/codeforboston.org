@@ -5,8 +5,9 @@
     Currently supports providing an address and asking for trash/recycling pick
     up days.
   repository: https://github.com/codeforboston/voiceapp311
-  partner: City of Boston 311
-  partnerUrl: https://www.cityofboston.gov/311/
+  partner:
+    - name: City of Boston 311
+      url: https://www.cityofboston.gov/311/
   lead: Jamie Martini
   technologies: Python, AWS
   news: >
@@ -23,8 +24,11 @@
     A health resource web app that collects information about businesses and
     organizations that promote healthy lifestyle choices
   repository: https://github.com/codeforboston/communityconnect
-  partner: MGH Center for Community Health Improvement
-  partnerUrl: https://www.massgeneral.org/cchi/
+  partner:
+    - name: MGH Center for Community Health Improvement
+      url: https://www.massgeneral.org/cchi/
+    - name: MGH Revere HealthCare Center
+    - name: Revere CARES Coalition
   technologies: ReactJS
 -
   name: MuckRock
@@ -55,8 +59,8 @@
     A web app designed to assist immigrant service providers by allowing them to
     create a profile, update information, and share it with clients quickly.
   lead: Charla M. Burnett
-  partner: Refugees Welcome!
-  partnerUrl: https://refugeeswelcomehome.org
-  # partner: Refugees Welcome!
-  # partnerUrl: https://refugeeswelcomehome.org
+  partner:
+    - name: Refugees Welcome!
+      url: https://refugeeswelcomehome.org
+    - name: MapBox
   technologies: ReactJS, MapBox
