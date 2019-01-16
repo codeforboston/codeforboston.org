@@ -1,35 +1,14 @@
 -
-  name: Cliff Effects
+  name: Boston Info Voice App
   elevatorPitch: >
-    Prototyping a tool that can help case managers help 
-    their clients see how changes in pay can affect what 
-    they’re getting from public assistance programs.
-  url: https://codeforboston.github.io/cliff-effects/
-  repository: https://github.com/codeforboston/cliff-effects
-  partner:
-  partnerUrl:
-#  lead: A wonderful person
-#  leadUrl: http://wonderfulperson.com
-  technologies: NodeJS, ReactJS
-  news: >
-    <ul>
-      <li>Examine our UX and UI</li>
-      <li>Write unit, regression, and integration tests</li>
-      <li>Strengthen and question our existing code</li>
-      <li>Translate the app</li>
-      <li>Validate benefit logic with with people familiar with regulation language and create a process for adding new benefits</li>
-    </ul>
--
-  name: My City Voice App
-  elevatorPitch: >
-    An Alexa skill to answer questions about municipal 
-    services in Boston. Currently supports providing an 
-    address and asking for trash/recycling pick up days.
+    An Alexa skill to answer questions about municipal services in Boston.
+    Currently supports providing an address and asking for trash/recycling pick
+    up days.
   repository: https://github.com/codeforboston/voiceapp311
-  partner: City of Boston 311
-  partnerUrl: https://www.cityofboston.gov/311/
-  #lead: Another wonderful person
-  #leadUrl: http://wonderfulperson.com
+  partner:
+    - name: City of Boston 311
+      url: https://www.cityofboston.gov/311/
+  lead: Jamie Martini
   technologies: Python, AWS
   news: >
     <ul>
@@ -40,33 +19,48 @@
       <li>City of Boston status page</li>
     </ul>
 -
-  name: Interactive Film Documentary
-  elevatorPitch: > 
-    Code and UI/UX for the invisible women of Delhi
-  url: https://www.youtube.com/watch?v=SWXhe6ycKrY
-  repository: 
-  partner: 
-  partnerUrl: 
-  lead: Anandana Kapur
-  leadUrl: 
-  technologies: React Native, YouTube API
-  news: >
-    Need help integrating with the YouTube API
-  # What to do with this media?
-  # <iframe height="520px" width="1600" src="https://www.youtube.com/embed/SWXhe6ycKrY" frameborder="10" data-autoplay allowfullscreen></iframe>
+  name: Community Connect
+  elevatorPitch: >-
+    A health resource web app that collects information about businesses and
+    organizations that promote healthy lifestyle choices
+  repository: https://github.com/codeforboston/communityconnect
+  partner:
+    - name: MGH Center for Community Health Improvement
+      url: https://www.massgeneral.org/cchi/
+    - name: MGH Revere HealthCare Center
+    - name: Revere CARES Coalition
+  technologies: ReactJS
 -
   name: MuckRock
   elevatorPitch: >
     File, track, and share public records requests.
   url: https://www.muckrock.com/
   repository: https://github.com/MuckRock/muckrock
-  partner: 
-  partnerUrl: 
- # lead: 
- # leadUrl: 
+  lead: Mike Morisy
   technologies: Python, Django
   news: >
     MuckRock is a non-profit, collaborative news site that brings together journalists,
     researchers, activists, and regular citizens to request, analyze, and share government
     documents, making politics more transparent and democracies more informed.
     Looking for folks interested in triaging todos or talking charts.
+-
+  name: Safe Drinking Water Project
+  repository: https://github.com/codeforboston/safe-water
+  elevatorPitch: >-
+    An exploratory data project to predict safe drinking water violations. It
+    uses the EPA's Safe Drinking Water Information System and the EnviroFacts
+    API.
+  lead: Andrew Seeder
+  technologies: Pandas (Python), R
+-
+  name: Migrant Service Map
+  repository: https://github.com/codeforboston/migrant_service_map
+  elevatorPitch: >-
+    A web app designed to assist immigrant service providers by allowing them to
+    create a profile, update information, and share it with clients quickly.
+  lead: Charla M. Burnett
+  partner:
+    - name: Refugees Welcome!
+      url: https://refugeeswelcomehome.org
+    - name: MapBox
+  technologies: ReactJS, MapBox

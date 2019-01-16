@@ -59,9 +59,17 @@ type: inNavBar
                           <strong>Partner Organization</strong>
                       </div>
                       <div class="col-sm-8 col-12">
-                          {% if proj.partnerUrl %}<a href="{{proj.partnerUrl}}" target="project">{% endif %}
-                              {{proj.partner}}
-                          {% if proj.partnerUrl %}</a>{% endif %}
+                          {% for partner in proj.partner %}
+                          <div>
+                              {% if partner.url %}
+                              <a href="{{ partner.url }}" target="project" >
+                                  {{ partner.name }}
+                              </a>
+                              {% else %}
+                              {{ partner.name }}
+                              {% endif %}
+                          </div>
+                          {% endfor %}
                       </div>
                   </div>
                   {% endif %}
