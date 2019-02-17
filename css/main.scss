@@ -49,7 +49,6 @@ body {
   position: relative;
   margin: 0;
   padding-bottom: 12rem;
-  min-height: 100%;
 }
 
 html {
@@ -83,13 +82,13 @@ h3 {
 }
 
 .page-content {
-    margin-bottom: 300px;
+    margin-bottom: 50px;
 }
 
 .centered {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 250px;
+    margin-bottom: 50px;
     padding: 10px;
 }
 
@@ -132,12 +131,12 @@ h3 {
 /*** FOOTER ***/
 
 .site-footer {
+    border-top: 5px solid #65B3E0;
     background: #e8e8e8;
-    position: fixed;
+    padding: 20px 0px 20px 0px;
     color: #111;
     box-sizing: border-box;
     right: 0;
-    bottom: 0;
     left: 0;
 }
 
