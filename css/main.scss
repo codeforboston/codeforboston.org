@@ -156,6 +156,7 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
+    margin-bottom: 30px;
 
     .cfbcol-4 {
         grid-column: span 4;
