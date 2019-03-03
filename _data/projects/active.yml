@@ -64,3 +64,16 @@
       url: https://refugeeswelcomehome.org
     - name: MapBox
   technologies: ReactJS, MapBox
+-
+  name: Windfall Awareness project
+  repository: TBD
+  elevatorPitch: >-
+    A tool to help retirees affected by Social Security Windfall Elimination Program (WEP),
+    a program which can reduce SSA benefits by up to 50% for certain public servants.
+    This tool will help help affected workers better plan retirement and self-advocate
+    with the Social Security Administration.
+  lead: Annie Lacourt
+  partner:
+    - name: TBD
+      url: TBD
+  technologies: TBD
