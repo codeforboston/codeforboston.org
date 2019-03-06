@@ -85,6 +85,18 @@ type: inNavBar
                       </div>
                   </div>
                   {% endif %}
+                  {% if proj.slackChannel %}
+                  <div class="row">
+                      <div class="col-sm-4 col-12">
+                          <strong>Channel</strong>
+                      </div>
+                      <div class="col-sm-8 col-12">
+                          <a href="https://slack.com/app_redirect?cteam={{ site.slack_team_id }}&channel={{ proj.slackChannel}}">
+                              #{{ proj.slackChannel }}
+                          </a>
+                      </div>
+                  </div>
+                  {% endif %}
                   <div class="row spacer-10">
                       <div class="col-12"></div>
                   </div>
