@@ -1,0 +1,78 @@
+.hero {
+    width: 100%;
+    height: 100%;
+    background: url('/img/hackathon_hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    // text-align: center;
+}
+
+.hero h5 {
+    color: white;
+    text-shadow: 2px 2px #333;
+
+}
+
+span {
+    color: #fff;
+}
+
+.hero p {
+    max-width: none;
+    font-size: 24px;
+    text-shadow: 2px 2px #333;
+    font-weight: bold;
+}
+
+.hero h1 {
+    // font-size: 
+}
+
+.hero a {
+    color: #fff;
+}
+
+.hero a:hover {
+    color: rgb(224, 224, 224)
+}
+
+
+.hero h2 {
+    font-size: 56px;
+    text-shadow: 2px 2px #333;
+
+}
+
+.hero h3 {
+    font-size: 38px;
+    text-shadow: 2px 2px #333;
+
+}
+
+.blue-bg {
+    background-color: #65B3E0;
+    padding: 5px 10px 5px 10px;
+    line-height: 60px;
+}
+
+.red-bg {
+    background-color: #CE324A !important;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 25px;
+
+}
+
+.faq-item {
+    h5 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+.sponsor-image {
+    width: 100%;
+    align-content: center;
+    margin-bottom: 20px;
+}
