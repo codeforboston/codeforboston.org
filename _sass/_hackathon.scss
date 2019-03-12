@@ -19,6 +19,10 @@ span {
     color: #fff;
 }
 
+b {
+    font-weight: 600;
+}
+
 .hero p {
     max-width: none;
     font-size: 24px;
@@ -68,6 +72,12 @@ span {
     h5 {
         margin-top: 20px;
         margin-bottom: 5px;
+    }
+}
+
+.schedule{
+    .day {
+        font-size: 16px;
     }
 }
 
