@@ -44,7 +44,7 @@ b {
 
 
 .hero h2 {
-    font-size: 56px;
+    font-size: 50px;
     text-shadow: 2px 2px #333;
 
 }
@@ -78,6 +78,19 @@ b {
 .schedule{
     .day {
         font-size: 16px;
+    }
+}
+
+.navbar-toggler{
+    float: right;
+}
+
+.navbar {
+    width: 100%;
+
+    .navbar-collapse {
+        float: right;
+        margin: 10px;
     }
 }
 
