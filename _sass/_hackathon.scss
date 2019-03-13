@@ -1,59 +1,43 @@
 .hero {
     width: 100%;
     height: 100%;
-    background: url('/img/hackathon_hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    // text-align: center;
-}
-
-.hero h5 {
-    color: white;
-    text-shadow: 2px 2px #333;
-
-}
-
-span {
-    color: #fff;
 }
 
 b {
     font-weight: 600;
 }
 
-.hero p {
-    max-width: none;
-    font-size: 24px;
-    text-shadow: 2px 2px #333;
-    font-weight: bold;
+.navbar-brand {
+    font-size: 18px;
+    padding: 0px;
 }
 
-.hero h1 {
-    // font-size: 
-}
+.hero {
+    p {
+        max-width: none;
+        font-size: 24px;
+    }
 
-.hero a {
-    color: #fff;
-}
+    h2 {
+        font-size: 50px;
+    }
 
-.hero a:hover {
-    color: rgb(224, 224, 224)
-}
+    h3 {
+        font-size: 30px;
+    }
 
+    h5 {
+        color: black;
+        font-size: 24px;
+    }
 
-.hero h2 {
-    font-size: 50px;
-    text-shadow: 2px 2px #333;
-
-}
-
-.hero h3 {
-    font-size: 38px;
-    text-shadow: 2px 2px #333;
 
 }
+
 
 .blue-bg {
     background-color: #65B3E0;
@@ -75,13 +59,13 @@ b {
     }
 }
 
-.schedule{
+.schedule {
     .day {
         font-size: 16px;
     }
 }
 
-.navbar-toggler{
+.navbar-toggler {
     float: right;
 }
 
