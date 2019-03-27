@@ -69,7 +69,7 @@
     - name: MapBox
   technologies: ReactJS, MapBox
   slackChannel: migrantservicemap
-  -
+ -
   name: Plogalong
   repository: https://github.com/codeforboston/plogalong
   elevatorPitch: >-
