@@ -69,11 +69,14 @@
     - name: MapBox
   technologies: ReactJS, MapBox
   slackChannel: migrantservicemap
- -
+-
   name: Plogalong
   repository: https://github.com/codeforboston/plogalong
   elevatorPitch: >-
-    When you plog, you pick up trash as you go about your daily life... jogging, hiking, or simply walking down the street. Plogalong helps you track your plogs, connect with nearby ploggers, earn badges, and access local discounts.
+    When you plog, you pick up trash as you go about your daily life... jogging,
+    hiking, or simply walking down the street. Plogalong helps you track your
+    plogs, connect with nearby ploggers, earn badges, and access local
+    discounts.
   lead: Eva Kaniasty and Brian Sanders
   partner:
     - name: Plogging Boston
