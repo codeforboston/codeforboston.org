@@ -21,13 +21,13 @@ $grey-color: #828282;
 $black-color: #111111;
 
 $blue-color: #65B3E0;
-$red-color: #CE324A;
+$purple-color: #291443;
 
 
 /*** COLOR ALIAS ***/
 $text-color:       $black-color;
 $background-color: $white-color;
-$brand-color:      $red-color;
+$brand-color:      $purple-color;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 15%);
 
@@ -105,7 +105,7 @@ h3 {
 }
 
 .site-header {
-    border-top: 5px solid #CE324A;
+    border-top: 5px solid $brand-color;
     border-bottom: 1px solid #e8e8e8;
     min-height: 56px;
     padding: 1rem;
