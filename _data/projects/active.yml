@@ -70,6 +70,19 @@
   technologies: ReactJS, MapBox
   slackChannel: migrantservicemap
 -
+  name: Windfall Awareness project
+  repository: TBD
+  elevatorPitch: >-
+    A tool to help retirees affected by Social Security Windfall Elimination Program (WEP),
+    a program which can reduce SSA benefits by up to 50% for certain public servants.
+    This tool will help help affected workers better plan retirement and self-advocate
+    with the Social Security Administration.
+  lead: Annie Lacourt
+  partner:
+    - name: Office of Seth Moulton
+      url: https://moulton.house.gov/
+  technologies: TBD
+-
   name: Plogalong
   repository: https://github.com/codeforboston/plogalong
   elevatorPitch: >-
