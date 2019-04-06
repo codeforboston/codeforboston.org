@@ -1,0 +1,85 @@
+.hero {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+b {
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    padding: 0px;
+}
+
+.hero {
+    p {
+        max-width: none;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h5 {
+        color: black;
+        font-size: 24px;
+    }
+
+
+}
+
+
+.blue-bg {
+    background-color: #65B3E0;
+    padding: 5px 10px 5px 10px;
+    line-height: 60px;
+}
+
+.red-bg {
+    background-color: #CE324A !important;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 25px;
+
+}
+
+.faq-item {
+    h5 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+.schedule {
+    .day {
+        font-size: 16px;
+    }
+}
+
+.navbar-toggler {
+    float: right;
+}
+
+.navbar {
+    width: 100%;
+
+    .navbar-collapse {
+        float: right;
+        margin: 10px;
+    }
+}
+
+.sponsor-image {
+    width: 100%;
+    align-content: center;
+    margin-bottom: 20px;
+}

@@ -10,6 +10,7 @@
       url: https://www.cityofboston.gov/311/
   lead: Jamie Martini
   technologies: Python, AWS
+  slackChannel: mycity
   news: >
     <ul>
       <li>Updating data locations for trash day and snow parking</li>
@@ -30,6 +31,7 @@
     - name: MGH Revere HealthCare Center
     - name: Revere CARES Coalition
   technologies: ReactJS
+  slackChannel: community-connect
 -
   name: MuckRock
   elevatorPitch: >
@@ -38,6 +40,7 @@
   repository: https://github.com/MuckRock/muckrock
   lead: Mike Morisy
   technologies: Python, Django
+  slackChannel: muckrock
   news: >
     MuckRock is a non-profit, collaborative news site that brings together journalists,
     researchers, activists, and regular citizens to request, analyze, and share government
@@ -52,6 +55,7 @@
     API.
   lead: Andrew Seeder
   technologies: Pandas (Python), R
+  slackChannel: water
 -
   name: Migrant Service Map
   repository: https://github.com/codeforboston/migrant_service_map
@@ -64,6 +68,7 @@
       url: https://refugeeswelcomehome.org
     - name: MapBox
   technologies: ReactJS, MapBox
+  slackChannel: migrantservicemap
 -
   name: Windfall Awareness project
   repository: TBD
@@ -77,3 +82,17 @@
     - name: Office of Seth Moulton
       url: https://moulton.house.gov/
   technologies: TBD
+-
+  name: Plogalong
+  repository: https://github.com/codeforboston/plogalong
+  elevatorPitch: >-
+    When you plog, you pick up trash as you go about your daily life... jogging,
+    hiking, or simply walking down the street. Plogalong helps you track your
+    plogs, connect with nearby ploggers, earn badges, and access local
+    discounts.
+  lead: Eva Kaniasty and Brian Sanders
+  partner:
+    - name: Plogging Boston
+      url: https://www.plogalong.com
+  technologies: ReactNative, Javascript
+  slackChannel: plogalong
