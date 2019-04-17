@@ -4,12 +4,6 @@ This is a pretty standard [Jekyll](https://jekyllrb.com/) website at http://www.
 
 We have a [Guide for New Members](http://www.codeforboston.org/new-members/).  Please be sure to read our [Code of Conduct](http://www.codeforboston.org/code-of-conduct/).  CFB is a [Code for America Brigade](http://www.codeforamerica.org/brigade/about).
 
-## First time? Download some dependencies.
-This repository makes use of [reveal.js](https://github.com/hakimel/reveal.js). In order to synchronize the dependencies within this repository, run the following:
-```bash
-git submodule update --init
-```
-
 ## I want to build the website locally. How do I do that?
 - Ensure you have Ruby installed on your system and available from your system `$PATH`.  Instructions will vary per environment but are available [here](https://www.ruby-lang.org/en/documentation/installation/).
 
