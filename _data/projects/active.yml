@@ -71,7 +71,7 @@
   slackChannel: migrantservicemap
 -
   name: Windfall Awareness project
-  repository: TBD
+  repository: https://github.com/codeforboston/windfall-elimination
   elevatorPitch: >-
     A tool to help retirees affected by Social Security Windfall Elimination Program (WEP),
     a program which can reduce SSA benefits by up to 50% for certain public servants.
@@ -81,7 +81,8 @@
   partner:
     - name: Office of Seth Moulton
       url: https://moulton.house.gov/
-  technologies: TBD
+  technologies: Javascript, ObservableHQ, ReactJS, Gatsby
+  slackChannel: windfall-awareness
 -
   name: Plogalong
   repository: https://github.com/codeforboston/plogalong
