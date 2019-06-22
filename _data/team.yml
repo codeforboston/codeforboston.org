@@ -3,6 +3,10 @@
   image: 
   email: thadk@codeforboston.org
 
+- name: Annie LaCourt
+  image:
+  email: annie@codeforboston.org
+
 - name: Liani Lye
   image: 
   email: liani@codeforboston.org
@@ -26,3 +30,7 @@
 - name: Matt Zagaja
   image: matt-zagaja.jpg
   email: mattz@codeforboston.org
+
+- name: Brian Sanders
+  image: brian-sanders.jpg
+  email: brian@codeforboston.org

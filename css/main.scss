@@ -21,13 +21,13 @@ $grey-color: #828282;
 $black-color: #111111;
 
 $blue-color: #65B3E0;
-$red-color: #CE324A;
+$purple-color: #291443;
 
 
 /*** COLOR ALIAS ***/
 $text-color:       $black-color;
 $background-color: $white-color;
-$brand-color:      $red-color;
+$brand-color:      $purple-color;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 15%);
 
@@ -49,7 +49,6 @@ body {
   position: relative;
   margin: 0;
   padding-bottom: 12rem;
-  min-height: 100%;
 }
 
 html {
@@ -82,14 +81,15 @@ h3 {
     font-weight: bold;
 }
 
-.page-content section {
-    margin-bottom: 4rem;
+.page-content {
+    margin-bottom: 50px;
 }
 
 .centered {
+    width: 50em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 250px;
+    margin-bottom: 50px;
     padding: 10px;
 }
 
@@ -105,7 +105,7 @@ h3 {
 }
 
 .site-header {
-    border-top: 5px solid #CE324A;
+    border-top: 5px solid $brand-color;
     border-bottom: 1px solid #e8e8e8;
     min-height: 56px;
     padding: 1rem;
@@ -132,11 +132,12 @@ h3 {
 /*** FOOTER ***/
 
 .site-footer {
+    border-top: 5px solid #65B3E0;
     background: #e8e8e8;
+    padding: 20px 0px 20px 0px;
     color: #111;
     box-sizing: border-box;
     right: 0;
-    bottom: 0;
     left: 0;
 }
 
@@ -155,6 +156,7 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
+    margin-bottom: 30px;
 
     .cfbcol-4 {
         grid-column: span 4;
@@ -236,5 +238,6 @@ h3 {
     "page-link-nav",
     "components",
     "jobs",
+    "hackathon",
     "syntax-highlighting"
 ;
