@@ -97,3 +97,23 @@
       url: https://www.plogalong.com
   technologies: ReactNative, Javascript
   slackChannel: plogalong
+-
+  name: Clean Slate
+  elevatorPitch: >
+    With Citizens for Juvenile Justice, we're working to:
+    <ul>
+      <li>Give people a chance at work and housing by helping them expunge their criminal record</li>
+      <li>Advocate for changes to the very stringent expungement regulations</li>
+    </ul>
+  partner:
+    - name: Citizens for Juvenile Justice
+      url: https://www.cfjj.org/
+  lead: Michelle Bernstein, Edwin Chalu, Will Pfeffer, and others
+  slackChannel: clean-slate
+  news: >
+    Current Goals:
+    <ul>
+      <li>Data analysis to estimate number of expungable records</li>
+      <li>User research for an online expungement form</li>
+    </ul>
+
