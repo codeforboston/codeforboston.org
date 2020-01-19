@@ -1,7 +1,12 @@
-- name: Libre Planet 2019
-  url: https://libreplanet.org/2019/
-  date: March 23rd to March 24th 2019
-  location: MIT, Cambrdige, MA
+ - name: Code for America Summit
+  url: https://www.codeforamerica.org/summit
+  date: March 11 - 13, 2020
+  location: Washington, D.C.
   description: >
-    <p>LibrePlanet is an annual conference hosted by the Free Software Foundation for free software enthusiasts and anyone who cares about the intersection of technology and social justice. LibrePlanet brings together software developers, law and policy experts, activists, students and computer users to learn skills, celebrate free software accomplishments, and face challenges to software freedom. Newcomers are always welcome, and LibrePlanet 2019 will feature programming for all ages and experience levels.
-    
+    <p>Our annual three-day event is an opportunity for public servants, advocates, entrepreneurs, technologists, and volunteers to get together in one room and break through some of government’s biggest challenges. In 2020, we’ll be focusing on: Design + Delivery; Civic Innovation + Data; Operations + Management; and Technology + Policy.</p>
+- name: BARI Spring Conference 2020
+  url: https://cssh.northeastern.edu/bostonarearesearchinitiative/spring-conference-2020/
+  date: April 24, 2020
+  location: Cambridge, MA
+  description: >
+    <p>BARI’s annual conference is a unique forum for greater Boston’s civic data ecosystem—spanning the public sector, private sector, non-profits, community leaders, and academia—to explore how data and technology can be used to better understand and serve our communities. “Smart cities” should be about more than just efficiency and fancy new tools; it is about partnering across institutions and communities to collaboratively transform all of our cities and towns into the places we want them to be.</p>
