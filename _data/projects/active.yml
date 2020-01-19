@@ -57,19 +57,6 @@
   technologies: Pandas (Python), R
   slackChannel: water
 -
-  name: Migrant Service Map
-  repository: https://github.com/codeforboston/migrant_service_map
-  elevatorPitch: >-
-    A web app designed to assist immigrant service providers by allowing them to
-    create a profile, update information, and share it with clients quickly.
-  lead: Charla M. Burnett
-  partner:
-    - name: Refugees Welcome!
-      url: https://refugeeswelcomehome.org
-    - name: MapBox
-  technologies: ReactJS, MapBox
-  slackChannel: migrantservicemap
--
   name: Windfall Awareness project
   repository: https://github.com/codeforboston/windfall-elimination
   elevatorPitch: >-
