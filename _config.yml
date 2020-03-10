@@ -9,6 +9,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  rooms:
+    title: Rooms
+    output: true
 email: hello@codeforboston.org
 description: 'Part of the Code for America Brigade network, we are a volunteer group
   of developers, designers, data geeks, and citizen activists who use creative technology
@@ -26,3 +29,5 @@ reveal_path: /reveal.js/
 reveal_theme_path: /reveal.js/css/theme/
 reveal_theme: sky.css
 slack_team_id: T0556DP9Y
+plugins:
+  - jekyll-redirect-from
