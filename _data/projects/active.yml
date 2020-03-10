@@ -11,6 +11,7 @@
   lead: Jamie Martini
   technologies: Python, AWS
   slackChannel: mycity
+  hangoutsSlug: bostoninfo
   news: >
     <ul>
       <li>Updating data locations for trash day and snow parking</li>
@@ -41,6 +42,7 @@
   lead: Mike Morisy
   technologies: Python, Django
   slackChannel: muckrock
+  hangoutsSlug: muckrock
   news: >
     MuckRock is a non-profit, collaborative news site that brings together journalists,
     researchers, activists, and regular citizens to request, analyze, and share government
@@ -56,6 +58,7 @@
   lead: Andrew Seeder
   technologies: Pandas (Python), R
   slackChannel: water
+  hangoutsSlug: drinkingwater
 -
   name: Windfall Awareness project
   repository: https://github.com/codeforboston/windfall-elimination
@@ -70,6 +73,7 @@
       url: https://moulton.house.gov/
   technologies: Javascript, ObservableHQ, ReactJS, Gatsby
   slackChannel: windfall-awareness
+  hangoutsSlug: windfallawareness
 -
   name: Plogalong
   repository: https://github.com/codeforboston/plogalong
@@ -84,6 +88,7 @@
       url: https://www.plogalong.com
   technologies: ReactNative, Javascript
   slackChannel: plogalong
+  hangoutsSlug: plogalong
 -
   name: Clean Slate
   elevatorPitch: >
@@ -97,6 +102,7 @@
       url: https://www.cfjj.org/
   lead: Michelle Bernstein, Edwin Chalu, Will Pfeffer, and others
   slackChannel: clean-slate
+  hangoutsSlug: cleanslate
   news: >
     Current Goals:
     <ul>

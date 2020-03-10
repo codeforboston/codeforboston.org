@@ -91,8 +91,20 @@ type: inNavBar
                           <strong>Channel</strong>
                       </div>
                       <div class="col-sm-8 col-12">
-                          <a href="https://slack.com/app_redirect?cteam={{ site.slack_team_id }}&channel={{ proj.slackChannel}}">
+                          <a href="https://cfb-public.slack.com/app_redirect?cteam={{ site.slack_team_id }}&channel={{ proj.slackChannel}}">
                               #{{ proj.slackChannel }}
+                          </a>
+                      </div>
+                  </div>
+                  {% endif %}
+                  {% if proj.hangoutsSlug or proj.hangoutsLink %}
+                  <div class="row">
+                      <div class="col-sm-4 col-12">
+                          <strong>Hangouts</strong>
+                      </div>
+                      <div class="col-sm-8 col-12">
+                          <a href="{% if proj.hangoutsSlug %}/rooms/{{ proj.hangoutsSlug }}{% else %}{{ proj.hangoutsLink }}{% endif %}">
+                              Join
                           </a>
                       </div>
                   </div>
