@@ -1,4 +1,4 @@
 ---
 title: Minuteman (General Usage)
-redirect_to: https://meet.google.com/cdv-hrdm-hnv
+redirect_to: https://meet.google.com/cin-icfc-pan
 ---
