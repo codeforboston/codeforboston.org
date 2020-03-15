@@ -16,7 +16,7 @@ type: inNavBar
         {% for event in site.data.events.active %}
             <h3><a href="{{event.url}}">{{ event.name }}- {{ event.date }}</a></h3>
             <p><i>{{ event.location }}</i></p>
-            <p>{{ event.description }}</p><br>
+            <p>{{ event.description | markdownify }}</p><br>
         {% endfor %}
     </section>
 </div>
