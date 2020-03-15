@@ -12,14 +12,6 @@
   technologies: Python, AWS
   slackChannel: mycity
   hangoutsSlug: bostoninfo
-  news: >
-    <ul>
-      <li>Updating data locations for trash day and snow parking</li>
-      <li>Researching automated testing</li>
-      <li>Developing new Alexa features</li>
-      <li>Street sweeping days</li>
-      <li>City of Boston status page</li>
-    </ul>
 -
   name: Community Connect
   elevatorPitch: >-
@@ -91,22 +83,19 @@
   hangoutsSlug: plogalong
 -
   name: Clean Slate
-  elevatorPitch: >
+  elevatorPitch: |
     With Citizens for Juvenile Justice, we're working to:
-    <ul>
-      <li>Give people a chance at work and housing by helping them expunge their criminal record</li>
-      <li>Advocate for changes to the very stringent expungement regulations</li>
-    </ul>
+
+    * Give people a chance at work and housing by helping them expunge their criminal record
+    * Advocate for changes to the very stringent expungement regulations
   partner:
     - name: Citizens for Juvenile Justice
       url: https://www.cfjj.org/
   lead: Michelle Bernstein, Edwin Chalu, Will Pfeffer, and others
   slackChannel: clean-slate
   hangoutsSlug: cleanslate
-  news: >
+  news: |
     Current Goals:
-    <ul>
-      <li>Data analysis to estimate number of expungable records</li>
-      <li>User research for an online expungement form</li>
-    </ul>
 
+    * Data analysis to estimate number of expungable records
+    * User research for an online expungement form

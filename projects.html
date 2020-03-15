@@ -30,7 +30,7 @@ type: inNavBar
                   </div>
                   <div class="row">
                       <div class="col-12 elevatorPitch">
-                          {{proj.elevatorPitch}}
+                          {{ proj.elevatorPitch | markdownify }}
                       </div>
                   </div>
               </div>
@@ -114,7 +114,7 @@ type: inNavBar
                   </div>
                   <div class="row">
                       <div class="col-12">
-                          <small>{{proj.news}}</small>
+                          <small>{{proj.news | markdownify }}</small>
                       </div>
                   </div>
               </div>
