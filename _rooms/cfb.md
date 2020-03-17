@@ -1,4 +1,4 @@
 ---
 title: Announcements and Orientation
-redirect_to: https://zoom.us/webinar/register/WN_WiOJTqrOQuWzvToJMqi2RA
+redirect_to: https://codeforamerica.zoom.us/meeting/register/vpcoc-mgpz4ohJM0OeUnvIrUO8ODmzB7Xw
 ---
