@@ -44,9 +44,7 @@
   name: Safe Drinking Water Project
   repository: https://github.com/codeforboston/safe-water
   elevatorPitch: >-
-    An exploratory data project to predict safe drinking water violations. It
-    uses the EPA's Safe Drinking Water Information System and the EnviroFacts
-    API.
+    We are predicting and visualizing the presence of hazardous drinking and surface water contaminants. Currently, we help the Charles River Watershed Association deploying their predictive model, as well as visualizing and communicating their data.
   lead: Andrew Seeder
   technologies: Pandas (Python), R
   slackChannel: water
