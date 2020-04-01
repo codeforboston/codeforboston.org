@@ -52,6 +52,20 @@
   slackChannel: windfall-awareness
   hangoutsSlug: windfallawareness
 -
+  name: Harm Reduction
+  elevatorPitch: >-
+    We are developing a tool for the communities of Chelsea, Revere, Saugus, and Winthrop to 
+    improve multi-sector and multi-jurisdictional coordination for outreach, response, and 
+    recovery to overdoses. We will do this by improving the efficiency of existing systems, 
+    speeding up access to critical data, and aiding in cross-jurisdictional  communication, 
+    in order to help these four communities save lives.
+  lead: Maia Materman
+  partner: 
+    - name: City of Revere Substance Use Disorder Initiatives (SUDI) office
+      url: https://www.revere.org/departments/substance-use-disorder-initiatives
+  slackChannel: harm-reduction
+  hangoutsSlug: harmreduction
+-
   name: Plogalong
   repository: https://github.com/codeforboston/plogalong
   elevatorPitch: >-
