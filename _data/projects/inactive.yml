@@ -1,20 +1,25 @@
 -
+  name: Community Connect
+  elevatorPitch: >-
+    A health resource web app that collects information about businesses and
+    organizations that promote healthy lifestyle choices
+  repository: https://github.com/codeforboston/communityconnect
+  partner:
+    - name: MGH Center for Community Health Improvement
+      url: https://www.massgeneral.org/cchi/
+    - name: MGH Revere HealthCare Center
+    - name: Revere CARES Coalition
+  technologies: ReactJS
+  slackChannel: community-connect
+-
   name: Cliff Effects
   elevatorPitch: >
-    Prototyping a tool that can help case managers help 
-    their clients see how changes in pay can affect what 
+    Prototyping a tool that can help case managers help
+    their clients see how changes in pay can affect what
     they’re getting from public assistance programs.
   url: https://codeforboston.github.io/cliff-effects/
   repository: https://github.com/codeforboston/cliff-effects
   technologies: NodeJS, ReactJS
-  news: >
-    <ul>
-      <li>Examine our UX and UI</li>
-      <li>Write unit, regression, and integration tests</li>
-      <li>Strengthen and question our existing code</li>
-      <li>Translate the app</li>
-      <li>Validate benefit logic with with people familiar with regulation language and create a process for adding new benefits</li>
-    </ul>
 -
   name: Ungentry
   url: https://github.com/codeforboston/ungentry
@@ -26,12 +31,12 @@
   url: https://github.com/codeforboston/cornerwise
 -
   name: Interactive Film Documentary
-  elevatorPitch: > 
+  elevatorPitch: >
     Code and UI/UX for the invisible women of Delhi
   url: http://www.aashiyaan.org/
   repository: https://github.com/codeforboston/conversations
   lead: Anandana Kapur
-  leadUrl: 
+  leadUrl:
   technologies: React Native, YouTube API
 -
   name: Finda

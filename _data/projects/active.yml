@@ -13,19 +13,6 @@
   slackChannel: mycity
   hangoutsSlug: bostoninfo
 -
-  name: Community Connect
-  elevatorPitch: >-
-    A health resource web app that collects information about businesses and
-    organizations that promote healthy lifestyle choices
-  repository: https://github.com/codeforboston/communityconnect
-  partner:
-    - name: MGH Center for Community Health Improvement
-      url: https://www.massgeneral.org/cchi/
-    - name: MGH Revere HealthCare Center
-    - name: Revere CARES Coalition
-  technologies: ReactJS
-  slackChannel: community-connect
--
   name: MuckRock
   elevatorPitch: >
     File, track, and share public records requests.
