@@ -31,8 +31,8 @@
   name: Safe Water Project
   repository: https://github.com/codeforboston/safe-water
   elevatorPitch: >-
-    We are predicting and visualizing the presence of hazardous drinking and surface water contaminants. 
-    Currently, we help the Charles River Watershed Association deploying their predictive model, 
+    We are predicting and visualizing the presence of hazardous drinking and surface water contaminants.
+    Currently, we help the Charles River Watershed Association deploying their predictive model,
     as well as visualizing and communicating their data.
   lead: Andrew Seeder
   technologies: Python, R, PHP
@@ -56,13 +56,13 @@
 -
   name: Harm Reduction
   elevatorPitch: >-
-    We are developing a tool for the communities of Chelsea, Revere, Saugus, and Winthrop to 
-    improve multi-sector and multi-jurisdictional coordination for outreach, response, and 
-    recovery to overdoses. We will do this by improving the efficiency of existing systems, 
-    speeding up access to critical data, and aiding in cross-jurisdictional  communication, 
+    We are developing a tool for the communities of Chelsea, Revere, Saugus, and Winthrop to
+    improve multi-sector and multi-jurisdictional coordination for outreach, response, and
+    recovery to overdoses. We will do this by improving the efficiency of existing systems,
+    speeding up access to critical data, and aiding in cross-jurisdictional  communication,
     in order to help these four communities save lives.
   lead: Maia Materman
-  partner: 
+  partner:
     - name: City of Revere Substance Use Disorder Initiatives (SUDI) office
       url: https://www.revere.org/departments/substance-use-disorder-initiatives
   slackChannel: harm-reduction
@@ -100,3 +100,18 @@
 
     * Data analysis to estimate number of expungable records
     * User research for an online expungement form
+-
+  name: JobHopper
+  repository: https://github.com/codeforboston/jobhopper
+  elevatorPitch: >-
+    The City of Somerville and a team of graduate students in Economics at
+    Harvard University are collaborating to equip policymakers, workforce
+    development systems, and labor market analysts with an easy to use visual
+    tool to help them understand how job changers successfully move between
+    professions.
+  partner:
+    - name: City of Somerville
+      url: https://www.somervillema.gov
+  lead: Annie LaCourt
+  slackChannel: jobhopper
+  hangoutsSlug: jobhopper

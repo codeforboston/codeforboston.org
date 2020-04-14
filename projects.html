@@ -15,7 +15,7 @@ type: inNavBar
                   accepting contributors. Projects
               are open to volunteers of all skillsets - if you're interested, just show up
               at one of our
-              <a href="{{site.meetup_url}}">Tuesday evening hack nights!</a>!</p>
+              <a href="{{site.meetup_url}}">Tuesday evening hack nights</a>!</p>
       </div>
       <div class="container">
           {% for proj in site.data.projects.active %}
@@ -41,22 +41,24 @@ type: inNavBar
                           <strong>Code Repository</strong>
                       </div>
                       <div class="col-sm-8 col-12 break-word">
-                          <a href="{{proj.repository}}" target="project">{{proj.repository}}</a>
+                          <a href="{{proj.repository}}" target="project">GitHub</a>
                       </div>
                   </div>
                   {% endif %}
+                  {% if proj.technologies %}
                   <div class="row">
                       <div class="col-sm-4 col-12">
-                          <strong>Technologies Used</strong>
+                          <strong>Technologies</strong>
                       </div>
                       <div class="col-sm-8 col-12">
                           {{proj.technologies}}
                       </div>
                   </div>
+                  {% endif %}
                   {% if proj.partner %}
                   <div class="row">
                       <div class="col-sm-4 col-12">
-                          <strong>Partner Organization</strong>
+                          <strong>Partner</strong>
                       </div>
                       <div class="col-sm-8 col-12">
                           {% for partner in proj.partner %}
@@ -88,7 +90,7 @@ type: inNavBar
                   {% if proj.slackChannel %}
                   <div class="row">
                       <div class="col-sm-4 col-12">
-                          <strong>Channel</strong>
+                          <strong>Slack Channel</strong>
                       </div>
                       <div class="col-sm-8 col-12">
                           <a href="https://cfb-public.slack.com/app_redirect?cteam={{ site.slack_team_id }}&channel={{ proj.slackChannel}}">
@@ -100,7 +102,7 @@ type: inNavBar
                   {% if proj.hangoutsSlug or proj.hangoutsLink %}
                   <div class="row">
                       <div class="col-sm-4 col-12">
-                          <strong>Hangouts</strong>
+                          <strong>Video Chat</strong>
                       </div>
                       <div class="col-sm-8 col-12">
                           <a href="{% if proj.hangoutsSlug %}/rooms/{{ proj.hangoutsSlug }}{% else %}{{ proj.hangoutsLink }}{% endif %}">
