@@ -124,8 +124,17 @@ h3 {
 
 
 .site-nav {
-    float: right;
-    line-height: 56px;
+  margin-top: 1rem;
+  float: right;
+}
+
+.site-header .page-links ul li {
+  display: inline-block!important;
+  height: 56px;
+}
+
+.centered {
+  max-width: 100%;
 }
 
 
