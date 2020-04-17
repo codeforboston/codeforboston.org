@@ -22,7 +22,7 @@ git version 2.17.1
 - Install [Jekyll](https://jekyllrb.com/) through Ruby's [Gem](https://rubygems.org/) package management system.  Jekyll is a dynamic website generator that allows Ruby code to be executed at build time.  The result is a site of static pages.
 
 ```
-$> gem install jekyll
+$> gem install jekyll jekyll-redirect-from
 Building native extensions. This could take a while...
 ...lots of output...
 21 gems installed
