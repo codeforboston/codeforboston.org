@@ -14,9 +14,11 @@ type: inNavBar
 
     <br>
         {% for event in site.data.events.active %}
-            <h3><a href="{{event.url}}">{{ event.name }}- {{ event.date }}</a></h3>
-            <p><i>{{ event.location }}</i></p>
-            <p>{{ event.description | markdownify }}</p><br>
+    <div itemscope itemtype="http://schema.org/Event">
+        <h3><a href="{{event.url}}"><span itemprop="name" >{{ event.name }}</span>- <span itemprop="startDate">{{ event.date }}</span></a></h3>
+        <p><i itemprop="location">{{ event.location }}</i></p>
+        <p itemprop="description">{{ event.description | markdownify }}</p><br>
+    </div>
         {% endfor %}
     </section>
 </div>
