@@ -1,4 +1,4 @@
 ---
 title: Announcements and Orientation
-redirect_to: https://codeforamerica.zoom.us/meeting/register/tJYrf-qvqjwqE9KW1PRctOrvpJSFHDdC31Jx
+redirect_to: https://codeforamerica.zoom.us/meeting/register/tJAkdO6rpzsrH9fCyGHNXG4hMtKY0OeTsal4
 ---
