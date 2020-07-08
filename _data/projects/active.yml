@@ -41,6 +41,7 @@
 -
   name: Windfall Awareness project
   repository: https://github.com/codeforboston/windfall-elimination
+  url: https://ssacalculator.org
   elevatorPitch: >-
     A tool to help retirees affected by Social Security Windfall Elimination Program (WEP),
     a program which can reduce SSA benefits by up to 50% for certain public servants.
