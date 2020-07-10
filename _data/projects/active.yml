@@ -14,11 +14,15 @@
 -
   name: Safe Water
   repository: https://github.com/codeforboston/safe-water
+  url: https://www.crwa.org/flagging-program.html
   elevatorPitch: >-
     We are predicting and visualizing the presence of hazardous drinking and surface water contaminants.
     Currently, we help the Charles River Watershed Association deploying their predictive model,
     as well as visualizing and communicating their data.
-  lead: Andrew Seeder
+  partner:
+    - name: Charles River Watershed Association
+      url: https://www.crwa.org/
+  lead: François Delavy
   technologies: Python, R, PHP
   slackChannel: water
   hangoutsSlug: drinkingwater
@@ -78,7 +82,7 @@
   partner:
     - name: Citizens for Juvenile Justice
       url: https://www.cfjj.org/
-  lead: Michelle Bernstein, Edwin Chalu, Will Pfeffer, and others
+  lead: Jeremy Lang
   slackChannel: clean-slate
   hangoutsSlug: cleanslate
   news: |
