@@ -1,10 +1,9 @@
 -
-  name: Boston Info Voice App
+  name: MyCity
   elevatorPitch: >
-    An Alexa skill to answer questions about municipal services in Boston.
-    Currently supports providing an address and asking for trash/recycling pick
-    up days.
+    Working on Alexa skills to connect cities to 311 information.
   repository: https://github.com/codeforboston/voiceapp311
+  url: https://www.amazon.com/City-of-Boston-Info/dp/B0843RR29K
   partner:
     - name: City of Boston 311
       url: https://www.cityofboston.gov/311/
@@ -13,22 +12,7 @@
   slackChannel: mycity
   hangoutsSlug: mycity
 -
-  name: MuckRock
-  elevatorPitch: >
-    File, track, and share public records requests.
-  url: https://www.muckrock.com/
-  repository: https://github.com/MuckRock/muckrock
-  lead: Mike Morisy
-  technologies: Python, Django
-  slackChannel: muckrock
-  hangoutsSlug: muckrock
-  news: >
-    MuckRock is a non-profit, collaborative news site that brings together journalists,
-    researchers, activists, and regular citizens to request, analyze, and share government
-    documents, making politics more transparent and democracies more informed.
-    Looking for folks interested in triaging todos or talking charts.
--
-  name: Safe Water Project
+  name: Safe Water
   repository: https://github.com/codeforboston/safe-water
   elevatorPitch: >-
     We are predicting and visualizing the presence of hazardous drinking and surface water contaminants.
