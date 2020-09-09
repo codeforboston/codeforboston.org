@@ -5,35 +5,365 @@ layout: page
 type: hidden
 ---
 
-<br>
-<a  class="logo"  href="https://www.codeforamerica.org/events/national-day-of-civic-hacking-2017"> <img src="https://s3-us-west-1.amazonaws.com/codeforamerica-cms1/images/national-day-logo_170726_134753.png" alt="{{ site.title }}"> </a>
-<br>
-<br>
-<section>
-  <p>The <a href="https://www.codeforamerica.org/events/national-day-of-civic-hacking-2017">National Day of Civic Hacking</a> brings together people who care about their communities to tackle big problems. This year's theme is "local" - which means that we're looking for Bostonians to bring their concerns and ideas about our own city on <b>September 23rd</b>.</p>
+<!DOCTYPE html>
+<html>
 
-<p><b>Got an idea? Get in touch at <a href="mailto:hello@codeforboston.org">hello@codeforboston.org</a>!</b></p>
-</section>
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    table {
+      width: 100%;
+      max-width: 50rem;
+      padding-bottom: 100px;
+    }
 
-<section>
-  <h2>Event Details</h2>
-  <p><b>When:</b> Sept. 23, 2017 11am - 6pm</p> 
-  <p><b>Where:</b> TBD</p> 
-  <p>Follow our <a href="site.twitter_url">Twitter</a>, <a href="site.facebook_url">Facebook</a>, or <a href="site.meetup_url">Meetup</a> for updates!</p>
-</section>
+    table th,
+    table td {
+      padding: 0.5rem 1rem;
+    }
 
-<section>
-  <h2>FAQs</h2>
-  <h4>Who can participate in the NDoCH?</h4>
-  <p>Anyone and everyone can participate! Typically, we see a mix of interests and skills represented, including those who work in technology like developers, designers, and data scientists, and those who are engaged in civic life, like journalists and community activists.</p>
-  <h4>What kinds of projects are a good fit for NDoCH?</h4>
-  <p>We've got some tips on how to frame a project proposal <a href="/projects">here.</a> Last year's event explored issues around housing, transportation, open data, and the environment, together with the state IT department MassIT. Some examples of past projects:
-    <ul>
-      <li><a href="http://need-now.herokuapp.com">Need Now</a>: an app to quickly locate food and shelter for those in need</li>
-      <li><a href="http://www.ceaseexploitation.org/about/">CEASE Boston</a>: website for Boston's anti-sex-trafficking initiative</li>
-      <li>Our Brigade Captain, Harlan, <a href="https://www.youtube.com/watch?v=FmdkU9hgJtc&index=22&list=PL65XgbSILalUZFyWsZqbtZKN1iffAOM5M">speaking at Code for America Summit</a> about the YouthHub project</li>
-    </ul>
-  </p>
-  <h4>What does "hacking" mean, anyway?</h4>
-  <p>Good question! To us, hacking doesn't just mean coding (our name notwithstanding). It means the whole process of making something that changes how the world works. It also means an ethos of scrappiness, creativity, and drive. Civic hackers are people who use whatever they have on hand - tools, skills, knowledge, relationships - to make things that improve civic life. If that sounds like you, you are welcome here.</p>
-</section>
+    table th {
+      font-weight: normal;
+/*      border-top: 2px solid rgb(112, 112, 112); */
+      border: 2px solid black;
+      vertical-align: top;
+    }
+
+    .cfa-main {
+      background-color: #0d77ac;
+      border: 2px solid black;
+      color: white;
+    }
+
+    .cfa-main a {
+      color: white;
+    }
+
+    .cfb-main {
+      background-color: #462075;
+      border: 2px solid black;
+      color: white;
+      padding-bottom: 18px;
+    }
+
+    .cfb-main a {
+      color: white;
+    }
+
+    .activityBlock {
+      background-color: #dadada;
+      padding-bottom: 10px;
+      border: 2px solid black;
+    }
+
+    .projectBreakout {
+      background-color: #ffb276;
+      padding-bottom: 10px;
+
+    }
+
+    .project {
+      background-color: #f5f5f5;
+      padding: 10px;
+      color: black;
+    }
+
+    .project a {
+      color: blue;
+    }
+
+    .talk {
+      background-color: #0b80002c;
+      padding: 10px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: blue;
+    }
+
+    .scheduleContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .closing {
+      border: 2px solid black;
+    }
+
+    .fun {
+      background-color: darkorange;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="scheduleContainer">
+    <table>
+      <caption style="text-align: center; caption-side: top;">
+        <h1>
+          National Day of Civic Hacking
+        </h1>
+        <h3>
+          People Over Paperwork: Civic Action for a Stronger Safety Net
+        </h3>
+        <h5>
+          Saturday, September 12, 2020
+        </h5>
+        
+      </caption>
+      <tr>
+        <th>9:30 AM EDT</th>
+        <td colspan="4" rowspan="1" class="cfb-main">
+          <h5>
+            Opening Remarks
+          </h5>
+          <div><a href="https://codeforamerica.zoom.us/meeting/register/tJMof-urrj4vHdaLXFXAG1VvMuV7vX2ZL26W" target="_blank">Zoom</a></div>
+          <div><a href="https://www.youtube.com/c/codeforboston" target="_blank">Youtube</a></div>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          10:00 AM EDT
+          <div style="font-size: 12px;">
+            All activities start <br />at the same time<br />
+            <br />
+            Participants should <br />pick one
+          </div>
+        </th>
+        <td rowspan="1" class="activityBlock">
+          <h5>Activity Block</h5>
+          <div class="talk">
+            <h5>
+              Foodlink in Arlington
+            </h5>
+            <div>
+              How COVID-19 has changed food rescue and how that has affected their organization
+            </div>
+            <div>
+              Room:
+<!--              <a href="#">link</a> -->
+            </div>
+            <div>
+              Document:
+<!--              <a href="#">Doc</a> -->
+            </div>
+          </div>
+          <br />
+          <div class="talk">
+            <h5>
+              Massachusetts Association for Community Action
+            </h5>
+            <div>
+              Speaker: Martha Rogers
+            </div>
+            <div>
+              Taxes in the time of COVID-19 and what Virtual VITA is enabling
+            </div>
+            <div>
+              Room:
+<!--              <a href="#">link</a> -->
+            </div>
+            <div>
+              <a href="https://www.masscap.org/">masscap.org</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>12:00 PM EDT</th>
+        <td rowspan="1" colspan="4" class="cfa-main">
+          <div>
+            <h5>
+              CFA Keynote
+            </h5>
+<!--            <a href="#">Zoom</a> -->
+            <br />
+            <p>
+              Join a panel of leaders from Code for America, the SF-Marin Food Bank, and the Center for Budget Policy
+              and Priorities discuss the current state of the social safety net as the impacts of COVID-19 continue,
+              approaches to strengthening it for those who need it most from grassroots to government at all levels,
+              and what’s on the horizon.
+            </p>
+            <h5>Speakers</h5>
+            <p>
+              <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>: Amanda Renteria,
+              Meredith Horowski, Tracey Patterson, Veronica Young
+              <br />
+              <a href="https://www.cbpp.org/" target="_blank">Center on Budget and Policy Priorities</a>: Jennifer Wagner
+              <br />
+              <a href="https://www.sfmfoodbank.org/" target="_blank">SF-Marin Food Bank</a>: Liliana Sandoval
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          1:00 PM EDT
+          <div style="font-size: 12px;">
+            All activities start <br />at the same time<br />
+            <br />
+            Participents should <br />pick one
+          </div>
+        </th>
+        <td rowspan="1" class="activityBlock">
+          <h5>Activity Block</h5>
+          <div class="talk">
+            <h5>
+              MassAccess
+            </h5>
+            <div>
+              How COVID-19 has changed how to file court forms, since most court buildings are closed
+            </div>
+            <div>
+              Room:
+              <a href="https://massaccess.suffolklitlab.org/" target="_blank">https://massaccess.suffolklitlab.org/</a>
+            </div>
+            <div>
+              Chat:
+              <a href="https://cfb-public.slack.com" target="_blank">link</a>
+            </div>
+            <div>
+              Document:
+              <a href="https://massaccess.suffolklitlab.org/" target="_blank">Doc</a>
+            </div>
+          </div>
+          <br />
+          <div class="talk">
+            <h5>
+              Budgeting - Workshop
+            </h5>
+            <div>
+              How do we make effective change for a budget through the lens of defunding the police?
+            </div>
+            <div>
+              Room:
+<!--              <a href="#">link</a> -->
+            </div>
+            <div>
+              Document:
+<!--              <a href="#">Doc</a> -->
+            </div>
+          </div>
+          <br />
+<!--          <div class="project"> -->
+          <div class="talk">
+            <h5>
+              Nashua Emergency Management Project
+            </h5>
+            <div>
+              Facilitated Design
+            </div>
+            <div>
+              Room:
+<!--              <a href="#">link</a> -->
+            </div>
+            <div>
+              Document:
+<!--              <a href="#">Doc</a> -->
+            </div>
+          </div>
+          <br />
+
+        </td>
+      </tr>
+      <tr>
+        <th>2:00 PM EDT
+          <div>Project Challenge</div>
+        </th>
+        <td rowspan="1" colspan="4" class="cfb-main">
+          <div>
+            <h5>
+              Project Breakouts
+            </h5>
+            <div>
+              <div class="project">
+                <h5>
+                  Budgets</h5>
+                <p>
+                  Give activists a tool to re-orient a budget
+                </p>
+                <div>
+                  Room:
+<!--                  <a href="#">link</a> -->
+                </div>
+                <div>
+                  Document:
+<!--                  <a href="#">Doc</a> -->
+                </div>
+              </div>
+              <br />
+              <div class="project">
+                <h5>
+                  Access to Justice
+                </h5>
+                <p>
+                  Project Description
+                </p>
+                <div>
+                  Room:
+<!--                  <a href="#">link</a> -->
+                </div>
+                <div>
+                  Document:
+<!--                  <a href="#">Doc</a> -->
+                </div>
+              </div>
+              <br />
+
+              <div class="project">
+                <h5>
+                  MA Benefit Design Audit (CFA)
+                </h5>
+                <p>
+                  Project Description
+                </p>
+                <div>
+                  Room:
+<!--                  <a href="#">link</a> -->
+                </div>
+                <div>
+                  Document:
+                  <a href="https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/"
+                    target="_blank">50-State Assessment</a>
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>6:00 PM EDT</th>
+        <td colspan="4" class="closing">
+          <h5>
+            Closing Remarks
+          </h5>
+          <div>
+            Room:
+<!--            <a href="#">link</a> -->
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>7:00 PM EDT</th>
+        <td colspan="4" class="fun">
+          <h5>
+            After Party
+          </h5>
+          <div>
+            Room:
+<!--            <a href="#">Trivia</a> -->
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="padding-bottom: 100px;"></div>
+</body>
+
+</html>
