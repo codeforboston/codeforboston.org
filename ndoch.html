@@ -5,29 +5,27 @@ layout: page
 type: hidden
 ---
 
-<!DOCTYPE html>
-<html>
-
-<head>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+<!-- <head> -->
+<!--  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <style>
+-->
+<!--  <style>
     table {
       width: 100%;
       max-width: 50rem;
       padding-bottom: 100px;
     }
 
-    table th,
     table td {
       padding: 0.5rem 1rem;
     }
 
     table th {
+      padding: 0.5rem 1rem;
       font-weight: normal;
-/*      border-top: 2px solid rgb(112, 112, 112); */
       border: 2px solid black;
       vertical-align: top;
+/*      border-top: 2px solid rgb(112, 112, 112); */
     }
 
     .cfa-main {
@@ -110,11 +108,12 @@ type: hidden
       color: blue;
     }
   </style>
-</head>
+</head> -->
 
-<body>
-  <div class="scheduleContainer">
-    <table>
+<!-- <body> -->
+  <!--class="scheduleContainer"-->
+  <div style="width: 100%; display: flex; flex-direction: row; justify-content: center;">
+    <table style="width: 100%; max-width: 50rem; padding-bottom: 100px;">
       <caption style="text-align: center; caption-side: top;">
         <h1>
           National Day of Civic Hacking
@@ -128,17 +127,41 @@ type: hidden
         
       </caption>
       <tr>
-        <th>9:30 AM EDT</th>
-        <td colspan="4" rowspan="1" class="cfb-main">
+        <th style="padding: 0.5rem 1rem;
+          font-weight: normal;
+          border: 2px solid black;
+          vertical-align: top;">9:30 AM EDT</th>
+        <!--class="cfb-main"-->
+        <td colspan="4" 
+          rowspan="1" 
+          style="background-color: #462075; 
+                 border: 2px solid black; 
+                 color: white; 
+                 padding: 0.5rem 1rem 18px 1rem;">
           <h5>
             Opening Remarks
           </h5>
-          <div><a href="https://codeforamerica.zoom.us/meeting/register/tJMof-urrj4vHdaLXFXAG1VvMuV7vX2ZL26W" target="_blank">Zoom</a></div>
-          <div><a href="https://www.youtube.com/c/codeforboston" target="_blank">Youtube</a></div>
+          <div>
+            <a href="https://codeforamerica.zoom.us/meeting/register/tJMof-urrj4vHdaLXFXAG1VvMuV7vX2ZL26W" 
+              target="_blank"
+              style="color: white;">
+              Zoom
+            </a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/c/codeforboston" 
+              target="_blank"
+              style="color: white;">
+              Youtube
+            </a>
+          </div>
         </td>
       </tr>
       <tr>
-        <th>
+        <th style="padding: 0.5rem 1rem;
+        font-weight: normal;
+        border: 2px solid black;
+        vertical-align: top;">
           10:00 AM EDT
           <div style="font-size: 12px;">
             All activities start <br />at the same time<br />
@@ -146,9 +169,14 @@ type: hidden
             Participants should <br />pick one
           </div>
         </th>
-        <td rowspan="1" class="activityBlock">
+        <!--class="activityBlock"-->
+        <td rowspan="1" 
+          style="background-color: #dadada; 
+                padding: 0.5rem 1rem 10px 1rem;
+                border: 2px solid black;">
           <h5>Activity Block</h5>
-          <div class="talk">
+          <!--class="talk"-->
+          <div style="background-color: #0b80002c; padding: 10px;">
             <h5>
               Foodlink in Arlington
             </h5>
@@ -157,15 +185,18 @@ type: hidden
             </div>
             <div>
               Room:
-<!--              <a href="#">link</a> -->
+<!--              <a href="#"
+              style="text-decoration: underline; color: blue;">link</a> -->
             </div>
             <div>
               Document:
-<!--              <a href="#">Doc</a> -->
+<!--              <a href="#"
+              style="text-decoration: underline; color: blue;">Doc</a> -->
             </div>
           </div>
           <br />
-          <div class="talk">
+          <!--class="talk"-->
+          <div style="background-color: #0b80002c; padding: 10px;">
             <h5>
               Massachusetts Association for Community Action
             </h5>
@@ -177,22 +208,32 @@ type: hidden
             </div>
             <div>
               Room:
-<!--              <a href="#">link</a> -->
+<!--              <a href="#"
+              style="text-decoration: underline; color: blue;">link</a> -->
             </div>
             <div>
-              <a href="https://www.masscap.org/">masscap.org</a>
+              <a href="https://www.masscap.org/"
+              style="text-decoration: underline; color: blue;">masscap.org</a>
             </div>
           </div>
         </td>
       </tr>
       <tr>
-        <th>12:00 PM EDT</th>
-        <td rowspan="1" colspan="4" class="cfa-main">
+        <th style="padding: 0.5rem 1rem;
+          font-weight: normal;
+          border: 2px solid black;
+          vertical-align: top;">12:00 PM EDT</th>
+        <!--class="cfa-main"-->
+        <td rowspan="1" colspan="4" 
+          style="background-color: #0d77ac; 
+                border: 2px solid black; 
+                color: white;
+                padding: 0.5rem 1rem;">
           <div>
             <h5>
               CFA Keynote
             </h5>
-<!--            <a href="#">Zoom</a> -->
+<!--            <a href="#" style="color: white;">Zoom</a> -->
             <br />
             <p>
               Join a panel of leaders from Code for America, the SF-Marin Food Bank, and the Center for Budget Policy
@@ -202,18 +243,27 @@ type: hidden
             </p>
             <h5>Speakers</h5>
             <p>
-              <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>: Amanda Renteria,
+              <a href="https://www.codeforamerica.org/" 
+                target="_blank"
+                style="color: white;">Code for America</a>: Amanda Renteria,
               Meredith Horowski, Tracey Patterson, Veronica Young
               <br />
-              <a href="https://www.cbpp.org/" target="_blank">Center on Budget and Policy Priorities</a>: Jennifer Wagner
+              <a href="https://www.cbpp.org/" 
+                target="_blank"
+                style="color: white;">Center on Budget and Policy Priorities</a>: Jennifer Wagner
               <br />
-              <a href="https://www.sfmfoodbank.org/" target="_blank">SF-Marin Food Bank</a>: Liliana Sandoval
+              <a href="https://www.sfmfoodbank.org/" 
+                target="_blank"
+                style="color: white;">SF-Marin Food Bank</a>: Liliana Sandoval
             </p>
           </div>
         </td>
       </tr>
       <tr>
-        <th>
+        <th style="padding: 0.5rem 1rem;
+          font-weight: normal;
+          border: 2px solid black;
+          vertical-align: top;">
           1:00 PM EDT
           <div style="font-size: 12px;">
             All activities start <br />at the same time<br />
@@ -221,9 +271,14 @@ type: hidden
             Participents should <br />pick one
           </div>
         </th>
-        <td rowspan="1" class="activityBlock">
+        <!--class="activityBlock"-->
+        <td rowspan="1" 
+          style="background-color: #dadada; 
+                padding: 0.5rem 1rem 10px 1rem;
+                border: 2px solid black;">
           <h5>Activity Block</h5>
-          <div class="talk">
+          <!--class="talk"-->
+          <div style="background-color: #0b80002c; padding: 10px;">
             <h5>
               MassAccess
             </h5>
@@ -232,19 +287,26 @@ type: hidden
             </div>
             <div>
               Room:
-<!--              <a href="https://massaccess.suffolklitlab.org/" target="_blank">https://massaccess.suffolklitlab.org/</a> -->
+<!--              <a href="https://massaccess.suffolklitlab.org/" 
+              target="_blank"
+              style="text-decoration: underline; color: blue;">https://massaccess.suffolklitlab.org/</a> -->
             </div>
             <div>
               Chat:
-<!--              <a href="https://cfb-public.slack.com" target="_blank">link</a> -->
+<!--              <a href="https://cfb-public.slack.com" 
+              target="_blank"
+              style="text-decoration: underline; color: blue;">link</a> -->
             </div>
             <div>
               Document:
-<!--              <a href="https://massaccess.suffolklitlab.org/" target="_blank">Doc</a> -->
+<!--              <a href="https://massaccess.suffolklitlab.org/" 
+              target="_blank"
+              style="text-decoration: underline; color: blue;">Doc</a> -->
             </div>
           </div>
           <br />
-          <div class="talk">
+          <!--class="talk"-->
+          <div style="background-color: #0b80002c; padding: 10px;">
             <h5>
               Budgeting - Workshop
             </h5>
@@ -253,16 +315,18 @@ type: hidden
             </div>
             <div>
               Room:
-<!--              <a href="#">link</a> -->
+<!--              <a href="#"
+              style="text-decoration: underline; color: blue;">link</a> -->
             </div>
             <div>
               Document:
-<!--              <a href="#">Doc</a> -->
+<!--              <a href="#"
+              style="text-decoration: underline; color: blue;">Doc</a> -->
             </div>
           </div>
           <br />
-<!--          <div class="project"> -->
-          <div class="talk">
+          <!--class="talk"-->
+          <div style="background-color: #0b80002c; padding: 10px;">
             <h5>
               Nashua Emergency Management Project
             </h5>
@@ -271,11 +335,13 @@ type: hidden
             </div>
             <div>
               Room:
-<!--              <a href="#">link</a> -->
+<!--              <a href="#"
+              style="text-decoration: underline; color: blue;">link</a> -->
             </div>
             <div>
               Document:
-<!--              <a href="#">Doc</a> -->
+<!--              <a href="#"
+              style="text-decoration: underline; color: blue;">Doc</a> -->
             </div>
           </div>
           <br />
@@ -283,16 +349,25 @@ type: hidden
         </td>
       </tr>
       <tr>
-        <th>2:00 PM EDT
+        <th style="padding: 0.5rem 1rem;
+          font-weight: normal;
+          border: 2px solid black;
+          vertical-align: top;">2:00 PM EDT
           <div>Project Challenge</div>
         </th>
-        <td rowspan="1" colspan="4" class="cfb-main">
+        <!--class="cfb-main"-->
+        <td rowspan="1" colspan="4" 
+          style="background-color: #462075; 
+                border: 2px solid black; 
+                color: white; 
+                padding: 0.5rem 1rem 18px 1rem;">
           <div>
             <h5>
               Project Breakouts
             </h5>
             <div>
-              <div class="project">
+              <!--class="project"-->
+              <div style="background-color: #f5f5f5; padding: 10px; color: black;">
                 <h5>
                   Budgets</h5>
                 <p>
@@ -300,15 +375,18 @@ type: hidden
                 </p>
                 <div>
                   Room:
-<!--                  <a href="#">link</a> -->
+<!--                  <a href="#" 
+                  style="text-decoration: underline; color: blue;">link</a> -->
                 </div>
                 <div>
                   Document:
-<!--                  <a href="#">Doc</a> -->
+<!--                  <a href="#" 
+                  style="text-decoration: underline; color: blue;">Doc</a> -->
                 </div>
               </div>
               <br />
-              <div class="project">
+              <!--class="project"-->
+              <div style="background-color: #f5f5f5; padding: 10px; color: black;">
                 <h5>
                   Access to Justice
                 </h5>
@@ -317,16 +395,18 @@ type: hidden
                 </p>
                 <div>
                   Room:
-<!--                  <a href="#">link</a> -->
+<!--                  <a href="#" 
+                  style="text-decoration: underline; color: blue;">link</a> -->
                 </div>
                 <div>
                   Document:
-<!--                  <a href="#">Doc</a> -->
+<!--                  <a href="#" 
+                  style="text-decoration: underline; color: blue;">Doc</a> -->
                 </div>
               </div>
               <br />
-
-              <div class="project">
+              <!--class="project"-->
+              <div style="background-color: #f5f5f5; padding: 10px; color: black;">
                 <h5>
                   MA Benefit Design Audit (CFA)
                 </h5>
@@ -335,12 +415,14 @@ type: hidden
                 </p>
                 <div>
                   Room:
-<!--                  <a href="#">link</a> -->
+<!--                  <a href="#" 
+                  style="text-decoration: underline; color: blue;">link</a> -->
                 </div>
                 <div>
                   Document:
                   <a href="https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/"
-                    target="_blank">50-State Assessment</a>
+                    target="_blank"
+                    style="text-decoration: underline; color: blue;">50-State Assessment</a>
                 </div>
               </div>
             </div>
@@ -349,32 +431,43 @@ type: hidden
         </td>
       </tr>
       <tr>
-        <th>6:00 PM EDT</th>
-        <td colspan="4" class="closing">
+        <th style="padding: 0.5rem 1rem;
+          font-weight: normal;
+          border: 2px solid black;
+          vertical-align: top;">6:00 PM EDT</th>
+        <!--class="closing"-->
+        <td colspan="4" style="border: 2px solid black; padding: 0.5rem 1rem;">
           <h5>
             Closing Remarks
           </h5>
           <div>
             Room:
-<!--            <a href="#">link</a> -->
+<!--            <a href="#"
+            style="text-decoration: underline; color: blue;">link</a> -->
           </div>
         </td>
       </tr>
       <tr>
-        <th>7:00 PM EDT</th>
-        <td colspan="4" class="fun">
+        <th style="padding: 0.5rem 1rem;
+          font-weight: normal;
+          border: 2px solid black;
+          vertical-align: top;">7:00 PM EDT</th>
+        <!--class="fun"-->
+        <td colspan="4" 
+          style="background-color: darkorange; 
+                border: 2px solid black;
+                padding: 0.5rem 1rem;">
           <h5>
             After Party
           </h5>
           <div>
             Room:
-<!--            <a href="#">Trivia</a> -->
+<!--            <a href="#"
+            style="text-decoration: underline; color: blue;">Trivia</a> -->
           </div>
         </td>
       </tr>
     </table>
   </div>
   <div style="padding-bottom: 100px;"></div>
-</body>
-
-</html>
+<!-- </body> -->
