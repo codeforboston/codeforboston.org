@@ -13,7 +13,8 @@ collections:
     title: Rooms
     output: true
 email: hello@codeforboston.org
-description: 'Part of the Code for America Brigade network, we are a volunteer group
+description:
+  'Part of the Code for America Brigade network, we are a volunteer group
   of developers, designers, data geeks, and citizen activists who use creative technology
   to solve civic and social problems.'
 baseurl: ''
@@ -24,7 +25,7 @@ github_url: https://github.com/codeforboston
 meetup_url: https://meetup.com/Code-For-Boston
 blog_url: https://medium.com/@CodeForBoston
 events_url: http://cal.codeforboston.org
-zoom_url: https://codeforamerica.zoom.us/meeting/register/tJcqceCvrzspHNyWvFkETFOxCJTThIDhvjRE
+zoom_url: https://codeforamerica.zoom.us/meeting/register/tJMucumpqTgiGt1EMn8pakLVJylNGo8QGrGZ
 slack_url: https://communityinviter.com/apps/cfb-public/code-for-boston
 youtube_url: https://www.youtube.com/c/codeforboston
 facebook_url: https://www.facebook.com/codeforboston/
