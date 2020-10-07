@@ -1,18 +1,35 @@
 <header class="site-header">
-
   <div class="wrapper">
-
-    <a  class="logo"  href="{{ site.baseurl }}/">
-      <img src="{{ '/img/cfb-logo/cfb-logo-stacked-dark.png' | prepend: site.baseurl }}" alt="{{ site.title }}">
+    <a class="logo" href="{{ site.baseurl }}/">
+      <img
+        src="{{ '/img/cfb-logo/cfb-logo-stacked-dark.png' | prepend: site.baseurl }}"
+        alt="{{ site.title }}"
+      />
     </a>
 
     <nav class="site-nav">
-
       <div class="trigger">
-        {% include pages-list.html %}
+        <nav class="page-links">
+          <ul class="list-unstyled">
+            {% for page in site.pages %} {% if page.title and page.type ==
+            'inNavBar' %}
+            <li>
+              <a href="{{ page.url | prepend: site.baseurl }}"
+                >{{ page.title }}</a
+              >
+            </li>
+            {% endif %} {% endfor %}
+            <li>
+              <a
+                href="https://www.codeforamerica.org/donate-to-a-brigade"
+                class="btn-primary btn--small"
+              >
+                Donate
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </nav>
-
   </div>
-
 </header>
