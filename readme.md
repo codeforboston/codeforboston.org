@@ -1,4 +1,4 @@
-# Code For Boston Website
+# Code For Boston Website helpful for everyone.
 
 This is a pretty standard [Jekyll](https://jekyllrb.com/) website at http://www.codeforboston.org/; there are a number of datasets in `_data` that build various lists displayed on the site.
 
@@ -50,14 +50,12 @@ remote: Counting objects: 1739, done.
 Receiving objects:  24% (418/1739), 1.65 MiB | 3.23 MiB
 ...a lot of output...
 Resolving deltas: 100% (867/867), done.
-```
-
+``
 - Move into the new working directory
 
 ```
 $> cd codeforboston.org
 ```
-
 - Add a reference to the upstream remote repository so that you may later synchronize changes with new work.
 
 ```
@@ -83,7 +81,6 @@ LiveReload address: http://127.0.0.1:35729
 - View the site using your web browser at the address indicated above, in this case `http://127.0.0.1:4000/`. Changes you make to the source files should trigger a Jekyll rebuild and appear in your browser once done.
 
 ## I want to update the wesite. How do I do that?
-
 - To add/update events, edit [`_data/events/active.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/events/active.yml)
 - To add/update current projects, edit [`_data/projects/active.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/projects/active.yml)
 - To add/update retired projects, edit [`_data/projects/inactive.yml`](https://github.com/codeforboston/CFB_static/edit/master/_data/projects/inactive.yml)
