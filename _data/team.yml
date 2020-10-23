@@ -1,31 +1,15 @@
 
 - name: Thad Kerosky
-  image: 
+  image:
   email: thadk@codeforboston.org
 
 - name: Annie LaCourt
   image:
   email: annie@codeforboston.org
 
-- name: Liani Lye
-  image: 
-  email: liani@codeforboston.org
-
-- name: Jonathan Marcus
-  image: jon-marcus.jpg
-  email: jonathan@codeforboston.org
-
 - name: Alex Merritt
   image: alex-merritt.jpg
   email: alex@codeforboston.org
-
-- name: Liam Morley
-  image: liam-morley.jpg
-  email: liam@codeforboston.org
-
-- name: Andrew Seeder
-  image: andrew-seeder.jpg
-  email: andrew@codeforboston.org
 
 - name: Matt Zagaja
   image: matt-zagaja.jpg

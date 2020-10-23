@@ -65,7 +65,12 @@ Default contact information for Code for Boston events.
 {: .l-pad--top }
 ## Code for Boston Brigade Core Team & Organizers
 
-{% include team-list.html %}
+<ul>
+  <li>Whole team: <a href="mailto:hello@codeforboston.org">hello@codeforboston.org</a></li>
+  {% for member in site.data.team %}
+    <li>{{member.name}}: <a href="mailto:{{member.email}}">{{member.email}}</a></li>
+  {% endfor %}
+</ul>
 
 {: .l-pad--top }
 ## Local Resources
