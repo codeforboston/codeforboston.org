@@ -19,18 +19,20 @@ description:
   to solve civic and social problems.'
 baseurl: ''
 url: https://www.codeforboston.org
+# NOTE:If you change the below donate_url you should also update the URL here: https://github.com/codeforboston/.github/FUNDING.yml
+donate_url: https://codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Boston&utm_source=codeforboston.org
 hackpad_url: https://codeforboston.hackpad.com/
 twitter_url: https://twitter.com/codeforboston
 github_url: https://github.com/codeforboston
 meetup_url: https://meetup.com/Code-For-Boston
 blog_url: https://medium.com/@CodeForBoston
-events_url: http://cal.codeforboston.org
+events_url: https://cal.codeforboston.org
 zoom_url: https://codeforamerica.zoom.us/meeting/register/tJEocO6prD4tEtxyZTta2yRj4V9XcKJvcBPP
-slack_url: https://communityinviter.com/apps/cfb-public/code-for-boston
+slack_url: https://communityinviter.com/apps/cfb-public/code-for-boston-slack-invite
 youtube_url: https://www.youtube.com/c/codeforboston
 facebook_url: https://www.facebook.com/codeforboston/
 instagram_url: https://www.instagram.com/codeforboston/
-newsletter_url: http://eepurl.com/5UcLX
+newsletter_url: https://eepurl.com/5UcLX
 slack_team_id: T0556DP9Y
 plugins:
   - jekyll-redirect-from
