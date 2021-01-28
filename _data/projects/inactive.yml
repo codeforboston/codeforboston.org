@@ -1,5 +1,4 @@
--
-  name: Community Connect
+- name: Community Connect
   url: https://github.com/codeforboston/communityconnect
   elevatorPitch: >-
     A health resource web app that collects information about businesses and
@@ -12,8 +11,7 @@
     - name: Revere CARES Coalition
   technologies: ReactJS
   slackChannel: community-connect
--
-  name: Cliff Effects
+- name: Cliff Effects
   elevatorPitch: >
     Prototyping a tool that can help case managers help
     their clients see how changes in pay can affect what
@@ -21,17 +19,13 @@
   url: https://codeforboston.github.io/cliff-effects/
   repository: https://github.com/codeforboston/cliff-effects
   technologies: NodeJS, ReactJS
--
-  name: Ungentry
+- name: Ungentry
   url: https://github.com/codeforboston/ungentry
--
-  name: MBTA.ninja
+- name: MBTA.ninja
   url: https://github.com/codeforboston/mbta-ninja
--
-  name: CornerWise
+- name: CornerWise
   url: https://github.com/codeforboston/cornerwise
--
-  name: Interactive Film Documentary
+- name: Interactive Film Documentary
   elevatorPitch: >
     Code and UI/UX for the invisible women of Delhi
   url: http://www.aashiyaan.org/
@@ -39,25 +33,21 @@
   lead: Anandana Kapur
   leadUrl:
   technologies: React Native, YouTube API
--
-  name: Finda
+- name: Finda
   url: https://github.com/codeforboston/finda
--
-  name: Cambridge Open Data Challenges
+- name: Cambridge Open Data Challenges
   news: >
     Public data sets with problem statements from the City of Cambridge
     https://data.cambridgema.gov/General-Government/Civic-Innovation-Challenge-Inventory/x96z-hdnh/about
     Kent Johnson's answer to one of the problem statements (this was demo'd at the 2017 Bloomberg What Works Cities conference):
     http://kentsj.com/Misc/Board_of_Zoning_Appeal_Requests_CT.html
--
-  name: Tools and Rules for Blockchain-Backed Individual Identity
+- name: Tools and Rules for Blockchain-Backed Individual Identity
   news: >
     https://www.meetup.com/Massachusetts-Legal-Hackers/events/239091160
     In the Prome Conference Room, 4th Floor CIC.
     Tonight is the third of five Legal Hack Nights dedicated to building out a reference implementation blockchain-backed individual identity digital signature app.  The app is intended to be a working prototype we can use to evaluate and work with individual identity innovation and to better understand how legal, technical and other requirements can be addressed in an integrated manner.
     Massachusetts Legal Hackers is grateful to hack along with Code for Boston during this special 5-part series!
--
-  name: Inman Square Intersection VM
+- name: Inman Square Intersection VM
   news: >
     Urban Planning with Virtual Reality: Inman Square Intersection
 
@@ -70,9 +60,21 @@
     - Research / survey design
 
     No VR experience required.
--
-  name: EnerSave
+- name: EnerSave
   url: https://github.com/codeforboston/cambridge_energy_app
--
-  name: Migrant Service Map
+- name: Migrant Service Map
   url: https://migrantservicemap.com/
+- name: Harm Reduction
+  repository: https://github.com/codeforboston/harm-reduction
+  elevatorPitch: >-
+    We are developing a tool for the communities of Chelsea, Revere, Saugus, and Winthrop to
+    improve multi-sector and multi-jurisdictional coordination for outreach, response, and
+    recovery to overdoses. We will do this by improving the efficiency of existing systems,
+    speeding up access to critical data, and aiding in cross-jurisdictional  communication,
+    in order to help these four communities save lives.
+  lead: Maia Materman
+  partner:
+    - name: City of Revere Substance Use Disorder Initiatives (SUDI) office
+      url: https://www.revere.org/departments/substance-use-disorder-initiatives
+  slackChannel: harm-reduction
+  hangoutsSlug: harmreduction

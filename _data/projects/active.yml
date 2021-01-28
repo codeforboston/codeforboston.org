@@ -1,5 +1,4 @@
--
-  name: MyCity
+- name: MyCity
   elevatorPitch: >
     Working on Alexa skills to connect cities to 311 information.
   repository: https://github.com/codeforboston/voiceapp311
@@ -11,8 +10,7 @@
   technologies: Python, AWS
   slackChannel: mycity
   hangoutsSlug: mycity
--
-  name: Safe Water
+- name: Safe Water
   repository: https://github.com/codeforboston/safe-water
   url: https://www.crwa.org/flagging-program.html
   elevatorPitch: >-
@@ -26,8 +24,7 @@
   technologies: Python, R, PHP
   slackChannel: water
   hangoutsSlug: drinkingwater
--
-  name: Windfall Awareness project
+- name: Windfall Awareness project
   repository: https://github.com/codeforboston/windfall-elimination
   url: https://ssacalculator.org
   elevatorPitch: >-
@@ -42,23 +39,7 @@
   technologies: Javascript, ObservableHQ, ReactJS, Gatsby
   slackChannel: windfall-awareness
   hangoutsSlug: windfallawareness
--
-  name: Harm Reduction
-  repository: https://github.com/codeforboston/harm-reduction
-  elevatorPitch: >-
-    We are developing a tool for the communities of Chelsea, Revere, Saugus, and Winthrop to
-    improve multi-sector and multi-jurisdictional coordination for outreach, response, and
-    recovery to overdoses. We will do this by improving the efficiency of existing systems,
-    speeding up access to critical data, and aiding in cross-jurisdictional  communication,
-    in order to help these four communities save lives.
-  lead: Maia Materman
-  partner:
-    - name: City of Revere Substance Use Disorder Initiatives (SUDI) office
-      url: https://www.revere.org/departments/substance-use-disorder-initiatives
-  slackChannel: harm-reduction
-  hangoutsSlug: harmreduction
--
-  name: Plogalong
+- name: Plogalong
   repository: https://github.com/codeforboston/plogalong
   elevatorPitch: >-
     When you plog, you pick up trash as you go about your daily life... jogging,
@@ -72,8 +53,7 @@
   technologies: ReactNative, Javascript
   slackChannel: plogalong
   hangoutsSlug: plogalong
--
-  name: Clean Slate
+- name: Clean Slate
   elevatorPitch: |
     With Citizens for Juvenile Justice, we're working to:
 
@@ -90,8 +70,7 @@
 
     * Data analysis to estimate number of expungable records
     * User research for an online expungement form
--
-  name: JobHopper
+- name: JobHopper
   repository: https://github.com/codeforboston/jobhopper
   elevatorPitch: >-
     The City of Somerville and a team of graduate students in Economics at
@@ -105,3 +84,17 @@
   lead: Annie LaCourt
   slackChannel: jobhopper
   hangoutsSlug: jobhopper
+- name: Advocacy Maps
+  elevatorPitch: >
+    The GGP mission is to better leverage the student voice in Massachusetts
+    to preserve and expand the quality of our democracies. The GGP is building
+    a legislative advocacy map that will be the centering mechanism for our
+    advocacy efforts as we aggregate student voices throughout MA to advance
+    critical democracy legislation. The GGP is supported by over a dozen (and
+    growing) student groups across Boston College, and the Greater Boston Area.
+  repository: https://github.com/codeforboston/advocacy-maps
+  partner:
+    - name: Boston College Clough Center for Constitutional Democracy
+      url: hhttps://www.bc.edu/content/bc-web/centers/clough.html
+  lead: Matt Victor
+  slackChannel: ggp-advocacy-map
