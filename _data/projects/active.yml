@@ -118,3 +118,13 @@
       url: hhttps://www.bc.edu/content/bc-web/centers/clough.html
   lead: Matt Victor
   slackChannel: ggp-advocacy-map
+  hangoutsSlug: advocacymaps
+- name: VaccinateMA
+  elevatorPitch: >
+    We are a group of volunteers helping Massachusetts residents get vaccinated.
+    Our site uses a mix of automated and crowdsourced data to show vaccine 
+    appointment availability. VaccinateMA launched on January 17, 2021.
+  repository: https://github.com/codeforboston/vaccinatema
+  lead: John Deyrup
+  slackChannel: vaccinatema-cfb-portal
+  hangoutsSlug: vaccinatema
