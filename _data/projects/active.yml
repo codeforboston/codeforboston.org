@@ -1,29 +1,14 @@
-- name: MyCity
+- name: Mattapan Mapping
   elevatorPitch: >
-    Working on Alexa skills to connect cities to 311 information.
-  repository: https://github.com/codeforboston/voiceapp311
+    The Mattapan Mapping Project is a community-based initiative to collect and share resident stories alongside quantitative and spatial data about how Mattapan is changing on a single open-source online platform. The goal is to provide information all in one place to empower residents to take civic action and advocate for equitable policy.
+  repository: https://github.com/codeforboston/mattapan-mapping
   url: https://www.amazon.com/City-of-Boston-Info/dp/B0843RR29K
   partner:
-    - name: City of Boston 311
-      url: https://www.cityofboston.gov/311/
-  lead: Jamie Martini
+    - name: Powerful Pathways
+      url: https://powerfulpathways.org
+  lead: 
   technologies: Python, AWS
-  slackChannel: mycity
-  hangoutsSlug: mycity
-- name: Safe Water
-  repository: https://github.com/codeforboston/safe-water
-  url: https://www.crwa.org/flagging-program.html
-  elevatorPitch: >-
-    We are predicting and visualizing the presence of hazardous drinking and surface water contaminants.
-    Currently, we help the Charles River Watershed Association deploying their predictive model,
-    as well as visualizing and communicating their data.
-  partner:
-    - name: Charles River Watershed Association
-      url: https://www.crwa.org/
-  lead: François Delavy
-  technologies: Python, R, PHP
-  slackChannel: water
-  hangoutsSlug: drinkingwater
+  slackChannel: mattapan-mapping
 - name: Windfall Awareness project
   repository: https://github.com/codeforboston/windfall-elimination
   url: https://ssacalculator.org
