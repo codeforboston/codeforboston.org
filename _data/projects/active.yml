@@ -77,6 +77,7 @@
     And many more...
 - name: JobHopper
   repository: https://github.com/codeforboston/jobhopper
+  url: https://www.jobhopper.live
   elevatorPitch: >-
     The City of Somerville and a team of graduate students in Economics at
     Harvard University are collaborating to equip policymakers, workforce
@@ -100,7 +101,7 @@
   repository: https://github.com/codeforboston/advocacy-maps
   partner:
     - name: Boston College Clough Center for Constitutional Democracy
-      url: hhttps://www.bc.edu/content/bc-web/centers/clough.html
+      url: https://www.bc.edu/content/bc-web/centers/clough.html
   lead: Matt Victor
   slackChannel: ggp-advocacy-map
   hangoutsSlug: advocacymaps
