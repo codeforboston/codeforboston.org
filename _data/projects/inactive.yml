@@ -105,6 +105,7 @@
   slackChannel: mycity
   hangoutsSlug: mycity
 - name: JobHopper
+  url: https://jobhopper.live
   repository: https://github.com/codeforboston/jobhopper
   elevatorPitch: >-
     The City of Somerville and a team of graduate students in Economics at
