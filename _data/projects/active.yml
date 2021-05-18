@@ -6,7 +6,7 @@
   partner:
     - name: Powerful Pathways
       url: https://powerfulpathways.org
-  lead: 
+  lead:
   technologies: Python, AWS
   slackChannel: mattapan-mapping
 - name: Windfall Awareness project
@@ -47,7 +47,7 @@
   partner:
     - name: Citizens for Juvenile Justice
       url: https://www.cfjj.org/
-  lead: Jeremy Lang
+  lead: Michelle Bernstein
   slackChannel: clean-slate
   hangoutsSlug: cleanslate
   news: |
@@ -57,9 +57,9 @@
     * User research for an online expungement form
 - name: Police Misconduct Data Trust
   elevatorPitch: |
-    We're building a national index of police incidents. 
-    We connect journalists, social scientists, and criminal 
-    and civil rights lawyers to allow them to access injustice 
+    We're building a national index of police incidents.
+    We connect journalists, social scientists, and criminal
+    and civil rights lawyers to allow them to access injustice
     data across state lines in one shared location.
   partner:
     - name: The Tubman Project
@@ -68,27 +68,13 @@
   slackChannel: police-data-trust
   news: |
     This project is now launching our effort to aggregate data from multiple partners:
-    
+
     * National Association of Criminal Defense Lawyers
     * Measures for Justice
     * Raheem.ai
     * Fatal Encounters
     * Texas Justice Initiative
     And many more...
-- name: JobHopper
-  repository: https://github.com/codeforboston/jobhopper
-  elevatorPitch: >-
-    The City of Somerville and a team of graduate students in Economics at
-    Harvard University are collaborating to equip policymakers, workforce
-    development systems, and labor market analysts with an easy to use visual
-    tool to help them understand how job changers successfully move between
-    professions.
-  partner:
-    - name: City of Somerville
-      url: https://www.somervillema.gov
-  lead: Annie LaCourt
-  slackChannel: jobhopper
-  hangoutsSlug: jobhopper
 - name: Advocacy Maps
   elevatorPitch: >
     The GGP mission is to better leverage the student voice in Massachusetts
@@ -107,7 +93,7 @@
 - name: VaccinateMA
   elevatorPitch: >
     We are a group of volunteers helping Massachusetts residents get vaccinated.
-    Our site uses a mix of automated and crowdsourced data to show vaccine 
+    Our site uses a mix of automated and crowdsourced data to show vaccine
     appointment availability. VaccinateMA launched on January 17, 2021.
   repository: https://github.com/codeforboston/vaccinatema
   lead: John Deyrup

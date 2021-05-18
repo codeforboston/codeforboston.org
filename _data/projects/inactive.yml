@@ -104,3 +104,17 @@
   technologies: Python, AWS
   slackChannel: mycity
   hangoutsSlug: mycity
+- name: JobHopper
+  repository: https://github.com/codeforboston/jobhopper
+  elevatorPitch: >-
+    The City of Somerville and a team of graduate students in Economics at
+    Harvard University are collaborating to equip policymakers, workforce
+    development systems, and labor market analysts with an easy to use visual
+    tool to help them understand how job changers successfully move between
+    professions.
+  partner:
+    - name: City of Somerville
+      url: https://www.somervillema.gov
+  lead: Annie LaCourt
+  slackChannel: jobhopper
+  hangoutsSlug: jobhopper
