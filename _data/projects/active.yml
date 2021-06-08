@@ -9,6 +9,7 @@
   lead:
   technologies: Python, AWS
   slackChannel: mattapan-mapping
+  hangoutsSlug: mattapanmapping
 - name: Windfall Awareness project
   repository: https://github.com/codeforboston/windfall-elimination
   url: https://ssacalculator.org
