@@ -66,6 +66,7 @@
   url: https://migrantservicemap.com/
 - name: Harm Reduction
   repository: https://github.com/codeforboston/harm-reduction
+  url: https://github.com/codeforboston/harm-reduction
   elevatorPitch: >-
     We are developing a tool for the communities of Chelsea, Revere, Saugus, and Winthrop to
     improve multi-sector and multi-jurisdictional coordination for outreach, response, and
