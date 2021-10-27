@@ -75,18 +75,3 @@
     * Fatal Encounters
     * Texas Justice Initiative
     And many more...
-- name: Advocacy Maps
-  elevatorPitch: >
-    The GGP mission is to better leverage the student voice in Massachusetts
-    to preserve and expand the quality of our democracies. The GGP is building
-    a legislative advocacy map that will be the centering mechanism for our
-    advocacy efforts as we aggregate student voices throughout MA to advance
-    critical democracy legislation. The GGP is supported by over a dozen (and
-    growing) student groups across Boston College, and the Greater Boston Area.
-  repository: https://github.com/codeforboston/advocacy-maps
-  partner:
-    - name: Boston College Clough Center for Constitutional Democracy
-      url: hhttps://www.bc.edu/content/bc-web/centers/clough.html
-  lead: Matt Victor
-  slackChannel: ggp-advocacy-map
-  hangoutsSlug: advocacymaps
