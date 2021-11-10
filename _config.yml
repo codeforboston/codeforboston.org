@@ -19,6 +19,11 @@ description:
   to solve civic and social problems.'
 baseurl: ''
 url: https://www.codeforboston.org
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
 # NOTE:If you change the below donate_url you should also update the URL here: https://github.com/codeforboston/.github/FUNDING.yml
 donate_url: https://codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Boston&utm_source=codeforboston.org
 hackpad_url: https://codeforboston.hackpad.com/

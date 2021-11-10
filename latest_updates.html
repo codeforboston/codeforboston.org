@@ -1,0 +1,22 @@
+---
+title: Latest Updates
+permalink: "/posts/"
+layout: page
+type: inNavBar
+---
+
+<h1 class="t-section-headline">Latest Updates</h1>
+<h2>{{ site.posts[0].title }}</h2>
+<h4>{{ site.posts[0].date | date_to_long_string: "ordinal", "US" }}</h4>
+
+<section>
+  <br>
+  <div class="newsletter">
+    {{ site.posts[0].content }}
+  </div>
+</section>
+
+<hr style="margin-top: 10px; margin-bottom: 20px;" />
+<section style="text-align: center">
+  <a href="{% link newsletters.html %}">Newsletter Index</a>
+</section>

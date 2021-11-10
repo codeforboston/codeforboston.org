@@ -1,0 +1,12 @@
+.newsletter {
+    h1 {
+        font-size: $base-font-size * $small-font-ratio * $small-font-ratio;
+    }
+    h2 {
+        font-size: $base-font-size * $small-font-ratio;
+    }
+    hr {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,25 @@
+---
+layout: page
+---
+
+<h1 class="t-section-headline">{{ page.title }}</h1>
+<h4>
+  {{ page.date | date_to_long_string: "ordinal", "US" }}
+</h4>
+
+
+<div class="centered">
+  <section class="newsletter" >
+    {{ content }}
+  </section>
+
+  <section>
+    {% if page.previous %}
+
+    {% endif %}
+    &bull; 
+    {% if page.next %}
+
+    {% endif %}
+  </section>
+</div>
