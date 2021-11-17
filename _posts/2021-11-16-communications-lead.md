@@ -3,7 +3,7 @@ title: Recruiting for a Communications Lead!
 ---
 Greetings Civic Hackers!
 
-We are now recruiting for someone interested in being a part of the leadership team at Code for Boston as our Communications Lead. A job description is linked here but we are looking for a volunteer that is experienced in communications and excited about telling the stories of our project groups. If you have questions or want to learn more about this role feel free to reach out to us [via email](mailto:hello@codeforboston.org).
+We are now recruiting for someone interested in being a part of the leadership team at Code for Boston as our Communications Lead. A job description is [linked here](https://www.codeforboston.org/communications-lead/). We are looking for a volunteer that is experienced in communications and excited about telling the stories of our project groups. If you have questions or want to learn more about this role feel free to reach out to us [via email](mailto:hello@codeforboston.org).
 
 We also had a great partner interest lunch for folks interested in doing a project collaboration with us. We recorded and posted the [video of the presentation to our YouTube channel](https://youtu.be/fiG3OQ72e7E). Feel free to pass this along to friends or colleagues in any government or non-profit organization that might benefit from a collaboration with us!
 
