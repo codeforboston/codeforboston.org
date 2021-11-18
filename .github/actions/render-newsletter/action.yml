@@ -1,0 +1,33 @@
+name: render-newsletter
+description: Render the newsletter
+inputs:
+  text_path:
+    description: 'Path to Markdown file containing the post body'
+    required: true
+  out_path:
+    description: 'Path where the output should be written'
+    required: false
+
+  sendgrid_api_key:
+    description: 'Sendgrid API Key'
+    required: false
+  sendgrid_list_id:
+    description: 'SendGrid contacts list to send the newsletter to'
+    required: false
+  suppression_group_id:
+    description: ''
+    required: false
+  template_path:
+    description: ''
+    required: false
+  site_yaml:
+    description: 'Path to YAML file with the properties for "site" context variable'
+    required: false
+
+  context:
+    description: 'JSON-encoded context to include when rendering newsletter'
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

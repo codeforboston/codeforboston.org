@@ -13,13 +13,18 @@ What we’re reading & watching:
 
 Matt & The Code for Boston Core Team
 <hr>
+
 # Events
+
 ## [Civic Tech Coffee](https://codeforamerica.zoom.us/meeting/register/tJIud-Corj0sGNaJai1FmkyfRMek27MzEC_X)
 Civic Tech Coffee is a monthly virtual event where individuals interested in Civic Tech can share what they are up to, meet other professionals in the field, and ask for help or ideas. Occasionally we host guest speakers or have other presentations which are announced ahead of time.
 
 <hr>
+
 # Jobs
+
 ## [City of Boston - Wu Administration](https://www.allaboardboston.com/join-us)
+
 Mayor-Elect Michelle Wu is collecting resumes for individuals interested in serving in her administration. If you have background in technology or software development you can submit your resume and check off “Technology” in the checkbox.
 
 # Project Updates
