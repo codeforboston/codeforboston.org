@@ -28,5 +28,6 @@ jobs:
             "domain": "${{ steps.site-domain.outputs.domain }}"
             }
       - name: Post to slack
+        if: ${{ steps.newsletter.outputs.url != '' }}
         run: |
-          ./.github/workflows/post_to_slack.sh "${{ secrets.SLACK_URL }}" "${{ steps.newsletter.send_date }}" "${{ steps.newsletter.url }}"
+          ./.github/workflows/post_to_slack.sh "${{ secrets.SLACK_URL }}" "${{ steps.newsletter.outputs.send_date }}" "${{ steps.newsletter.outputs.url }}"
