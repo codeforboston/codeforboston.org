@@ -27,6 +27,14 @@ inputs:
   context:
     description: 'JSON-encoded context to include when rendering newsletter'
     required: false
+  subject_format:
+    description: 'Format of the subject, where %s will be replaced by the "title" from the front matter of the post'
+    require: false
+outputs:
+  send_date:
+    description: 'ISO 8601-formatted date string'
+  single_send_url:
+    description: 'URL of for the new SendGrid single send'
 
 runs:
   using: 'node12'

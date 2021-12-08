@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { EOL } from 'os';
 import { promisify } from 'util';
 import * as gm from 'gray-matter';
 import * as hb from 'handlebars';
@@ -10,6 +11,17 @@ import fetch from 'node-fetch';
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 
+
+function escapeData(s: string): string {
+  return s
+    .replace(/%/g, '%25')
+    .replace(/\r/g, '%0D')
+    .replace(/\n/g, '%0A')
+}
+
+function setOutput(key: string, val: string) {
+  process.stdout.write(`::set-output name=${key}::${escapeData(val)}` + EOL);
+}
 
 const API_BASE = 'https://api.sendgrid.com/v3';
 type SingleSendParams = {
@@ -52,6 +64,7 @@ type Options = {
   listId?: string,
   suppressionGroupId?: number,
   siteYaml?: string,
+  subject?: string,
 };
 
 async function loadTemplate(path?: string, options?: CompileOptions) {
@@ -65,6 +78,7 @@ function splitTitleFromName(basename: string) {
   return [m[0], basename.slice(m[0].length)];
 }
 
+type PathContext = ReturnType<typeof contextFromPath>;
 function contextFromPath(filepath: string) {
   const basename = path.basename(filepath);
   const [title, ext] = splitTitleFromName(basename);
@@ -87,21 +101,31 @@ function contextFromPath(filepath: string) {
   };
 }
 
-function postUrl(post: ReturnType<typeof contextFromPath>, site: any) {
+function postUrl(post: PathContext, site: any) {
   const siteUrl = site.url;
   const basePath = site.baseurl ?? '';
 
   return `${siteUrl}${basePath}/${post.year}/${post.month}/${post.day}/${post.slug}.html`;
 }
 
+type PostContext = PathContext &
+  { url: string } &
+  { [k in string]: any };
+
 function postContext(data: any, path: string, site?: any) {
   const post = contextFromPath(path);
 
   return Object.assign({ url: site ? postUrl(post, site) : '' },
-                       post, data);
+                       post, data) as PostContext;
 }
 
-async function siteContext(path?: string) {
+type TemplateContext = {
+  content: string,
+  post: PostContext,
+  site: { [k in string]: any },
+} & { [k in string]: any };
+
+async function siteContext(path?: string): Promise<{ [k in string]: any }> {
   if (!path)
     return {};
 
@@ -125,7 +149,7 @@ async function render(opts: Options) {
   });
 
   const template = await pTemplate;
-  const context = Object.assign({
+  const context: TemplateContext = Object.assign({
     content: rendered,
     post: postContext(data, opts.path, site),
     site,
@@ -138,6 +162,19 @@ async function render(opts: Options) {
   };
 }
 
+function getSendDate(c: TemplateContext) {
+  let date = c.post.date;
+  if (date.getTime() <= Date.now()) {
+    const today = new Date();
+    date = new Date(today.getFullYear(),
+                    today.getMonth(),
+                    today.getDate()+1);
+  }
+
+  date.setHours(15);
+  return date;
+}
+
 async function run(options: Options) {
   const { text, context } = await render(options);
   // console.log(context);
@@ -145,16 +182,21 @@ async function run(options: Options) {
   if (options.output) {
     await writeFile(options.output, text);
   } else if (options.apiKey) {
+    const sendAt = getSendDate(context);
     const response = await singleSend({
       html: text,
       listId: options.listId,
       suppressionGroup: options.suppressionGroupId,
       token: options.apiKey,
-      sendAt: new Date(Date.now() + 60000),
-      subject: `Test Newsletter: ${context.post.title}`,
+      sendAt,
+      subject: (options.subject ?? '%s').replace('%s', context.post.title),
     });
 
+    const url = response.headers.get('location');
     console.log(response.status, response.statusText, response.headers, await response.text());
+
+    setOutput('send_date', sendAt.toISOString());
+    setOutput('single_send_url', url);
   } else {
     console.log(text);
   }
@@ -170,6 +212,7 @@ async function runAction() {
     INPUT_OUT_PATH: outPath,
     INPUT_SUPPRESSION_GROUP_ID: suppressionGroupId,
     INPUT_SITE_YAML: siteYaml,
+    INPUT_SUBJECT_FORMAT: subject = '%s',
   } = process.env;
 
   if (!path) {
@@ -188,6 +231,7 @@ async function runAction() {
     listId: listId,
     suppressionGroupId: suppressionGroupId ? parseInt(suppressionGroupId) : undefined,
     siteYaml,
+    subject,
   });
 }
 

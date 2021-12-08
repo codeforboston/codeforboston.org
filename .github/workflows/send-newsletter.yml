@@ -14,6 +14,7 @@ jobs:
         id: newsletter-path
       - uses: ./.github/actions/render-newsletter
         if: ${{ steps.newsletter-path.outputs.post_path != '' }}
+        id: newsletter
         with:
           text_path: "${{ steps.newsletter-path.outputs.post_path }}"
           template_path: "./.github/workflows/newsletter_template.html"
@@ -21,7 +22,11 @@ jobs:
           sendgrid_api_key: ${{ secrets.SENDGRID_API_KEY }}
           suppression_group_id: 17889
           site_yaml: "./_config.yml"
+          subject_format: "[Code for Boston] %s"
           context: >-
             {
             "domain": "${{ steps.site-domain.outputs.domain }}"
             }
+      - name: Post to slack
+        run: |
+          ./.github/workflows/post_to_slack.sh "${{ secrets.SLACK_URL }}" "${{ steps.newsletter.send_date }}" "${{ steps.newsletter.url }}"
