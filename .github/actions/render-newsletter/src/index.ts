@@ -20,7 +20,7 @@ function escapeData(s: string): string {
 }
 
 function setOutput(key: string, val: string) {
-  process.stdout.write(`::set-output name=${key}::${escapeData(val)}` + EOL);
+  process.stdout.write(`::set-output name=${key}::${escapeData(val)}${EOL}`);
 }
 
 const API_BASE = 'https://api.sendgrid.com/v3';
