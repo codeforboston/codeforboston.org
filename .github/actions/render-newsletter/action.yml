@@ -3,7 +3,11 @@ description: Render the newsletter
 inputs:
   text_path:
     description: 'Path to Markdown file containing the post body'
-    required: true
+    required: false
+  posts_dir:
+    description: 'Path to directory containing posts'
+    required: false
+
   out_path:
     description: 'Path where the output should be written'
     required: false
@@ -30,11 +34,15 @@ inputs:
   subject_format:
     description: 'Format of the subject, where %s will be replaced by the "title" from the front matter of the post'
     require: false
+  slack_url:
+    description: 'Post link to SendGrid single send'
+    require: false
+
 outputs:
   send_date:
     description: 'ISO 8601-formatted date string'
   single_send_url:
-    description: 'URL of for the new SendGrid single send'
+    description: 'URL of the new SendGrid single send'
 
 runs:
   using: 'node12'

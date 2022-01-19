@@ -1,5 +1,8 @@
 name: send-newsletter
-on: push
+on:
+  push:
+    branches:
+      - master
 jobs:
   send-newsletter:
     runs-on: ubuntu-latest
@@ -9,27 +12,19 @@ jobs:
       - run: ./.github/workflows/get_domain.sh
         shell: bash
         id: site-domain
-      - name: Find new post
-        id: newsletter-path
-        run: ./.github/workflows/find-modified-newsletter.sh
-        shell: bash
       - name: Render newsletter
-        if: ${{ steps.newsletter-path.outputs.post_path != '' }}
         id: newsletter
         uses: ./.github/actions/render-newsletter
         with:
-          text_path: "${{ steps.newsletter-path.outputs.post_path }}"
+          posts_dir: "./_posts"
           template_path: "./.github/workflows/newsletter_template.html"
           sendgrid_list_id: "559adb5e-7164-4ac8-bbb5-1398d4ff0df9"
           sendgrid_api_key: ${{ secrets.SENDGRID_API_KEY }}
           suppression_group_id: 17889
           site_yaml: "./_config.yml"
           subject_format: "[Code for Boston] %s"
+          slack_url: ${{ secrets.SLACK_URL }}
           context: >-
             {
             "domain": "${{ steps.site-domain.outputs.domain }}"
             }
-      - name: Post to slack
-        if: ${{ steps.newsletter.outputs.url != '' }}
-        run: |
-          ./.github/workflows/post_to_slack.sh "${{ secrets.SLACK_URL }}" "${{ steps.newsletter.outputs.send_date }}" "${{ steps.newsletter.outputs.url }}"
