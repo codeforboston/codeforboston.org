@@ -10,6 +10,7 @@ import fetch from 'node-fetch';
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
+const readdir = promisify(fs.readdir);
 
 
 function escapeData(s: string): string {
@@ -21,6 +22,27 @@ function escapeData(s: string): string {
 
 function setOutput(key: string, val: string) {
   process.stdout.write(`::set-output name=${key}::${escapeData(val)}${EOL}`);
+}
+
+async function postToSlack(slackUrl: string, url: string) {
+  await fetch(slackUrl, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      text: "SendGrid single send created for newsletter",
+      blocks: [
+        {
+          type: "section",
+          text: {
+            type: "mrkdwn",
+            text: `Newsletter: <${url}|Single Send> created.`
+          }
+        }
+      ]
+    })
+  });
 }
 
 const API_BASE = 'https://api.sendgrid.com/v3';
@@ -40,7 +62,7 @@ async function singleSend(params: SingleSendParams) {
       'Content-type': 'application/json',
     },
     body: JSON.stringify({
-      name: 'Test Send',
+      name: `Newsletter: ${params.subject}`,
       send_at: params.sendAt?.toISOString(),
       send_to: {
         list_ids: [params.listId]
@@ -54,10 +76,17 @@ async function singleSend(params: SingleSendParams) {
   });
 }
 
+type GetSingleSendsParams = {
+
+};
+
+async function getSingleSends(params: GetSingleSendsParams) {
+
+}
 
 type Options = {
   apiKey?: string,
-  path: string,
+  filePath: string,
   output?: string,
   template?: string,
   context?: any,
@@ -65,6 +94,7 @@ type Options = {
   suppressionGroupId?: number,
   siteYaml?: string,
   subject?: string,
+  slackUrl?: string,
 };
 
 async function loadTemplate(path?: string, options?: CompileOptions) {
@@ -134,7 +164,7 @@ async function siteContext(path?: string): Promise<{ [k in string]: any }> {
 }
 
 async function render(opts: Options) {
-  const pFile = readFile(opts.path);
+  const pFile = readFile(opts.filePath);
   const pTemplate = loadTemplate(opts.template);
   const site = await siteContext(opts.siteYaml);
 
@@ -151,7 +181,7 @@ async function render(opts: Options) {
   const template = await pTemplate;
   const context: TemplateContext = Object.assign({
     content: rendered,
-    post: postContext(data, opts.path, site),
+    post: postContext(data, opts.filePath, site),
     site,
   }, opts.context);
   const text = template(context);
@@ -197,9 +227,63 @@ async function run(options: Options) {
 
     setOutput('send_date', sendAt.toISOString());
     setOutput('single_send_url', url);
+
+    return {
+      sendAt,
+      url
+    };
   } else {
     console.log(text);
   }
+}
+
+type PathFilter = (path: string) => boolean;
+type RunOptions = Omit<Options, 'filePath'> & {
+  source: { file: string } | { dir: string },
+  filter?: PathFilter,
+};
+
+function dateFilter(after: number) {
+  return (path: string) => {
+    const ctx = contextFromPath(path);
+    return ctx.date.getTime() > after;
+  };
+}
+
+async function toFileList(source: RunOptions['source'], filter?: PathFilter) {
+  if ('file' in source)
+    return [source.file];
+
+  const paths = await readdir(source.dir)
+    .then(names => names.map(n => path.join(source.dir, n)));
+
+  return filter ?
+    paths.filter(filter) : paths;
+}
+
+async function runAll(options: RunOptions) {
+  const posts = await toFileList(options.source, options.filter);
+  const urls: string[] = [];
+  const promises: Promise<any>[] = [];
+
+  if (!posts.length) {
+    console.log('No posts to send.');
+    return;
+  }
+
+  for (const post of posts) {
+    const result = await run({
+      ...options,
+      filePath: post
+    });
+
+    if (result?.url && options.slackUrl) {
+      promises.push(postToSlack(options.slackUrl, result.url));
+    }
+    urls.push(result.url);
+  }
+
+  await Promise.all(urls);
 }
 
 async function runAction() {
@@ -213,18 +297,21 @@ async function runAction() {
     INPUT_SUPPRESSION_GROUP_ID: suppressionGroupId,
     INPUT_SITE_YAML: siteYaml,
     INPUT_SUBJECT_FORMAT: subject = '%s',
+    INPUT_POSTS_DIR: postsDir,
+    INPUT_SLACK_URL: slackUrl,
+    TODAY_OVERRIDE: today,
   } = process.env;
 
-  if (!path) {
+  if (!(path || postsDir)) {
     console.error(
-      'Missing required environment variable INPUT_TEXT_PATH'
+      'Either INPUT_TEXT_PATH or INPUT_POSTS_DIR must be non-empty'
     );
     process.exit(1);
   }
 
-  await run({
+  await runAll({
     apiKey,
-    path,
+    source: path ? { file: path } : { dir: postsDir },
     template,
     output: outPath,
     context: context ? JSON.parse(context) : {},
@@ -232,19 +319,30 @@ async function runAction() {
     suppressionGroupId: suppressionGroupId ? parseInt(suppressionGroupId) : undefined,
     siteYaml,
     subject,
+    slackUrl,
+    filter: dateFilter(today ? new Date(today).getTime() : Date.now()),
   });
 }
 
 async function testRun() {
+  // const apiKey = 'REAS-yuff0naum!krar';
   process.env['INPUT_SENDGRID_LIST_ID'] =  "559adb5e-7164-4ac8-bbb5-1398d4ff0df9";
   // process.env['INPUT_SENDGRID_API_KEY'] = apiKey;
-  process.env['INPUT_TEXT_PATH'] = __dirname + '/../../../../_posts/2021-11-16-communications-lead.md';
+  // process.env['INPUT_TEXT_PATH'] = __dirname + '/../../../../_posts/2021-11-16-communications-lead.md';
+  process.env['INPUT_POSTS_DIR'] = __dirname + '/../../../../_posts';
   process.env['INPUT_TEMPLATE_PATH'] = __dirname + '/../../../workflows/newsletter_template.html';
   process.env['INPUT_CONTEXT'] = `{}`;
   process.env['INPUT_SUPPRESSION_GROUP_ID'] = '17889';
   process.env['INPUT_SITE_YAML'] = __dirname + '/../../../../_config.yml';
+  process.env['INPUT_SLACK_URL'] = 'https://hooks.slack.com/services/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';
+  process.env['TODAY_OVERRIDE'] = '2022-01-10';
 
   await runAction();
 }
 
-runAction();
+
+if (process.env['NODE_ENV'] === 'test')
+  testRun();
+else
+  runAction();
+
