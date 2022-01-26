@@ -8,6 +8,8 @@ import * as marked from 'marked';
 import * as yaml from 'js-yaml';
 import fetch from 'node-fetch';
 
+import * as SG from './sendgrid';
+
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const readdir = promisify(fs.readdir);
@@ -45,45 +47,6 @@ async function postToSlack(slackUrl: string, url: string) {
   });
 }
 
-const API_BASE = 'https://api.sendgrid.com/v3';
-type SingleSendParams = {
-  html: string,
-  listId: string,
-  suppressionGroup: number,
-  token: string,
-  sendAt?: Date,
-  subject: string,
-};
-async function singleSend(params: SingleSendParams) {
-  return await fetch(`${API_BASE}/marketing/singlesends`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${params.token}`,
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify({
-      name: `Newsletter: ${params.subject}`,
-      send_at: params.sendAt?.toISOString(),
-      send_to: {
-        list_ids: [params.listId]
-      },
-      email_config: {
-        subject: params.subject,
-        html_content: params.html,
-        suppression_group_id: params.suppressionGroup
-      }
-    })
-  });
-}
-
-type GetSingleSendsParams = {
-
-};
-
-async function getSingleSends(params: GetSingleSendsParams) {
-
-}
-
 type Options = {
   apiKey?: string,
   filePath: string,
@@ -95,6 +58,7 @@ type Options = {
   siteYaml?: string,
   subject?: string,
   slackUrl?: string,
+  index?: SG.SingleSendIndex,
 };
 
 async function loadTemplate(path?: string, options?: CompileOptions) {
@@ -192,6 +156,12 @@ async function render(opts: Options) {
   };
 }
 
+const dateStr = (d: Date) => ((d.toISOString()).split('T', 1)[0]);
+
+const floorDate = (d: Date) => (new Date(d.getFullYear(),
+                                         d.getMonth(),
+                                         d.getDate()));
+
 function getSendDate(c: TemplateContext) {
   let date = c.post.date;
   if (date.getTime() <= Date.now()) {
@@ -213,13 +183,16 @@ async function run(options: Options) {
     await writeFile(options.output, text);
   } else if (options.apiKey) {
     const sendAt = getSendDate(context);
-    const response = await singleSend({
+    const id = options.index?.byDate[dateStr(context.post.date)][0];
+    const response = await SG.singleSend({
       html: text,
       listId: options.listId,
       suppressionGroup: options.suppressionGroupId,
       token: options.apiKey,
       sendAt,
       subject: (options.subject ?? '%s').replace('%s', context.post.title),
+      categories: ['newsletter'],
+      id,
     });
 
     const url = response.headers.get('location');
@@ -271,10 +244,14 @@ async function runAll(options: RunOptions) {
     return;
   }
 
+  const index = await SG.indexSingleSends({ token: options.apiKey });
+
   for (const post of posts) {
+
     const result = await run({
       ...options,
-      filePath: post
+      filePath: post,
+      index,
     });
 
     if (result?.url && options.slackUrl) {
