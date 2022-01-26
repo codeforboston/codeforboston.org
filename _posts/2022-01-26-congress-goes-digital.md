@@ -7,11 +7,13 @@ I was excited to [read that the U.S. House of Representatives is going to get an
 
 A couple notes on demo night tentatively scheduled for February 22, 2022. CIC has informed us that they are requiring attendees to be fully boosted (three shots) to attend on site, and masks will be required except when eating or drinking. We will likely hold capacity to about 50% of Venture Cafe’s capacity to allow for distancing. We will also be live-streaming on YouTube for folks who wish to watch from home. I will be sharing an RSVP link for those that wish to attend next week.
 
-What we’re reading
+What we’re reading:
 
 - [Lessons Learned from Colorado Exposure Notifications Metrics](https://coloradodigitalservice.medium.com/cross-sector-collaboration-during-covid-19-lessons-learned-from-colorado-exposure-notifications-340358c4c9ea) shared some interesting insights from Colorado’s exposure notification app.
 - Protocol [has a good summary of Biden’s new customer experience executive order](https://www.protocol.com/policy/biden-customer-experience-order) that touches on the challenges of digitizing government.
 - [A software bug kept thousands of inmates in prison beyond their release date](https://kjzz.org/content/1660988/whistleblowers-software-bug-keeping-hundreds-inmates-arizona-prisons-beyond-release). Hard to read this one without feeling outraged.
+
+- Matt & The Code for Boston Team
 
 ## Jobs
 ### [City of Boston: Chief Information Officer](https://city-boston.icims.com/jobs/21266/chief-information-officer/job?hub=8&mobile=false&width=1200&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240)
@@ -37,3 +39,7 @@ Boston’s CIO manages the Department of Innovation & Technology (DoIT.)  That D
 ## Mattapan Mapping
 * Working on a Hasura/GraphQL backend
 * Design and content updates.
+
+## Legislative Testimony
+* Back end data work from legislature data API
+* Front-end and design work.
