@@ -156,11 +156,8 @@ async function render(opts: Options) {
   };
 }
 
-const dateStr = (d: Date) => ((d.toISOString()).split('T', 1)[0]);
-
-const floorDate = (d: Date) => (new Date(d.getFullYear(),
-                                         d.getMonth(),
-                                         d.getDate()));
+const dateStr =
+  (d: Date | string) => ((typeof d === 'string' ? d : d.toISOString()).split('T', 1)[0]);
 
 function getSendDate(c: TemplateContext) {
   let date = c.post.date;
@@ -175,15 +172,33 @@ function getSendDate(c: TemplateContext) {
   return date;
 }
 
+function singleSendId(context: TemplateContext, index?: SG.SingleSendIndex) {
+  if (!index)
+    return undefined;
+
+  const date = dateStr(context.post.date);
+
+  for (const ss of Object.values(index.byId)) {
+    if (dateStr(ss.send_at) === date)
+      return ss.id;
+
+    if (ss.name.includes(context.post.title))
+      return ss.id;
+  }
+}
+
 async function run(options: Options) {
   const { text, context } = await render(options);
-  // console.log(context);
 
   if (options.output) {
     await writeFile(options.output, text);
   } else if (options.apiKey) {
     const sendAt = getSendDate(context);
-    const id = options.index?.byDate[dateStr(context.post.date)][0];
+    const id = singleSendId(context, options.index);
+
+    if (id)
+      console.log(`Updating existing Single Send ${id}`);
+
     const response = await SG.singleSend({
       html: text,
       listId: options.listId,
@@ -219,7 +234,7 @@ type RunOptions = Omit<Options, 'filePath'> & {
 function dateFilter(after: number) {
   return (path: string) => {
     const ctx = contextFromPath(path);
-    return ctx.date.getTime() > after;
+    return ctx.date.getTime() >= after;
   };
 }
 
@@ -247,7 +262,6 @@ async function runAll(options: RunOptions) {
   const index = await SG.indexSingleSends({ token: options.apiKey });
 
   for (const post of posts) {
-
     const result = await run({
       ...options,
       filePath: post,
@@ -276,7 +290,7 @@ async function runAction() {
     INPUT_SUBJECT_FORMAT: subject = '%s',
     INPUT_POSTS_DIR: postsDir,
     INPUT_SLACK_URL: slackUrl,
-    TODAY_OVERRIDE: today,
+    INPUT_AFTER_DATE: today,
   } = process.env;
 
   if (!(path || postsDir)) {
@@ -302,7 +316,6 @@ async function runAction() {
 }
 
 async function testRun() {
-  // const apiKey = 'REAS-yuff0naum!krar';
   process.env['INPUT_SENDGRID_LIST_ID'] =  "559adb5e-7164-4ac8-bbb5-1398d4ff0df9";
   // process.env['INPUT_SENDGRID_API_KEY'] = apiKey;
   // process.env['INPUT_TEXT_PATH'] = __dirname + '/../../../../_posts/2021-11-16-communications-lead.md';
@@ -311,8 +324,6 @@ async function testRun() {
   process.env['INPUT_CONTEXT'] = `{}`;
   process.env['INPUT_SUPPRESSION_GROUP_ID'] = '17889';
   process.env['INPUT_SITE_YAML'] = __dirname + '/../../../../_config.yml';
-  process.env['INPUT_SLACK_URL'] = 'https://hooks.slack.com/services/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';
-  process.env['TODAY_OVERRIDE'] = '2022-01-10';
 
   await runAction();
 }

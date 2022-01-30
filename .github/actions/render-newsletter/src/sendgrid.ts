@@ -47,8 +47,19 @@ export async function singleSend(params: SingleSendParams) {
   });
 }
 
+export async function deleteSingleSend(params: any) {
+  const { id, token } = params;
+  return await fetch(`${API_BASE}/marketing/singlesends/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Authorization': `Bearer ${token}`
+    }
+  });
+}
+
 type GetSingleSendsParams = {
   token: string,
+  categories?: string[]
 };
 
 export async function *getSingleSends(params: GetSingleSendsParams) {
@@ -62,7 +73,7 @@ export async function *getSingleSends(params: GetSingleSendsParams) {
       },
       body: JSON.stringify({
         status: ['scheduled', 'draft'],
-        // categories: ['newsletter']
+        categories: params.categories
       })
     });
 
@@ -93,4 +104,16 @@ export async function indexSingleSends(params: GetSingleSendsParams) {
   }
 
   return idx;
+}
+
+export async function cleanup(params: GetSingleSendsParams) {
+  const deleteBefore = new Date(2022, 2, 2).getTime();
+  for await (const ss of getSingleSends(params)) {
+    if (new Date(ss.send_at).getTime() < deleteBefore) {
+      await deleteSingleSend({
+        id: ss.id,
+        token: params.token,
+      });
+    }
+  }
 }

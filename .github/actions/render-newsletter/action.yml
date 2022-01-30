@@ -8,6 +8,10 @@ inputs:
     description: 'Path to directory containing posts'
     required: false
 
+  after_date:
+    description: 'Only render posts that have a send date >= this ISO 8601-formatted date'
+    required: false
+
   out_path:
     description: 'Path where the output should be written'
     required: false
