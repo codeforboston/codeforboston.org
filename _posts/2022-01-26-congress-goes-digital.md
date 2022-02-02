@@ -13,7 +13,7 @@ What we’re reading:
 - Protocol [has a good summary of Biden’s new customer experience executive order](https://www.protocol.com/policy/biden-customer-experience-order) that touches on the challenges of digitizing government.
 - [A software bug kept thousands of inmates in prison beyond their release date](https://kjzz.org/content/1660988/whistleblowers-software-bug-keeping-hundreds-inmates-arizona-prisons-beyond-release). Hard to read this one without feeling outraged.
 
-- Matt & The Code for Boston Team
+Matt & The Code for Boston Team
 
 ## Jobs
 ### [City of Boston: Chief Information Officer](https://city-boston.icims.com/jobs/21266/chief-information-officer/job?hub=8&mobile=false&width=1200&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240)
@@ -30,16 +30,16 @@ Boston’s CIO manages the Department of Innovation & Technology (DoIT.)  That D
 * Testing framework updates
 * New API pull request.
 
-## Police Data Trust
+### Police Data Trust
 * Tapped out of backend tasks
 * Doing some testing before decide how to move forward
 * Work on connecting front to the backend
 * Working on getting public site up
 
-## Mattapan Mapping
+### Mattapan Mapping
 * Working on a Hasura/GraphQL backend
 * Design and content updates.
 
-## Legislative Testimony
+### Legislative Testimony
 * Back end data work from legislature data API
 * Front-end and design work.
