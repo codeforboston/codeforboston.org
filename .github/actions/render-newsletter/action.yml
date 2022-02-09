@@ -22,6 +22,9 @@ inputs:
   sendgrid_list_id:
     description: 'SendGrid contacts list to send the newsletter to'
     required: false
+  sendgrid_sender_id:
+    description: 'Verified sender id'
+    required: false
   suppression_group_id:
     description: ''
     required: false

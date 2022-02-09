@@ -54,6 +54,7 @@ type Options = {
   template?: string,
   context?: any,
   listId?: string,
+  senderId?: number,
   suppressionGroupId?: number,
   siteYaml?: string,
   subject?: string,
@@ -291,6 +292,8 @@ async function runAction() {
   const {
     INPUT_SENDGRID_LIST_ID: listId,
     INPUT_SENDGRID_API_KEY: apiKey,
+    INPUT_SENDGRID_SENDER_ID: senderId,
+
     INPUT_TEMPLATE_PATH: template,
     INPUT_TEXT_PATH: path,
     INPUT_CONTEXT: context,
@@ -317,6 +320,7 @@ async function runAction() {
     output: outPath,
     context: context ? JSON.parse(context) : {},
     listId: listId,
+    senderId: senderId ? parseInt(senderId) : undefined,
     suppressionGroupId: suppressionGroupId ? parseInt(suppressionGroupId) : undefined,
     siteYaml,
     subject,
@@ -334,6 +338,7 @@ async function testRun() {
   process.env['INPUT_CONTEXT'] = `{}`;
   process.env['INPUT_SUPPRESSION_GROUP_ID'] = '17889';
   process.env['INPUT_SITE_YAML'] = __dirname + '/../../../../_config.yml';
+
 
   await runAction();
 }

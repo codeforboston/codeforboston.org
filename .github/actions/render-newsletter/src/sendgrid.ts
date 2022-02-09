@@ -20,6 +20,7 @@ const API_BASE = 'https://api.sendgrid.com/v3';
 type SingleSendParams = {
   html: string,
   listId: string,
+  senderId?: number,
   suppressionGroup: number,
   token: string,
   sendAt?: Date,
@@ -47,7 +48,8 @@ export async function singleSend(params: SingleSendParams) {
       email_config: {
         subject: params.subject,
         html_content: params.html,
-        suppression_group_id: params.suppressionGroup
+        suppression_group_id: params.suppressionGroup,
+        sender_id: params.senderId || null,
       }
     })
   });
@@ -142,4 +144,13 @@ export async function cleanup(params: GetSingleSendsParams) {
       });
     }
   }
+}
+
+export async function verifiedSenders({ token } : { token: string }) {
+  return await fetch(`${API_BASE}/verified_senders`, {
+    method: 'GET',
+    headers: {
+      'Authorization': `Bearer ${token}`
+    }
+  });
 }
