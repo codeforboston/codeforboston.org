@@ -211,15 +211,25 @@ async function run(options: Options) {
     });
 
     const url = response.headers.get('location');
-    console.log(response.status, response.statusText, response.headers, await response.text());
 
-    setOutput('send_date', sendAt.toISOString());
-    setOutput('single_send_url', url);
+    if (response.ok) {
+      const ssend: SG.ScheduledSend = await response.json();
+      if (ssend.status === 'draft') {
+        console.log('Scheduling');
+        await SG.scheduleSingleSend({ id: ssend.id, sendAt, token: options.apiKey });
+      }
 
-    return {
-      sendAt,
-      url
-    };
+      setOutput('send_date', sendAt.toISOString());
+      setOutput('single_send_url', url);
+
+      return {
+        sendAt,
+        url
+      };
+    } else {
+      console.error(response.status, response.statusText, response.headers, await response.text());
+      throw new Error('Could not create newsletter');
+    }
   } else {
     console.log(text);
   }

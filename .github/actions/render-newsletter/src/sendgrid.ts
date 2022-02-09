@@ -3,12 +3,17 @@ import fetch from 'node-fetch';
 export type ScheduledSend = {
   id: string,
   name: string,
-  status: string,
+  status: 'draft' | 'scheduled' | 'triggered',
   categories: string[],
   send_at: string,
   created_at: string,
   updated_at: string,
   is_abtest: boolean,
+};
+
+export type ErrorItem = { field: string, message: string, error_id: string };
+export type ErrorBody = {
+  errors: ErrorItem[]
 };
 
 const API_BASE = 'https://api.sendgrid.com/v3';
@@ -25,6 +30,7 @@ type SingleSendParams = {
 export async function singleSend(params: SingleSendParams) {
   const url = `${API_BASE}/marketing/singlesends` +
     (params.id ? `/${params.id}` : '');
+
   return await fetch(url, {
     method: params.id ? 'PATCH' : 'POST',
     headers: {
@@ -43,6 +49,26 @@ export async function singleSend(params: SingleSendParams) {
         html_content: params.html,
         suppression_group_id: params.suppressionGroup
       }
+    })
+  });
+}
+
+type ScheduleSendParams = {
+  id: string,
+  sendAt: Date,
+  token: string,
+};
+export async function scheduleSingleSend({ id, sendAt, token }: ScheduleSendParams) {
+  const url = `${API_BASE}/marketing/singlesends/${id}/schedule`;
+
+  return await fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      send_at: sendAt.toISOString(),
     })
   });
 }
