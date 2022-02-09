@@ -12,6 +12,9 @@ jobs:
       - run: ./.github/workflows/get_domain.sh
         shell: bash
         id: site-domain
+      - run: ./.github/workflows/commit-date.sh
+        shell: bash
+        id: commit-date
       - name: Render newsletter
         id: newsletter
         uses: ./.github/actions/render-newsletter
@@ -24,6 +27,7 @@ jobs:
           site_yaml: "./_config.yml"
           subject_format: "[Code for Boston] %s"
           slack_url: ${{ secrets.SLACK_URL }}
+          after_date: ${{ steps.commit-date.outputs.commit-date }}
           context: >-
             {
             "domain": "${{ steps.site-domain.outputs.domain }}"

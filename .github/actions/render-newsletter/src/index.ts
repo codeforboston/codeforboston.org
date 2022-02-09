@@ -8,6 +8,8 @@ import * as marked from 'marked';
 import * as yaml from 'js-yaml';
 import fetch from 'node-fetch';
 
+import * as SG from './sendgrid';
+
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const readdir = promisify(fs.readdir);
@@ -45,45 +47,6 @@ async function postToSlack(slackUrl: string, url: string) {
   });
 }
 
-const API_BASE = 'https://api.sendgrid.com/v3';
-type SingleSendParams = {
-  html: string,
-  listId: string,
-  suppressionGroup: number,
-  token: string,
-  sendAt?: Date,
-  subject: string,
-};
-async function singleSend(params: SingleSendParams) {
-  return await fetch(`${API_BASE}/marketing/singlesends`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${params.token}`,
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify({
-      name: `Newsletter: ${params.subject}`,
-      send_at: params.sendAt?.toISOString(),
-      send_to: {
-        list_ids: [params.listId]
-      },
-      email_config: {
-        subject: params.subject,
-        html_content: params.html,
-        suppression_group_id: params.suppressionGroup
-      }
-    })
-  });
-}
-
-type GetSingleSendsParams = {
-
-};
-
-async function getSingleSends(params: GetSingleSendsParams) {
-
-}
-
 type Options = {
   apiKey?: string,
   filePath: string,
@@ -95,6 +58,7 @@ type Options = {
   siteYaml?: string,
   subject?: string,
   slackUrl?: string,
+  index?: SG.SingleSendIndex,
 };
 
 async function loadTemplate(path?: string, options?: CompileOptions) {
@@ -192,6 +156,9 @@ async function render(opts: Options) {
   };
 }
 
+const dateStr =
+  (d: Date | string) => ((typeof d === 'string' ? d : d.toISOString()).split('T', 1)[0]);
+
 function getSendDate(c: TemplateContext) {
   let date = c.post.date;
   if (date.getTime() <= Date.now()) {
@@ -205,21 +172,42 @@ function getSendDate(c: TemplateContext) {
   return date;
 }
 
+function singleSendId(context: TemplateContext, index?: SG.SingleSendIndex) {
+  if (!index)
+    return undefined;
+
+  const date = dateStr(context.post.date);
+
+  for (const ss of Object.values(index.byId)) {
+    if (dateStr(ss.send_at) === date)
+      return ss.id;
+
+    if (ss.name.includes(context.post.title))
+      return ss.id;
+  }
+}
+
 async function run(options: Options) {
   const { text, context } = await render(options);
-  // console.log(context);
 
   if (options.output) {
     await writeFile(options.output, text);
   } else if (options.apiKey) {
     const sendAt = getSendDate(context);
-    const response = await singleSend({
+    const id = singleSendId(context, options.index);
+
+    if (id)
+      console.log(`Updating existing Single Send ${id}`);
+
+    const response = await SG.singleSend({
       html: text,
       listId: options.listId,
       suppressionGroup: options.suppressionGroupId,
       token: options.apiKey,
       sendAt,
       subject: (options.subject ?? '%s').replace('%s', context.post.title),
+      categories: ['newsletter'],
+      id,
     });
 
     const url = response.headers.get('location');
@@ -246,7 +234,7 @@ type RunOptions = Omit<Options, 'filePath'> & {
 function dateFilter(after: number) {
   return (path: string) => {
     const ctx = contextFromPath(path);
-    return ctx.date.getTime() > after;
+    return ctx.date.getTime() >= after;
   };
 }
 
@@ -271,10 +259,13 @@ async function runAll(options: RunOptions) {
     return;
   }
 
+  const index = await SG.indexSingleSends({ token: options.apiKey });
+
   for (const post of posts) {
     const result = await run({
       ...options,
-      filePath: post
+      filePath: post,
+      index,
     });
 
     if (result?.url && options.slackUrl) {
@@ -299,7 +290,7 @@ async function runAction() {
     INPUT_SUBJECT_FORMAT: subject = '%s',
     INPUT_POSTS_DIR: postsDir,
     INPUT_SLACK_URL: slackUrl,
-    TODAY_OVERRIDE: today,
+    INPUT_AFTER_DATE: today,
   } = process.env;
 
   if (!(path || postsDir)) {
@@ -325,7 +316,6 @@ async function runAction() {
 }
 
 async function testRun() {
-  // const apiKey = 'REAS-yuff0naum!krar';
   process.env['INPUT_SENDGRID_LIST_ID'] =  "559adb5e-7164-4ac8-bbb5-1398d4ff0df9";
   // process.env['INPUT_SENDGRID_API_KEY'] = apiKey;
   // process.env['INPUT_TEXT_PATH'] = __dirname + '/../../../../_posts/2021-11-16-communications-lead.md';
@@ -334,8 +324,6 @@ async function testRun() {
   process.env['INPUT_CONTEXT'] = `{}`;
   process.env['INPUT_SUPPRESSION_GROUP_ID'] = '17889';
   process.env['INPUT_SITE_YAML'] = __dirname + '/../../../../_config.yml';
-  process.env['INPUT_SLACK_URL'] = 'https://hooks.slack.com/services/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';
-  process.env['TODAY_OVERRIDE'] = '2022-01-10';
 
   await runAction();
 }
