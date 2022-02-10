@@ -19,8 +19,7 @@ description:
   to solve civic and social problems.'
 baseurl: ''
 url: https://www.codeforboston.org
-author:
-  twitter: mzagaja
+author: Matt Zagaja
 defaults:
   - scope:
       type: posts
