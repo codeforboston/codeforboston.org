@@ -16,7 +16,6 @@ jobs:
         shell: bash
         id: commit-date
       - name: Render newsletter
-        id: newsletter
         uses: ./.github/actions/render-newsletter
         with:
           posts_dir: "./_posts"
