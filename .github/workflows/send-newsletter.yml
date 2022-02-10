@@ -24,6 +24,7 @@ jobs:
           sendgrid_list_id: "559adb5e-7164-4ac8-bbb5-1398d4ff0df9"
           sendgrid_api_key: ${{ secrets.SENDGRID_API_KEY }}
           suppression_group_id: 17889
+          sendgrid_sender_id: 2072506
           site_yaml: "./_config.yml"
           subject_format: "[Code for Boston] %s"
           slack_url: ${{ secrets.SLACK_URL }}
