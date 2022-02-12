@@ -1,31 +1,31 @@
 .walkthrough-list {
-    list-style: none;
-    margin: 2rem 0;
+  list-style: none;
+  margin: 2rem 0;
 
-    li {
-        counter-increment: step-counter;
-        margin-left: 6rem;
-        margin-bottom: 6rem;
-        position: relative;
+  li {
+    counter-increment: step-counter;
+    margin-left: 6rem;
+    margin-bottom: 6rem;
+    position: relative;
 
-        &:before {
-            content: counter(step-counter);
-            color: $purple-color;
-            font-weight: 700;
-            font-size: 6rem;
-            display: block;
-            border-radius: 50%;
-            position: absolute;
-            left: -5rem;
-            top: 0;
-        }
-
-        @include media-query($on-palm) {
-            margin-left: 0;
-
-            &:before {
-                position: static;
-            }
-        }
+    &:before {
+      content: counter(step-counter);
+      color: $purple-color;
+      font-weight: 700;
+      font-size: 6rem;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      left: -5rem;
+      top: 0;
     }
+
+    @include media-query($on-palm) {
+      margin-left: 0;
+
+      &:before {
+        position: static;
+      }
+    }
+  }
 }

@@ -1,6 +1,6 @@
 .card {
   margin-bottom: 1rem;
-  box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card--map {
@@ -15,7 +15,7 @@
   }
 
   .card-content {
-    float:left;
+    float: left;
     padding: 1.5rem;
     width: calc(100% - 15rem);
     @include media-query(767px) {
@@ -23,7 +23,7 @@
     }
   }
   .card-img {
-    float:right;
+    float: right;
     width: 15rem;
     @include media-query(767px) {
       display: none;
@@ -49,20 +49,17 @@
     background: $brand-color;
     color: $white-color;
     text-decoration: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     &:hover {
       background: darken($brand-color, 10%);
-
     }
   }
 }
-
 
 .panel {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-
 
 .hacknight-banner {
   background: $brand-color;
@@ -71,15 +68,12 @@
   .cta-section {
     text-align: right;
   }
-
 }
-
 
 .page-title {
   text-align: center;
   margin: 2rem 0;
 }
-
 
 .notice {
   padding: 1.4rem;
@@ -95,29 +89,19 @@
   }
 }
 
-
-
 .three-up {
   article p {
     min-height: 10rem;
   }
 }
 
-
-
-
-
-
-
 .t-section-headline {
-  padding: $spacing-unit*2 0;
+  padding: $spacing-unit * 2 0;
   text-align: center;
   @include media-query(768px) {
     padding: $spacing-unit 0;
   }
 }
-
-
 
 .team-grid {
   margin: 0 auto;
