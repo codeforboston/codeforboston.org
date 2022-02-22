@@ -28,6 +28,7 @@ jobs:
           subject_format: "[Code for Boston] %s"
           slack_url: ${{ secrets.SLACK_URL }}
           after_date: ${{ steps.commit-date.outputs.commit-date }}
+          send_at: "10:00-0500"
           context: >-
             {
             "domain": "${{ steps.site-domain.outputs.domain }}"

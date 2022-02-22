@@ -10,6 +10,8 @@ import fetch from 'node-fetch';
 
 import * as SG from './sendgrid';
 
+import { setTime, parseTimeSpec, TimeSpec } from './util';
+
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const readdir = promisify(fs.readdir);
@@ -60,6 +62,7 @@ type Options = {
   subject?: string,
   slackUrl?: string,
   index?: SG.SingleSendIndex,
+  sendAt?: TimeSpec,
 };
 
 async function loadTemplate(path?: string, options?: CompileOptions) {
@@ -160,7 +163,7 @@ async function render(opts: Options) {
 const dateStr =
   (d: Date | string) => ((typeof d === 'string' ? d : d.toISOString()).split('T', 1)[0]);
 
-function getSendDate(c: TemplateContext) {
+function getSendDate(c: TemplateContext, timeSpec?: TimeSpec) {
   let date = c.post.date;
   if (date.getTime() <= Date.now()) {
     const today = new Date();
@@ -169,8 +172,7 @@ function getSendDate(c: TemplateContext) {
                     today.getDate()+1);
   }
 
-  date.setHours(15);
-  return date;
+  return setTime(date, timeSpec)
 }
 
 function singleSendId(context: TemplateContext, index?: SG.SingleSendIndex) {
@@ -194,7 +196,7 @@ async function run(options: Options) {
   if (options.output) {
     await writeFile(options.output, text);
   } else if (options.apiKey) {
-    const sendAt = getSendDate(context);
+    const sendAt = getSendDate(context, options.sendAt);
     const id = singleSendId(context, options.index);
 
     if (id)
@@ -242,10 +244,14 @@ type RunOptions = Omit<Options, 'filePath'> & {
   filter?: PathFilter,
 };
 
-function dateFilter(after: number) {
+
+/**
+ * @param timeSpec Set the time on the date parsed from the file name
+ */
+function dateFilter(after: number, timeSpec?: TimeSpec) {
   return (path: string) => {
     const ctx = contextFromPath(path);
-    return ctx.date.getTime() >= after;
+    return setTime(ctx.date, timeSpec).getTime() >= after;
   };
 }
 
@@ -304,6 +310,7 @@ async function runAction() {
     INPUT_POSTS_DIR: postsDir,
     INPUT_SLACK_URL: slackUrl,
     INPUT_AFTER_DATE: today,
+    INPUT_SEND_AT: sendAtRaw,
   } = process.env;
 
   if (!(path || postsDir)) {
@@ -312,6 +319,8 @@ async function runAction() {
     );
     process.exit(1);
   }
+
+  const timeSpec = parseTimeSpec(sendAtRaw);
 
   await runAll({
     apiKey,
@@ -325,7 +334,9 @@ async function runAction() {
     siteYaml,
     subject,
     slackUrl,
-    filter: dateFilter(today ? new Date(today).getTime() : Date.now()),
+    // Filter out posts from before this date.
+    filter: dateFilter(today ? new Date(today).getTime() : Date.now(), timeSpec),
+    sendAt: timeSpec,
   });
 }
 
@@ -338,6 +349,7 @@ async function testRun() {
   process.env['INPUT_CONTEXT'] = `{}`;
   process.env['INPUT_SUPPRESSION_GROUP_ID'] = '17889';
   process.env['INPUT_SITE_YAML'] = __dirname + '/../../../../_config.yml';
+  process.env['INPUT_SEND_AT'] = '10:00-0500';
 
 
   await runAction();
