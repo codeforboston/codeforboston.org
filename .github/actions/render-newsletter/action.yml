@@ -11,6 +11,9 @@ inputs:
   after_date:
     description: 'Only render posts that have a send date >= this ISO 8601-formatted date'
     required: false
+  send_at:
+    description: 'Time of day to send the newsletter, formatted as HH:MM+ZZZZ'
+    required: false
 
   out_path:
     description: 'Path where the output should be written'
