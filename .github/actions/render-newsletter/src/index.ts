@@ -211,15 +211,22 @@ async function run(options: Options) {
       subject: (options.subject ?? '%s').replace('%s', context.post.title),
       categories: ['newsletter'],
       id,
+      senderId: options.senderId,
     });
 
     const url = response.headers.get('location');
 
     if (response.ok) {
       const ssend: SG.ScheduledSend = await response.json();
+      console.log('Single send created', ssend);
+
       if (ssend.status === 'draft') {
         console.log('Scheduling');
-        await SG.scheduleSingleSend({ id: ssend.id, sendAt, token: options.apiKey });
+        await SG.scheduleSingleSend({
+          id: ssend.id,
+          sendAt,
+          token: options.apiKey,
+        });
       }
 
       setOutput('send_date', sendAt.toISOString());
