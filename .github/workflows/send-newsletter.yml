@@ -20,7 +20,7 @@ jobs:
         with:
           posts_dir: "./_posts"
           template_path: "./.github/workflows/newsletter_template.html"
-          sendgrid_list_id: "559adb5e-7164-4ac8-bbb5-1398d4ff0df9"
+          sendgrid_list_id: "3ad415ef-d330-487b-94e2-7c60a34ae6f4"
           sendgrid_api_key: ${{ secrets.SENDGRID_API_KEY }}
           suppression_group_id: 17889
           sendgrid_sender_id: 2072506
