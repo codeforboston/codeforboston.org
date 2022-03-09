@@ -15,7 +15,7 @@ What We’re Reading and Watching:
 Open Data Week is an annual festival of community-driven events organized and produced by the NYC Mayor’s Office of Data Analytics and BetaNYC. Every year, New Yorkers come together all across the five boroughs to celebrate New York City’s Open Data Law, which was signed into law on March 7, 2012. Coincidentally, the first weekend of March is also International Open Data Day.  With these dates anchoring Open Data Week, we rally NYC’s civic tech and open data communities and offer opportunities for more people to learn about and engage with municipal open data.
 
 ## Jobs
-[Housing Navigator - Project Coordinator](https://www.housingnavigatorma.org/wp-content/uploads/2022/02/HN-Project-Coord-Feb-2022.pdf)
+### [Housing Navigator - Project Coordinator](https://www.housingnavigatorma.org/wp-content/uploads/2022/02/HN-Project-Coord-Feb-2022.pdf)
 
 Housing Navigator Massachusetts, Inc. (HNMI) seeks a full-time Project Coordinator for our five-person team based in Cambridge, Massachusetts. This is a rare opportunity to be part of a growing organization delivering tech for good with passionate, problem-solving colleagues focused on improving affordable housing access. We are a nonprofit start-up offering tools and information—for renters, for owners, for anyone–throughout Massachusetts. We make it easier for people to find a home, giving everyone more time to focus on their hopes, their dreams, and their lives.
 
