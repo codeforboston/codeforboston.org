@@ -163,17 +163,9 @@ async function render(opts: Options) {
 const dateStr =
   (d: Date | string) => ((typeof d === 'string' ? d : d.toISOString()).split('T', 1)[0]);
 
-function getSendDate(c: TemplateContext, timeSpec?: TimeSpec) {
-  let date = c.post.date;
-  if (date.getTime() <= Date.now()) {
-    const today = new Date();
-    date = new Date(today.getFullYear(),
-                    today.getMonth(),
-                    today.getDate()+1);
-  }
+const getSendDate = (c: TemplateContext, timeSpec?: TimeSpec) =>
+  setTime(c.post.date, timeSpec);
 
-  return setTime(date, timeSpec)
-}
 
 function singleSendId(context: TemplateContext, index?: SG.SingleSendIndex) {
   if (!index)
