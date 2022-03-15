@@ -102,8 +102,10 @@ function contextFromPath(filepath: string) {
 function postUrl(post: PathContext, site: any) {
   const siteUrl = site.url;
   const basePath = site.baseurl ?? '';
+  const m = `${post.month}`.padStart(2, '0');
+  const d = `${post.day}`.padStart(2, '0');
 
-  return `${siteUrl}${basePath}/${post.year}/${post.month}/${post.day}/${post.slug}.html`;
+  return `${siteUrl}${basePath}/${post.year}/${m}/${d}/${post.slug}.html`;
 }
 
 type PostContext = PathContext &
