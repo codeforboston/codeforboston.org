@@ -11,8 +11,6 @@ All tech projects require both code and non-code roles to function properly and 
 
 For example, our very own Annie LaCourt in our leadership team is an avid weight lifter. When she's not working at her day job or leading on Mattapan Mapping, she's [dead-lifting 280 pounds at the gym.](https://media.giphy.com/media/7wrO5zq0GDSWVk1yOi/giphy.gif)
 
-<iframe src="https://giphy.com/embed/7wrO5zq0GDSWVk1yOi" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/7wrO5zq0GDSWVk1yOi">via GIPHY</a></p>
-
 What's your hobby outside of civic tech?
 
 ## Job Openings!
@@ -22,19 +20,18 @@ What's your hobby outside of civic tech?
 - [Work at CharlieHealth to reduce teenage suicide rates!](https://www.charliehealth.com/)
 
 ## Events:
-- April 13 [Data Sharing and Platform Urbanism: Contested Digital Sovereignty in the Emergent ‘Smart City’](https://www.eventbrite.com/e/comms-api-tech-10-boston-with-github-infobip-workshop-networking-tickets-311785527907)
-- April 14 [Comms API Tech #10 - Boston with GitHub & Infobip Workshop & Networking](https://www.eventbrite.com/e/comms-api-tech-10-boston-with-github-infobip-workshop-networking-tickets-311785527907).
-- April 26 [Suffolk’s Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/events/lookahead/)
-- April 20-21 [ODSC East 2022 | Open Data Science Conference](https://odsc.com/boston/#register)
+- April 13: [Data Sharing and Platform Urbanism: Contested Digital Sovereignty in the Emergent ‘Smart City’](https://www.eventbrite.com/e/comms-api-tech-10-boston-with-github-infobip-workshop-networking-tickets-311785527907)
+- April 14: [Comms API Tech #10 - Boston with GitHub & Infobip Workshop & Networking](https://www.eventbrite.com/e/comms-api-tech-10-boston-with-github-infobip-workshop-networking-tickets-311785527907).
+- April 26: [Suffolk’s Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/events/lookahead/)
+- April 20-21: [ODSC East 2022 | Open Data Science Conference](https://odsc.com/boston/#register)
 
 
 ## Project Updates
 
 ### Clean Slate
-- Working on plugins, parties, budget, and such on the Massachusetts Recreational Consumer Council website
+- Massachusetts Recreational Consumer Council  Wordpress site: Last week week started discussions about plugins, budget, and the “Take Action” page.
 - [Recently released version 4 of the testing framework](https://suffolklitlab.org/docassemble-AssemblyLine-documentation/docs/automated_integrated_testing/)
-- Working on next version
-- Wordpress on one side
+- Working on efiling needs for the testing framework, as well as bulk tests, and discussions on random input testing.
 
 ### Police Data Trust
 - Getting PR ready
