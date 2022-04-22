@@ -1,6 +1,8 @@
 - name: Mattapan Mapping
   elevatorPitch: >
-    The Mattapan Mapping Project is a community-based initiative to collect and share resident stories alongside quantitative and spatial data about how Mattapan is changing on a single open-source online platform. The goal is to provide information all in one place to empower residents to take civic action and advocate for equitable policy.
+    The Mattapan Mapping Project is a community-based initiative to collect and share resident stories alongside
+    quantitative and spatial data about how Mattapan is changing on a single open-source online platform. The goal is to
+     provide information all in one place to empower residents to take civic action and advocate for equitable policy.
   repository: https://github.com/codeforboston/mattapan-mapping
   partner:
     - name: Powerful Pathways
@@ -9,54 +11,20 @@
   technologies: Python, AWS
   slackChannel: mattapan-mapping
   hangoutsSlug: mattapanmapping
-- name: Windfall Awareness project
-  repository: https://github.com/codeforboston/windfall-elimination
-  url: https://ssacalculator.org
-  elevatorPitch: >-
-    A tool to help retirees affected by Social Security Windfall Elimination Program (WEP),
-    a program which can reduce SSA benefits by up to 50% for certain public servants.
-    This tool will help help affected workers better plan retirement and self-advocate
-    with the Social Security Administration.
-  lead: Thad Kerosky
-  partner:
-    - name: Office of Seth Moulton
-      url: https://moulton.house.gov/
-  technologies: Javascript, ObservableHQ, ReactJS, Gatsby
-  slackChannel: windfall-awareness
-  hangoutsSlug: windfallawareness
-- name: Plogalong
-  repository: https://github.com/codeforboston/plogalong
-  elevatorPitch: >-
-    When you plog, you pick up trash as you go about your daily life... jogging,
-    hiking, or simply walking down the street. Plogalong helps you track your
-    plogs, connect with nearby ploggers, earn badges, and access local
-    discounts.
-  lead: Eva Kaniasty and Brian Sanders
-  partner:
-    - name: Plogging Boston
-      url: https://www.plogalong.com
-  technologies: ReactNative, Javascript
-  slackChannel: plogalong
-  hangoutsSlug: plogalong
 - name: Clean Slate
-  elevatorPitch: |
-    With Citizens for Juvenile Justice, we're working to:
-
-    * Give people a chance at work and housing by helping them expunge their criminal record
-    * Advocate for changes to the very stringent expungement regulations
+  elevatorPitch: >
+    Clean Slate is working with Suffolk Law's LIT Lab to build an automated testing framework for DocAssemble. They are
+    also working with Mass Recreatonal Consumer Council to update their website.
   partner:
-    - name: Citizens for Juvenile Justice
-      url: https://www.cfjj.org/
+    - name: Suffolk Law LIT Lab
+      url: https://suffolklitlab.org
+    - name: Massachusetts Recreational Consumer Council
+      url: https://massreccouncil.com
   lead: Michelle Bernstein
   slackChannel: clean-slate
   hangoutsSlug: cleanslate
-  news: |
-    Current Goals:
-
-    * Data analysis to estimate number of expungable records
-    * User research for an online expungement form
 - name: National Police Data Coalition
-  elevatorPitch: |
+  elevatorPitch: >
     We're building a national index of police incidents.
     We connect journalists, social scientists, and criminal
     and civil rights lawyers to allow them to access injustice
@@ -75,3 +43,12 @@
     * Fatal Encounters
     * Texas Justice Initiative
     And many more...
+- name: Massachusetts Platform for Legislative Engagement
+  elevatorPitch: >
+    This project endeavors to produce a digital public space wherein Massachusetts constituents can share their
+    expertise, stories and opinions on the legislation that shapes our lives.
+  partner:
+    - name: Northeastern University
+      url: https://www.northeastern.edu
+  lead: Matthew Victor
+  slackChannel: legislative-testimony
