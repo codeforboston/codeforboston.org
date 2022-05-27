@@ -1,4 +1,4 @@
 ---
 title: Mattapan Mapping
-redirect_to: https://us02web.zoom.us/j/5770034068
+redirect_to: https://codeforamerica.zoom.us/meeting/register/tJEocO6prD4tEtxyZTta2yRj4V9XcKJvcBPP
 ---
