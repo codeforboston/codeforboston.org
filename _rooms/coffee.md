@@ -1,4 +1,4 @@
 ---
 title: Civic Tech Coffee
-redirect_to: https://codeforamerica.zoom.us/meeting/register/tJIud-Corj0sGNaJai1FmkyfRMek27MzEC_X
+redirect_to: https://codeforamerica.zoom.us/meeting/register/tZIldemvqTovHNO4aqs0pNmYsU1vje6Vi9tv
 ---
