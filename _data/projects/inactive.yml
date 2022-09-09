@@ -173,3 +173,36 @@
   lead: Matt Victor
   slackChannel: ggp-advocacy-map
   hangoutsSlug: advocacymaps
+- name: Mattapan Mapping
+  elevatorPitch: >
+    The Mattapan Mapping Project is a community-based initiative to collect and share resident stories alongside
+    quantitative and spatial data about how Mattapan is changing on a single open-source online platform. The goal is to
+     provide information all in one place to empower residents to take civic action and advocate for equitable policy.
+  repository: https://github.com/codeforboston/mattapan-mapping
+  partner:
+    - name: Powerful Pathways
+      url: https://powerfulpathways.org
+  lead:
+  technologies: Python, AWS
+  slackChannel: mattapan-mapping
+  hangoutsSlug: mattapanmapping
+- name: National Police Data Coalition
+  elevatorPitch: >
+    We're building a national index of police incidents.
+    We connect journalists, social scientists, and criminal
+    and civil rights lawyers to allow them to access injustice
+    data across state lines in one shared location.
+  partner:
+    - name: The Tubman Project
+      url: https://tubmanproject.com/
+  lead: Darrell Malone
+  slackChannel: police-data-trust
+  news: |
+    This project is now launching our effort to aggregate data from multiple partners:
+
+    * National Association of Criminal Defense Lawyers
+    * Measures for Justice
+    * Raheem.ai
+    * Fatal Encounters
+    * Texas Justice Initiative
+    And many more...

@@ -1,16 +1,3 @@
-- name: Mattapan Mapping
-  elevatorPitch: >
-    The Mattapan Mapping Project is a community-based initiative to collect and share resident stories alongside
-    quantitative and spatial data about how Mattapan is changing on a single open-source online platform. The goal is to
-     provide information all in one place to empower residents to take civic action and advocate for equitable policy.
-  repository: https://github.com/codeforboston/mattapan-mapping
-  partner:
-    - name: Powerful Pathways
-      url: https://powerfulpathways.org
-  lead:
-  technologies: Python, AWS
-  slackChannel: mattapan-mapping
-  hangoutsSlug: mattapanmapping
 - name: Clean Slate
   elevatorPitch: >
     Clean Slate is working with Suffolk Law's LIT Lab to build an automated testing framework for DocAssemble. They are
@@ -23,26 +10,6 @@
   lead: Michelle Bernstein
   slackChannel: clean-slate
   hangoutsSlug: cleanslate
-- name: National Police Data Coalition
-  elevatorPitch: >
-    We're building a national index of police incidents.
-    We connect journalists, social scientists, and criminal
-    and civil rights lawyers to allow them to access injustice
-    data across state lines in one shared location.
-  partner:
-    - name: The Tubman Project
-      url: https://tubmanproject.com/
-  lead: Darrell Malone
-  slackChannel: police-data-trust
-  news: |
-    This project is now launching our effort to aggregate data from multiple partners:
-
-    * National Association of Criminal Defense Lawyers
-    * Measures for Justice
-    * Raheem.ai
-    * Fatal Encounters
-    * Texas Justice Initiative
-    And many more...
 - name: Massachusetts Platform for Legislative Engagement
   elevatorPitch: >
     This project endeavors to produce a digital public space wherein Massachusetts constituents can share their
@@ -53,9 +20,9 @@
   lead: Matthew Victor
   slackChannel: legislative-testimony
 - name: Urban League Heat Pump Accelerator
-  elevatorPitch: > 
+  elevatorPitch: >
     Through this project and its grant, the Urban League plans to hire folks to engage in outreach to homeowners in traditionally underserved communities so they are aware of and can access incentives and resources to convert their HVAC to environmentally friendly air source heat pumps. This will help the Commonwealth reach its goals in the Massachusetts Clean Energy and Climate Plan. It will also reduce the cost of heating and cooling homes for residents in these communities, keeping more of their money in the community and reducing reliance on volatile natural gas or home heating oil prices.
-    
+
     Code for Boston volunteers are needed to participate in the data science, design, and software engineering work to build out an application for the Urban League and its outreach team. Using property assessment data compiled from municipalities across Massachusetts we need to import it into a database (developing scrapers/converters to do so), create a front-end for the Urban League to access the data, and do feature engineering and analysis on the data to improve the targeting for the outreach program.
   repository: https://github.com/codeforboston/urban-league-heat-pump-accelerator
   partner:
@@ -64,6 +31,6 @@
     - name: HeatSmart Alliance
       url: https://heatsmartalliance.org
   lead:
-  technologies: 
+  technologies: Ruby on Rails, React, Python
   slackChannel: urban-league-heat-pump-accelerator
   hangoutsSlug:
