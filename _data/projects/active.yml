@@ -2,6 +2,7 @@
   elevatorPitch: >
     Clean Slate is working with Suffolk Law's LIT Lab to build an automated testing framework for DocAssemble. They are
     also working with Mass Recreatonal Consumer Council to update their website.
+  repository: https://github.com/codeforboston/docassemble-juvenilesealing
   partner:
     - name: Suffolk Law LIT Lab
       url: https://suffolklitlab.org
@@ -14,6 +15,7 @@
   elevatorPitch: >
     This project endeavors to produce a digital public space wherein Massachusetts constituents can share their
     expertise, stories and opinions on the legislation that shapes our lives.
+  repository: https://github.com/codeforboston/maple
   partner:
     - name: Northeastern University
       url: https://www.northeastern.edu
