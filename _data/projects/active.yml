@@ -1,16 +1,3 @@
-- name: Clean Slate
-  elevatorPitch: >
-    Clean Slate is working with Suffolk Law's LIT Lab to build an automated testing framework for DocAssemble. They are
-    also working with Mass Recreatonal Consumer Council to update their website.
-  repository: https://github.com/codeforboston/docassemble-juvenilesealing
-  partner:
-    - name: Suffolk Law LIT Lab
-      url: https://suffolklitlab.org
-    - name: Massachusetts Recreational Consumer Council
-      url: https://massreccouncil.com
-  lead: Michelle Bernstein
-  slackChannel: clean-slate
-  hangoutsSlug: cleanslate
 - name: Massachusetts Platform for Legislative Engagement
   elevatorPitch: >
     This project endeavors to produce a digital public space wherein Massachusetts constituents can share their
