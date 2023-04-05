@@ -23,3 +23,22 @@
   technologies: Ruby on Rails, React, Python
   slackChannel: urban-league-heat-pump-accelerator
   hangoutsSlug:
+- name: National Police Data Coalition
+  elevatorPitch: >
+    We're building a national index of police incidents.
+    We connect journalists, social scientists, and criminal
+    and civil rights lawyers to allow them to access injustice
+    data across state lines in one shared location.
+  partner:
+    - name: National Police Data Coalition
+      url: https://www.nationalpolicedata.org/
+  lead: Darrell Malone
+  slackChannel: police-data-trust
+  news: |
+    This project is now launching our effort to aggregate data from multiple partners:
+
+    * National Association of Criminal Defense Lawyers
+    * Measures for Justice
+    * Fatal Encounters
+    * Texas Justice Initiative
+    And many more...
