@@ -20,8 +20,6 @@
 - name: Urban League Heat Pump Accelerator
   elevatorPitch: >
     Through this project and its grant, the Urban League plans to hire folks to engage in outreach to homeowners in traditionally underserved communities so they are aware of and can access incentives and resources to convert their HVAC to environmentally friendly air source heat pumps. This will help the Commonwealth reach its goals in the Massachusetts Clean Energy and Climate Plan. It will also reduce the cost of heating and cooling homes for residents in these communities, keeping more of their money in the community and reducing reliance on volatile natural gas or home heating oil prices.
-
-    Code for Boston volunteers are needed to participate in the data science, design, and software engineering work to build out an application for the Urban League and its outreach team. Using property assessment data compiled from municipalities across Massachusetts we need to import it into a database (developing scrapers/converters to do so), create a front-end for the Urban League to access the data, and do feature engineering and analysis on the data to improve the targeting for the outreach program.
   repository: https://github.com/codeforboston/urban-league-heat-pump-accelerator
   partner:
     - name: Urban League of Eastern Massachusetts
