@@ -1,3 +1,12 @@
+- name: Home Energy Analysis Tool
+  elevatorPitch: >
+    Residential heating accounts for over 15% of greenhouse gas emissions in Massachusetts. Transitioning from fossil-fuel heating systems to heat pumps is a key step in the state's overall decarbonization strategy, but appropriately sizing heat pumps is critical to realizing their full decarbonization benefit. This project involves moving a calculator tool from an Excel spreadsheet into a web application to improve the workflow of volunteer Heat Pump Coaches and later make the tool more accessible to the public.
+  repository: https://github.com/codeforboston/home-energy-analysis-tool
+  partner:
+    - name: Heat Smart Alliance
+      url: https://heatsmartalliance.org
+  lead: Thad Kerosky
+  slackChannel: heat-home-energy-analysis-tool
 - name: Massachusetts Platform for Legislative Engagement
   elevatorPitch: >
     This project endeavors to produce a digital public space wherein Massachusetts constituents can share their
@@ -17,12 +26,9 @@
   partner:
     - name: Urban League of Eastern Massachusetts
       url: https://www.ulem.org
-    - name: HeatSmart Alliance
-      url: https://heatsmartalliance.org
   lead:
   technologies: Ruby on Rails, React, Python
   slackChannel: urban-league-heat-pump-accelerator
-  hangoutsSlug:
 - name: National Police Data Coalition
   elevatorPitch: >
     We're building a national index of police incidents.
