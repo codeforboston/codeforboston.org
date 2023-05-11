@@ -24,6 +24,8 @@
   partner:
     - name: Urban League of Eastern Massachusetts
       url: https://www.ulem.org
+    - name: Heat Smart Alliance
+      url: https://heatsmartalliance.org
   lead:
   technologies: Ruby on Rails, React, Python
   slackChannel: urban-league-heat-pump-accelerator
