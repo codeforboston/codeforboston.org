@@ -35,6 +35,7 @@
     We connect journalists, social scientists, and criminal
     and civil rights lawyers to allow them to access injustice
     data across state lines in one shared location.
+  repository: https://github.com/codeforboston/police-data-trust
   partner:
     - name: National Police Data Coalition
       url: https://www.nationalpolicedata.org/
