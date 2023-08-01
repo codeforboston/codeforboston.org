@@ -29,6 +29,7 @@ defaults:
 donate_url: https://codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Boston&utm_source=codeforboston.org
 hackpad_url: https://codeforboston.hackpad.com/
 twitter_url: https://twitter.com/codeforboston
+threads_url: http://threads.net/@codeforboston
 github_url: https://github.com/codeforboston
 meetup_url: https://meetup.com/Code-For-Boston
 blog_url: https://medium.com/@CodeForBoston
