@@ -1,4 +1,4 @@
 ---
 title: Announcements and Orientation
-redirect_to: https://exponentpartners.zoom.us/j/96864682628?pwd=ejFUOUdlWHI0ME96ZnUvdTRjZngzZz09
+redirect_to: https://us06web.zoom.us/meeting/register/tZMucemvrTIrE9JVYr8HXslr02yJ_BlGWMta#/registration
 ---
