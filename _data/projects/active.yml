@@ -1,12 +1,12 @@
 - name: Harvard FCU Map
   elevatorPitch: >
-    HFCU was recently charted as a federal credit union. This change has expanded those eligible for membership in the HFCU to include those living in census tracts that are considered underserved by traditional banks.  This project is focused in making it easier for someone interested in membership to determine if they live in one of these census tracts and eligible to join.  
+    HFCU was recently charted as a federal credit union. This change has expanded those eligible for membership in the HFCU to include those living in census tracts that are considered underserved by traditional banks.  This project is focused in making it easier for someone interested in membership to determine if they live in one of these census tracts and eligible to join.
   repository: https://github.com/codeforboston/harvard-fcu
   partner:
     - name: Harvard Federal Credit Union
       url: https://harvardfcu.org
   lead: Annie LaCourt
-  slackChannel: hfcu
+  slackChannel: harvard-fcu
 - name: Home Energy Analysis Tool
   elevatorPitch: >
     Residential heating accounts for over 15% of greenhouse gas emissions in Massachusetts. Transitioning from fossil-fuel heating systems to heat pumps is a key step in the state's overall decarbonization strategy, but appropriately sizing heat pumps is critical to realizing their full decarbonization benefit. This project involves moving a calculator tool from an Excel spreadsheet into a web application to improve the workflow of volunteer Heat Pump Coaches and later make the tool more accessible to the public.
