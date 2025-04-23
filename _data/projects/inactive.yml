@@ -1,3 +1,12 @@
+- name: Harvard FCU Map
+  elevatorPitch: >
+    HFCU was recently charted as a federal credit union. This change has expanded those eligible for membership in the HFCU to include those living in census tracts that are considered underserved by traditional banks.  This project is focused in making it easier for someone interested in membership to determine if they live in one of these census tracts and eligible to join.
+  repository: https://github.com/codeforboston/harvard-fcu
+  partner:
+    - name: Harvard Federal Credit Union
+      url: https://harvardfcu.org
+  lead: Annie LaCourt
+  slackChannel: harvard-fcu
 - name: Clean Slate
   elevatorPitch: >
     Clean Slate is working with Suffolk Law's LIT Lab to build an automated testing framework for DocAssemble. They are
