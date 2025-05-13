@@ -49,3 +49,15 @@
     * Fatal Encounters
     * Texas Justice Initiative
     And many more...
+- name: License to Succeed
+  elevatorPitch: >-
+    Mapping and visualization tool that tracks the distribution
+    of liquor licenses, increasing transparency and enabling equitable
+    access
+  slackChannel: boston-liquor-license-tracker
+  repository: https://github.com/codeforboston/boston-liquor-license-tracker
+  technologies: React, Docker, Github Actions
+  partner:
+    - name: Offsite Hospitality
+      url: https://www.getoffsite.com
+  lead: Curt Savoie
