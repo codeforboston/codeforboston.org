@@ -228,3 +228,15 @@
     * Fatal Encounters
     * Texas Justice Initiative
     And many more...
+- name: Urban League Heat Pump Accelerator
+  elevatorPitch: >
+      Through this project and its grant, the Urban League plans to hire folks to engage in outreach to homeowners in traditionally underserved communities so they are aware of and can access incentives and resources to convert their HVAC to environmentally friendly air source heat pumps. This will help the Commonwealth reach its goals in the Massachusetts Clean Energy and Climate Plan. It will also reduce the cost of heating and cooling homes for residents in these communities, keeping more of their money in the community and reducing reliance on volatile natural gas or home heating oil prices.
+      repository: https://github.com/codeforboston/urban-league-heat-pump-accelerator
+  partner:
+      - name: Urban League of Eastern Massachusetts
+        url: https://www.ulem.org
+      - name: Heat Smart Alliance
+        url: https://heatsmartalliance.org
+  lead:
+    technologies: Ruby on Rails, React
+    slackChannel: urban-league-heat-pump-accelerator
