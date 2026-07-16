@@ -17,26 +17,6 @@
       url: https://www.northeastern.edu
   lead: Matthew Victor
   slackChannel: maple-testimony
-- name: National Police Data Coalition
-  elevatorPitch: >
-    We're building a national index of police incidents.
-    We connect journalists, social scientists, and criminal
-    and civil rights lawyers to allow them to access injustice
-    data across state lines in one shared location.
-  repository: https://github.com/codeforboston/police-data-trust
-  partner:
-    - name: National Police Data Coalition
-      url: https://www.nationalpolicedata.org/
-  lead: Darrell Malone
-  slackChannel: natl-police-data-coalition
-  news: |
-    This project is now launching our effort to aggregate data from multiple partners:
-
-    * National Association of Criminal Defense Lawyers
-    * Measures for Justice
-    * Fatal Encounters
-    * Texas Justice Initiative
-    And many more...
 - name: License to Succeed
   elevatorPitch: >-
     Mapping and visualization tool that tracks the distribution
