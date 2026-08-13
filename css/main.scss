@@ -5,8 +5,8 @@
 
 /*** VARIABLES ***/
 
-$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-$headline-font-family: 'Merriweather', serif;
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$headline-font-family: "Merriweather", serif;
 $base-font-size: 18px;
 $font-ratio: 1.3;
 $small-font-ratio: 1.2;
@@ -21,7 +21,7 @@ $offwhite-color: #fdfdfd;
 $grey-color: #828282;
 $black-color: #111111;
 
-$blue-color: #65b3e0;
+$blue-color: #00639c;
 $purple-color: #291443;
 
 /*** COLOR ALIAS ***/
@@ -140,7 +140,7 @@ h3 {
 /*** FOOTER ***/
 
 .site-footer {
-  border-top: 5px solid #65b3e0;
+  border-top: 5px solid #00639c;
   background: #e8e8e8;
   padding: 20px 0px 20px 0px;
   color: #111;
@@ -237,5 +237,5 @@ h3 {
 }
 
 /*** IMPORT PARTIALS FROM 'SASS_DIR' (defaults to '_sass') ***/
-@import 'base', 'buttons', 'lists', 'forms', 'page-link-nav', 'components',
-  'hackathon', 'syntax-highlighting', 'newsletter';
+@import "base", "buttons", "lists", "forms", "page-link-nav", "components",
+  "hackathon", "syntax-highlighting", "newsletter";
